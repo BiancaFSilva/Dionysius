@@ -6,5 +6,5 @@
     <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/BiancaFSilva/Dionysius">
 </p>
 
-Wine & Sparkling Wine Catalog developed as a collaborative project between the disciplines Software Engineering I (IES100A) and Information Systems ([ISI002](https://github.com/BiancaFSilva/ISI002)), coordinated respectively by Masters Adilson Silva and Humberto Toledo. <br>
+Wine & Sparkling Wine Catalog developed as a collaborative project between the disciplines Software Engineering I (IES100A) and Information Systems ([ISI002](https://github.com/BiancaFSilva/ISI002)), coordinated respectively by Professors Adilson Silva and Humberto Toledo. <br>
 The project images used do not belong to me, they were taken from the internet ([Behance](https://www.behance.net/gallery/85854087/ZWIN-SHOco?tracking_source=search_projects%7Cwine%20catalog)) and are copyrighted by the authors.
