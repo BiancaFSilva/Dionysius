@@ -1,5 +1,9 @@
-# Dionysius
-<img align="left" width="25%" src="https://user-images.githubusercontent.com/60801421/186049397-c022e807-476a-49b2-9b08-42b6c706646e.jpg" alt="Logo">
+<h1> 
+    <img align="left" width="4%" src="https://user-images.githubusercontent.com/60801421/192075542-fece5d93-7484-48a7-9ce0-4686af7e149d.png" alt="Logo">
+    Dionysius 
+</h1>
+
+<img align="left" width="25%" src="https://user-images.githubusercontent.com/60801421/186049397-c022e807-476a-49b2-9b08-42b6c706646e.jpg" alt="Ambiente">
 
 <p align="right">
     <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/BiancaFSilva/Dionysius">
