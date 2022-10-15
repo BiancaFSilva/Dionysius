@@ -33,7 +33,7 @@ Partial Class Login
         Me.txtSenha = New System.Windows.Forms.MaskedTextBox()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.imgVerSenha = New System.Windows.Forms.PictureBox()
-        Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
+        Me.lblEsqueceuSenha = New System.Windows.Forms.LinkLabel()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.imgVerSenha, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -154,17 +154,17 @@ Partial Class Login
         Me.imgVerSenha.TabIndex = 10
         Me.imgVerSenha.TabStop = False
         '
-        'LinkLabel1
+        'lblEsqueceuSenha
         '
-        Me.LinkLabel1.AutoSize = True
-        Me.LinkLabel1.Font = New System.Drawing.Font("Bahnschrift", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LinkLabel1.LinkColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(230, Byte), Integer), CType(CType(217, Byte), Integer))
-        Me.LinkLabel1.Location = New System.Drawing.Point(263, 341)
-        Me.LinkLabel1.Name = "LinkLabel1"
-        Me.LinkLabel1.Size = New System.Drawing.Size(92, 14)
-        Me.LinkLabel1.TabIndex = 11
-        Me.LinkLabel1.TabStop = True
-        Me.LinkLabel1.Text = "Esqueci a senha"
+        Me.lblEsqueceuSenha.AutoSize = True
+        Me.lblEsqueceuSenha.Font = New System.Drawing.Font("Bahnschrift", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblEsqueceuSenha.LinkColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(230, Byte), Integer), CType(CType(217, Byte), Integer))
+        Me.lblEsqueceuSenha.Location = New System.Drawing.Point(263, 341)
+        Me.lblEsqueceuSenha.Name = "lblEsqueceuSenha"
+        Me.lblEsqueceuSenha.Size = New System.Drawing.Size(92, 14)
+        Me.lblEsqueceuSenha.TabIndex = 11
+        Me.lblEsqueceuSenha.TabStop = True
+        Me.lblEsqueceuSenha.Text = "Esqueci a senha"
         '
         'Login
         '
@@ -172,7 +172,7 @@ Partial Class Login
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(89, Byte), Integer), CType(CType(8, Byte), Integer), CType(CType(2, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1009, 612)
-        Me.Controls.Add(Me.LinkLabel1)
+        Me.Controls.Add(Me.lblEsqueceuSenha)
         Me.Controls.Add(Me.imgVerSenha)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.txtSenha)
@@ -205,5 +205,5 @@ Partial Class Login
     Friend WithEvents txtSenha As MaskedTextBox
     Friend WithEvents Label5 As Label
     Friend WithEvents imgVerSenha As PictureBox
-    Friend WithEvents LinkLabel1 As LinkLabel
+    Friend WithEvents lblEsqueceuSenha As LinkLabel
 End Class
