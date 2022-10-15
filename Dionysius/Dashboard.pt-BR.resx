@@ -212,9 +212,6 @@
   <data name="DionysiusToolStripMenuItem.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
   </data>
-  <data name="DionysiusToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>383, 23</value>
-  </data>
   <data name="DionysiusToolStripMenuItem.Text" xml:space="preserve">
     <value>Dionysius</value>
   </data>
@@ -314,14 +311,8 @@
         j06k2+ZT+JuXMS7C78l8/azNm04bNvw/V9M5Z0ZtcCgAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="LoginToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>28, 23</value>
-  </data>
   <data name="LoginToolStripMenuItem.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>TopRight</value>
-  </data>
-  <data name="MenuStrip1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="MenuStrip1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
@@ -329,10 +320,6 @@
   </data>
   <data name="MenuStrip1.Size" type="System.Drawing.Size, System.Drawing">
     <value>1184, 43</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="MenuStrip1.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
   </data>
   <data name="MenuStrip1.Text" xml:space="preserve">
     <value>MenuStrip1</value>
