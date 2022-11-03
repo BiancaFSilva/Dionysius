@@ -43,4 +43,92 @@
                    "Tente novamente mais tarde", MsgBoxStyle.Critical + MsgBoxStyle.OkOnly, "ATENÇÃO")
         End Try
     End Sub
+
+    Sub carregaDadosProducao()
+        Try
+            sql = "SELECT * FROM tb_fabricacao ORDER BY processo ASC"
+            rs = db.Execute(sql)
+
+            cont = 1
+            With Dashboard.dgvDadosProducao
+                .Rows.Clear()
+
+                Do While rs.EOF = False
+                    .Rows.Add(cont, rs.Fields(5).Value, rs.Fields(1).Value, rs.Fields(2).Value, rs.Fields(3).Value, rs.Fields(4).Value, Nothing, Nothing)
+                    rs.MoveNext()
+
+                    cont = cont + 1
+                Loop
+            End With
+        Catch ex As Exception
+            MsgBox("Ocorreu um erro durante o carregamento" + vbNewLine &
+                   "Tente novamente mais tarde", MsgBoxStyle.Critical + MsgBoxStyle.OkOnly, "ATENÇÃO")
+        End Try
+    End Sub
+
+    Sub carregaDadosEvento()
+        Try
+            sql = "SELECT * FROM tb_eventos ORDER BY nome ASC"
+            rs = db.Execute(sql)
+
+            cont = 1
+            With Dashboard.dgvDadosEvento
+                .Rows.Clear()
+
+                Do While rs.EOF = False
+                    .Rows.Add(cont, rs.Fields(1).Value, rs.Fields(2).Value, rs.Fields(3).Value, rs.Fields(4).Value, rs.Fields(5).Value, rs.Fields(6).Value, rs.Fields(7).Value, rs.Fields(8).Value, Nothing, Nothing)
+                    rs.MoveNext()
+
+                    cont = cont + 1
+                Loop
+            End With
+        Catch ex As Exception
+            MsgBox("Ocorreu um erro durante o carregamento" + vbNewLine &
+                   "Tente novamente mais tarde", MsgBoxStyle.Critical + MsgBoxStyle.OkOnly, "ATENÇÃO")
+        End Try
+    End Sub
+
+    Sub carregaDadosFornecedores()
+        Try
+            sql = "SELECT * FROM tb_fornecedores ORDER BY nome ASC"
+            rs = db.Execute(sql)
+
+            cont = 1
+            With Dashboard.dgvDadosFornecedores
+                .Rows.Clear()
+
+                Do While rs.EOF = False
+                    .Rows.Add(cont, rs.Fields(1).Value, rs.Fields(2).Value, rs.Fields(4).Value, rs.Fields(5).Value, rs.Fields(3).Value, rs.Fields(6).Value, Nothing, Nothing)
+                    rs.MoveNext()
+
+                    cont = cont + 1
+                Loop
+            End With
+        Catch ex As Exception
+            MsgBox("Ocorreu um erro durante o carregamento" + vbNewLine &
+                   "Tente novamente mais tarde", MsgBoxStyle.Critical + MsgBoxStyle.OkOnly, "ATENÇÃO")
+        End Try
+    End Sub
+
+    Sub carregaDadosUsuario()
+        Try
+            sql = "SELECT * FROM tb_clientes ORDER BY nome ASC"
+            rs = db.Execute(sql)
+
+            cont = 1
+            With Dashboard.dgvDadosUsuarios
+                .Rows.Clear()
+
+                Do While rs.EOF = False
+                    .Rows.Add(cont, rs.Fields(1).Value, rs.Fields(2).Value, rs.Fields(3).Value, rs.Fields(4).Value, rs.Fields(7).Value, rs.Fields(5).Value, rs.Fields(6).Value, rs.Fields(8).Value, Nothing, Nothing)
+                    rs.MoveNext()
+
+                    cont = cont + 1
+                Loop
+            End With
+        Catch ex As Exception
+            MsgBox("Ocorreu um erro durante o carregamento" + vbNewLine &
+                   "Tente novamente mais tarde", MsgBoxStyle.Critical + MsgBoxStyle.OkOnly, "ATENÇÃO")
+        End Try
+    End Sub
 End Module
