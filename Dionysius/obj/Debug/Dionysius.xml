@@ -22,5 +22,10 @@ Dionysius
   resource lookups using this strongly typed resource class.
 </summary>
 </member>
+<member name="P:Dionysius.My.Resources.Resources.wine_colorful">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 </members>
 </doc>
