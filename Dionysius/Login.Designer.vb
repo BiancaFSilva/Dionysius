@@ -23,31 +23,18 @@ Partial Class Login
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Login))
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.btnLogin = New System.Windows.Forms.Button()
         Me.btnCriaConta = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.txtEmail = New System.Windows.Forms.TextBox()
+        Me.txtUsuario = New System.Windows.Forms.TextBox()
         Me.txtSenha = New System.Windows.Forms.MaskedTextBox()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.imgVerSenha = New System.Windows.Forms.PictureBox()
         Me.lblEsqueceuSenha = New System.Windows.Forms.LinkLabel()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.imgVerSenha, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(425, -2)
-        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(588, 618)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox1.TabIndex = 0
-        Me.PictureBox1.TabStop = False
         '
         'Label1
         '
@@ -113,15 +100,15 @@ Partial Class Login
         Me.Label3.TabIndex = 5
         Me.Label3.Text = "E-mail"
         '
-        'txtEmail
+        'txtUsuario
         '
-        Me.txtEmail.BackColor = System.Drawing.Color.FromArgb(CType(CType(89, Byte), Integer), CType(CType(8, Byte), Integer), CType(CType(2, Byte), Integer))
-        Me.txtEmail.Font = New System.Drawing.Font("Bahnschrift", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtEmail.ForeColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(230, Byte), Integer), CType(CType(217, Byte), Integer))
-        Me.txtEmail.Location = New System.Drawing.Point(55, 253)
-        Me.txtEmail.Name = "txtEmail"
-        Me.txtEmail.Size = New System.Drawing.Size(300, 24)
-        Me.txtEmail.TabIndex = 6
+        Me.txtUsuario.BackColor = System.Drawing.Color.FromArgb(CType(CType(89, Byte), Integer), CType(CType(8, Byte), Integer), CType(CType(2, Byte), Integer))
+        Me.txtUsuario.Font = New System.Drawing.Font("Bahnschrift", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtUsuario.ForeColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(230, Byte), Integer), CType(CType(217, Byte), Integer))
+        Me.txtUsuario.Location = New System.Drawing.Point(55, 253)
+        Me.txtUsuario.Name = "txtUsuario"
+        Me.txtUsuario.Size = New System.Drawing.Size(300, 24)
+        Me.txtUsuario.TabIndex = 6
         '
         'txtSenha
         '
@@ -144,16 +131,6 @@ Partial Class Login
         Me.Label5.TabIndex = 9
         Me.Label5.Text = "Senha"
         '
-        'imgVerSenha
-        '
-        Me.imgVerSenha.Image = CType(resources.GetObject("imgVerSenha.Image"), System.Drawing.Image)
-        Me.imgVerSenha.Location = New System.Drawing.Point(335, 314)
-        Me.imgVerSenha.Name = "imgVerSenha"
-        Me.imgVerSenha.Size = New System.Drawing.Size(20, 20)
-        Me.imgVerSenha.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.imgVerSenha.TabIndex = 10
-        Me.imgVerSenha.TabStop = False
-        '
         'lblEsqueceuSenha
         '
         Me.lblEsqueceuSenha.AutoSize = True
@@ -166,17 +143,27 @@ Partial Class Login
         Me.lblEsqueceuSenha.TabStop = True
         Me.lblEsqueceuSenha.Text = "Esqueci a senha"
         '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
+        Me.PictureBox1.Location = New System.Drawing.Point(425, -2)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(588, 618)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 0
+        Me.PictureBox1.TabStop = False
+        '
         'Login
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(89, Byte), Integer), CType(CType(8, Byte), Integer), CType(CType(2, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(1009, 612)
+        Me.ClientSize = New System.Drawing.Size(1009, 611)
         Me.Controls.Add(Me.lblEsqueceuSenha)
-        Me.Controls.Add(Me.imgVerSenha)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.txtSenha)
-        Me.Controls.Add(Me.txtEmail)
+        Me.Controls.Add(Me.txtUsuario)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.btnCriaConta)
@@ -186,10 +173,11 @@ Partial Class Login
         Me.Font = New System.Drawing.Font("Bahnschrift", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Margin = New System.Windows.Forms.Padding(4)
+        Me.MaximizeBox = False
         Me.Name = "Login"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Login de Usuário"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.imgVerSenha, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -201,9 +189,8 @@ Partial Class Login
     Friend WithEvents btnCriaConta As Button
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
-    Friend WithEvents txtEmail As TextBox
+    Friend WithEvents txtUsuario As TextBox
     Friend WithEvents txtSenha As MaskedTextBox
     Friend WithEvents Label5 As Label
-    Friend WithEvents imgVerSenha As PictureBox
     Friend WithEvents lblEsqueceuSenha As LinkLabel
 End Class

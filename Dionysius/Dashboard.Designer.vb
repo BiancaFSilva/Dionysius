@@ -28,20 +28,6 @@ Partial Class Dashboard
         Dim Series1 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
         Dim Series2 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
         Me.dgvDadosVinho = New System.Windows.Forms.DataGridView()
-        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
-        Me.DionysiusToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.CatálogoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.FornecedoresToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.EventosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.LoginToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.tabControlDashboard = New System.Windows.Forms.TabControl()
-        Me.tabProdutos = New System.Windows.Forms.TabPage()
-        Me.tabProducao = New System.Windows.Forms.TabPage()
-        Me.tabVendas = New System.Windows.Forms.TabPage()
-        Me.tabEventos = New System.Windows.Forms.TabPage()
-        Me.tabFornecedores = New System.Windows.Forms.TabPage()
-        Me.tabUsuarios = New System.Windows.Forms.TabPage()
-        Me.Label6 = New System.Windows.Forms.Label()
         Me.Column = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Nome = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -56,6 +42,18 @@ Partial Class Dashboard
         Me.Column10 = New System.Windows.Forms.DataGridViewLinkColumn()
         Me.Editar = New System.Windows.Forms.DataGridViewImageColumn()
         Me.Excluir = New System.Windows.Forms.DataGridViewImageColumn()
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.DionysiusToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CatálogoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.FornecedoresToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EventosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.LoginToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.tabControlDashboard = New System.Windows.Forms.TabControl()
+        Me.tabProdutos = New System.Windows.Forms.TabPage()
+        Me.btnAdicionaVinho = New System.Windows.Forms.Button()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.tabProducao = New System.Windows.Forms.TabPage()
+        Me.btnAdicionaProducao = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.dgvDadosProducao = New System.Windows.Forms.DataGridView()
         Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -66,6 +64,11 @@ Partial Class Dashboard
         Me.DataGridViewTextBoxColumn6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewImageColumn1 = New System.Windows.Forms.DataGridViewImageColumn()
         Me.DataGridViewImageColumn2 = New System.Windows.Forms.DataGridViewImageColumn()
+        Me.tabVendas = New System.Windows.Forms.TabPage()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Chart1 = New System.Windows.Forms.DataVisualization.Charting.Chart()
+        Me.tabEventos = New System.Windows.Forms.TabPage()
+        Me.btnAdicionaEvento = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.dgvDadosEvento = New System.Windows.Forms.DataGridView()
         Me.DataGridViewTextBoxColumn7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -79,6 +82,8 @@ Partial Class Dashboard
         Me.Column12 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewImageColumn3 = New System.Windows.Forms.DataGridViewImageColumn()
         Me.DataGridViewImageColumn4 = New System.Windows.Forms.DataGridViewImageColumn()
+        Me.tabFornecedores = New System.Windows.Forms.TabPage()
+        Me.btnAdicionaFornecedor = New System.Windows.Forms.Button()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.dgvDadosFornecedores = New System.Windows.Forms.DataGridView()
         Me.DataGridViewTextBoxColumn13 = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -90,6 +95,8 @@ Partial Class Dashboard
         Me.DataGridViewTextBoxColumn18 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewImageColumn5 = New System.Windows.Forms.DataGridViewImageColumn()
         Me.DataGridViewImageColumn6 = New System.Windows.Forms.DataGridViewImageColumn()
+        Me.tabUsuarios = New System.Windows.Forms.TabPage()
+        Me.btnAdicionaUsuario = New System.Windows.Forms.Button()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.dgvDadosUsuarios = New System.Windows.Forms.DataGridView()
         Me.DataGridViewTextBoxColumn20 = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -103,22 +110,22 @@ Partial Class Dashboard
         Me.Column15 = New System.Windows.Forms.DataGridViewCheckBoxColumn()
         Me.DataGridViewImageColumn7 = New System.Windows.Forms.DataGridViewImageColumn()
         Me.DataGridViewImageColumn8 = New System.Windows.Forms.DataGridViewImageColumn()
-        Me.Chart1 = New System.Windows.Forms.DataVisualization.Charting.Chart()
-        Me.Label5 = New System.Windows.Forms.Label()
+        Me.DataGridViewImageColumn9 = New System.Windows.Forms.DataGridViewImageColumn()
+        Me.DataGridViewImageColumn10 = New System.Windows.Forms.DataGridViewImageColumn()
         CType(Me.dgvDadosVinho, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.MenuStrip1.SuspendLayout()
         Me.tabControlDashboard.SuspendLayout()
         Me.tabProdutos.SuspendLayout()
         Me.tabProducao.SuspendLayout()
-        Me.tabVendas.SuspendLayout()
-        Me.tabEventos.SuspendLayout()
-        Me.tabFornecedores.SuspendLayout()
-        Me.tabUsuarios.SuspendLayout()
         CType(Me.dgvDadosProducao, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.dgvDadosEvento, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.dgvDadosFornecedores, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.dgvDadosUsuarios, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.tabVendas.SuspendLayout()
         CType(Me.Chart1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.tabEventos.SuspendLayout()
+        CType(Me.dgvDadosEvento, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.tabFornecedores.SuspendLayout()
+        CType(Me.dgvDadosFornecedores, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.tabUsuarios.SuspendLayout()
+        CType(Me.dgvDadosUsuarios, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'dgvDadosVinho
@@ -128,114 +135,6 @@ Partial Class Dashboard
         Me.dgvDadosVinho.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column, Me.Nome, Me.Column1, Me.Column2, Me.Column3, Me.Column4, Me.Column5, Me.Column6, Me.Column7, Me.Column8, Me.Column9, Me.Column10, Me.Editar, Me.Excluir})
         resources.ApplyResources(Me.dgvDadosVinho, "dgvDadosVinho")
         Me.dgvDadosVinho.Name = "dgvDadosVinho"
-        '
-        'MenuStrip1
-        '
-        Me.MenuStrip1.BackColor = System.Drawing.Color.FromArgb(CType(CType(89, Byte), Integer), CType(CType(8, Byte), Integer), CType(CType(2, Byte), Integer))
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.DionysiusToolStripMenuItem, Me.CatálogoToolStripMenuItem, Me.FornecedoresToolStripMenuItem, Me.EventosToolStripMenuItem, Me.LoginToolStripMenuItem})
-        resources.ApplyResources(Me.MenuStrip1, "MenuStrip1")
-        Me.MenuStrip1.Name = "MenuStrip1"
-        '
-        'DionysiusToolStripMenuItem
-        '
-        resources.ApplyResources(Me.DionysiusToolStripMenuItem, "DionysiusToolStripMenuItem")
-        Me.DionysiusToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(230, Byte), Integer), CType(CType(217, Byte), Integer))
-        Me.DionysiusToolStripMenuItem.Name = "DionysiusToolStripMenuItem"
-        Me.DionysiusToolStripMenuItem.Padding = New System.Windows.Forms.Padding(4, 0, 280, 0)
-        '
-        'CatálogoToolStripMenuItem
-        '
-        resources.ApplyResources(Me.CatálogoToolStripMenuItem, "CatálogoToolStripMenuItem")
-        Me.CatálogoToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(230, Byte), Integer), CType(CType(217, Byte), Integer))
-        Me.CatálogoToolStripMenuItem.Name = "CatálogoToolStripMenuItem"
-        Me.CatálogoToolStripMenuItem.Padding = New System.Windows.Forms.Padding(20, 0, 20, 0)
-        '
-        'FornecedoresToolStripMenuItem
-        '
-        resources.ApplyResources(Me.FornecedoresToolStripMenuItem, "FornecedoresToolStripMenuItem")
-        Me.FornecedoresToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(230, Byte), Integer), CType(CType(217, Byte), Integer))
-        Me.FornecedoresToolStripMenuItem.Name = "FornecedoresToolStripMenuItem"
-        Me.FornecedoresToolStripMenuItem.Padding = New System.Windows.Forms.Padding(20, 0, 20, 0)
-        '
-        'EventosToolStripMenuItem
-        '
-        resources.ApplyResources(Me.EventosToolStripMenuItem, "EventosToolStripMenuItem")
-        Me.EventosToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(230, Byte), Integer), CType(CType(217, Byte), Integer))
-        Me.EventosToolStripMenuItem.Name = "EventosToolStripMenuItem"
-        Me.EventosToolStripMenuItem.Padding = New System.Windows.Forms.Padding(20, 0, 20, 0)
-        '
-        'LoginToolStripMenuItem
-        '
-        Me.LoginToolStripMenuItem.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right
-        resources.ApplyResources(Me.LoginToolStripMenuItem, "LoginToolStripMenuItem")
-        Me.LoginToolStripMenuItem.Name = "LoginToolStripMenuItem"
-        '
-        'tabControlDashboard
-        '
-        resources.ApplyResources(Me.tabControlDashboard, "tabControlDashboard")
-        Me.tabControlDashboard.Controls.Add(Me.tabProdutos)
-        Me.tabControlDashboard.Controls.Add(Me.tabProducao)
-        Me.tabControlDashboard.Controls.Add(Me.tabVendas)
-        Me.tabControlDashboard.Controls.Add(Me.tabEventos)
-        Me.tabControlDashboard.Controls.Add(Me.tabFornecedores)
-        Me.tabControlDashboard.Controls.Add(Me.tabUsuarios)
-        Me.tabControlDashboard.Multiline = True
-        Me.tabControlDashboard.Name = "tabControlDashboard"
-        Me.tabControlDashboard.SelectedIndex = 0
-        '
-        'tabProdutos
-        '
-        Me.tabProdutos.Controls.Add(Me.Label6)
-        Me.tabProdutos.Controls.Add(Me.dgvDadosVinho)
-        resources.ApplyResources(Me.tabProdutos, "tabProdutos")
-        Me.tabProdutos.Name = "tabProdutos"
-        Me.tabProdutos.UseVisualStyleBackColor = True
-        '
-        'tabProducao
-        '
-        Me.tabProducao.Controls.Add(Me.Label1)
-        Me.tabProducao.Controls.Add(Me.dgvDadosProducao)
-        resources.ApplyResources(Me.tabProducao, "tabProducao")
-        Me.tabProducao.Name = "tabProducao"
-        Me.tabProducao.UseVisualStyleBackColor = True
-        '
-        'tabVendas
-        '
-        Me.tabVendas.Controls.Add(Me.Label5)
-        Me.tabVendas.Controls.Add(Me.Chart1)
-        resources.ApplyResources(Me.tabVendas, "tabVendas")
-        Me.tabVendas.Name = "tabVendas"
-        Me.tabVendas.UseVisualStyleBackColor = True
-        '
-        'tabEventos
-        '
-        Me.tabEventos.Controls.Add(Me.Label2)
-        Me.tabEventos.Controls.Add(Me.dgvDadosEvento)
-        resources.ApplyResources(Me.tabEventos, "tabEventos")
-        Me.tabEventos.Name = "tabEventos"
-        Me.tabEventos.UseVisualStyleBackColor = True
-        '
-        'tabFornecedores
-        '
-        Me.tabFornecedores.Controls.Add(Me.Label3)
-        Me.tabFornecedores.Controls.Add(Me.dgvDadosFornecedores)
-        resources.ApplyResources(Me.tabFornecedores, "tabFornecedores")
-        Me.tabFornecedores.Name = "tabFornecedores"
-        Me.tabFornecedores.UseVisualStyleBackColor = True
-        '
-        'tabUsuarios
-        '
-        Me.tabUsuarios.Controls.Add(Me.Label4)
-        Me.tabUsuarios.Controls.Add(Me.dgvDadosUsuarios)
-        resources.ApplyResources(Me.tabUsuarios, "tabUsuarios")
-        Me.tabUsuarios.Name = "tabUsuarios"
-        Me.tabUsuarios.UseVisualStyleBackColor = True
-        '
-        'Label6
-        '
-        resources.ApplyResources(Me.Label6, "Label6")
-        Me.Label6.ForeColor = System.Drawing.Color.Black
-        Me.Label6.Name = "Label6"
         '
         'Column
         '
@@ -311,6 +210,100 @@ Partial Class Dashboard
         Me.Excluir.Image = CType(resources.GetObject("Excluir.Image"), System.Drawing.Image)
         Me.Excluir.Name = "Excluir"
         '
+        'MenuStrip1
+        '
+        Me.MenuStrip1.BackColor = System.Drawing.Color.FromArgb(CType(CType(89, Byte), Integer), CType(CType(8, Byte), Integer), CType(CType(2, Byte), Integer))
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.DionysiusToolStripMenuItem, Me.CatálogoToolStripMenuItem, Me.FornecedoresToolStripMenuItem, Me.EventosToolStripMenuItem, Me.LoginToolStripMenuItem})
+        resources.ApplyResources(Me.MenuStrip1, "MenuStrip1")
+        Me.MenuStrip1.Name = "MenuStrip1"
+        '
+        'DionysiusToolStripMenuItem
+        '
+        resources.ApplyResources(Me.DionysiusToolStripMenuItem, "DionysiusToolStripMenuItem")
+        Me.DionysiusToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(230, Byte), Integer), CType(CType(217, Byte), Integer))
+        Me.DionysiusToolStripMenuItem.Name = "DionysiusToolStripMenuItem"
+        Me.DionysiusToolStripMenuItem.Padding = New System.Windows.Forms.Padding(4, 0, 280, 0)
+        '
+        'CatálogoToolStripMenuItem
+        '
+        resources.ApplyResources(Me.CatálogoToolStripMenuItem, "CatálogoToolStripMenuItem")
+        Me.CatálogoToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(230, Byte), Integer), CType(CType(217, Byte), Integer))
+        Me.CatálogoToolStripMenuItem.Name = "CatálogoToolStripMenuItem"
+        Me.CatálogoToolStripMenuItem.Padding = New System.Windows.Forms.Padding(20, 0, 20, 0)
+        '
+        'FornecedoresToolStripMenuItem
+        '
+        resources.ApplyResources(Me.FornecedoresToolStripMenuItem, "FornecedoresToolStripMenuItem")
+        Me.FornecedoresToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(230, Byte), Integer), CType(CType(217, Byte), Integer))
+        Me.FornecedoresToolStripMenuItem.Name = "FornecedoresToolStripMenuItem"
+        Me.FornecedoresToolStripMenuItem.Padding = New System.Windows.Forms.Padding(20, 0, 20, 0)
+        '
+        'EventosToolStripMenuItem
+        '
+        resources.ApplyResources(Me.EventosToolStripMenuItem, "EventosToolStripMenuItem")
+        Me.EventosToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(230, Byte), Integer), CType(CType(217, Byte), Integer))
+        Me.EventosToolStripMenuItem.Name = "EventosToolStripMenuItem"
+        Me.EventosToolStripMenuItem.Padding = New System.Windows.Forms.Padding(20, 0, 20, 0)
+        '
+        'LoginToolStripMenuItem
+        '
+        Me.LoginToolStripMenuItem.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right
+        resources.ApplyResources(Me.LoginToolStripMenuItem, "LoginToolStripMenuItem")
+        Me.LoginToolStripMenuItem.Name = "LoginToolStripMenuItem"
+        '
+        'tabControlDashboard
+        '
+        resources.ApplyResources(Me.tabControlDashboard, "tabControlDashboard")
+        Me.tabControlDashboard.Controls.Add(Me.tabProdutos)
+        Me.tabControlDashboard.Controls.Add(Me.tabProducao)
+        Me.tabControlDashboard.Controls.Add(Me.tabVendas)
+        Me.tabControlDashboard.Controls.Add(Me.tabEventos)
+        Me.tabControlDashboard.Controls.Add(Me.tabFornecedores)
+        Me.tabControlDashboard.Controls.Add(Me.tabUsuarios)
+        Me.tabControlDashboard.Multiline = True
+        Me.tabControlDashboard.Name = "tabControlDashboard"
+        Me.tabControlDashboard.SelectedIndex = 0
+        '
+        'tabProdutos
+        '
+        Me.tabProdutos.Controls.Add(Me.btnAdicionaVinho)
+        Me.tabProdutos.Controls.Add(Me.Label6)
+        Me.tabProdutos.Controls.Add(Me.dgvDadosVinho)
+        resources.ApplyResources(Me.tabProdutos, "tabProdutos")
+        Me.tabProdutos.Name = "tabProdutos"
+        Me.tabProdutos.UseVisualStyleBackColor = True
+        '
+        'btnAdicionaVinho
+        '
+        Me.btnAdicionaVinho.BackColor = System.Drawing.Color.FromArgb(CType(CType(174, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(65, Byte), Integer))
+        resources.ApplyResources(Me.btnAdicionaVinho, "btnAdicionaVinho")
+        Me.btnAdicionaVinho.ForeColor = System.Drawing.Color.White
+        Me.btnAdicionaVinho.Name = "btnAdicionaVinho"
+        Me.btnAdicionaVinho.UseVisualStyleBackColor = False
+        '
+        'Label6
+        '
+        resources.ApplyResources(Me.Label6, "Label6")
+        Me.Label6.ForeColor = System.Drawing.Color.Black
+        Me.Label6.Name = "Label6"
+        '
+        'tabProducao
+        '
+        Me.tabProducao.Controls.Add(Me.btnAdicionaProducao)
+        Me.tabProducao.Controls.Add(Me.Label1)
+        Me.tabProducao.Controls.Add(Me.dgvDadosProducao)
+        resources.ApplyResources(Me.tabProducao, "tabProducao")
+        Me.tabProducao.Name = "tabProducao"
+        Me.tabProducao.UseVisualStyleBackColor = True
+        '
+        'btnAdicionaProducao
+        '
+        Me.btnAdicionaProducao.BackColor = System.Drawing.Color.FromArgb(CType(CType(174, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(65, Byte), Integer))
+        resources.ApplyResources(Me.btnAdicionaProducao, "btnAdicionaProducao")
+        Me.btnAdicionaProducao.ForeColor = System.Drawing.Color.White
+        Me.btnAdicionaProducao.Name = "btnAdicionaProducao"
+        Me.btnAdicionaProducao.UseVisualStyleBackColor = False
+        '
         'Label1
         '
         resources.ApplyResources(Me.Label1, "Label1")
@@ -367,6 +360,58 @@ Partial Class Dashboard
         resources.ApplyResources(Me.DataGridViewImageColumn2, "DataGridViewImageColumn2")
         Me.DataGridViewImageColumn2.Image = CType(resources.GetObject("DataGridViewImageColumn2.Image"), System.Drawing.Image)
         Me.DataGridViewImageColumn2.Name = "DataGridViewImageColumn2"
+        '
+        'tabVendas
+        '
+        Me.tabVendas.Controls.Add(Me.Label5)
+        Me.tabVendas.Controls.Add(Me.Chart1)
+        resources.ApplyResources(Me.tabVendas, "tabVendas")
+        Me.tabVendas.Name = "tabVendas"
+        Me.tabVendas.UseVisualStyleBackColor = True
+        '
+        'Label5
+        '
+        resources.ApplyResources(Me.Label5, "Label5")
+        Me.Label5.ForeColor = System.Drawing.Color.Black
+        Me.Label5.Name = "Label5"
+        '
+        'Chart1
+        '
+        ChartArea1.Name = "ChartArea1"
+        Me.Chart1.ChartAreas.Add(ChartArea1)
+        Legend1.Name = "Bebidas"
+        Legend1.Title = "Produto"
+        Me.Chart1.Legends.Add(Legend1)
+        resources.ApplyResources(Me.Chart1, "Chart1")
+        Me.Chart1.Name = "Chart1"
+        Me.Chart1.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Chocolate
+        Series1.ChartArea = "ChartArea1"
+        Series1.Legend = "Bebidas"
+        Series1.LegendText = "Vinho"
+        Series1.Name = "Series1"
+        Series2.ChartArea = "ChartArea1"
+        Series2.Legend = "Bebidas"
+        Series2.LegendText = "Espumante"
+        Series2.Name = "Series2"
+        Me.Chart1.Series.Add(Series1)
+        Me.Chart1.Series.Add(Series2)
+        '
+        'tabEventos
+        '
+        Me.tabEventos.Controls.Add(Me.btnAdicionaEvento)
+        Me.tabEventos.Controls.Add(Me.Label2)
+        Me.tabEventos.Controls.Add(Me.dgvDadosEvento)
+        resources.ApplyResources(Me.tabEventos, "tabEventos")
+        Me.tabEventos.Name = "tabEventos"
+        Me.tabEventos.UseVisualStyleBackColor = True
+        '
+        'btnAdicionaEvento
+        '
+        Me.btnAdicionaEvento.BackColor = System.Drawing.Color.FromArgb(CType(CType(174, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(65, Byte), Integer))
+        resources.ApplyResources(Me.btnAdicionaEvento, "btnAdicionaEvento")
+        Me.btnAdicionaEvento.ForeColor = System.Drawing.Color.White
+        Me.btnAdicionaEvento.Name = "btnAdicionaEvento"
+        Me.btnAdicionaEvento.UseVisualStyleBackColor = False
         '
         'Label2
         '
@@ -440,6 +485,23 @@ Partial Class Dashboard
         Me.DataGridViewImageColumn4.Image = CType(resources.GetObject("DataGridViewImageColumn4.Image"), System.Drawing.Image)
         Me.DataGridViewImageColumn4.Name = "DataGridViewImageColumn4"
         '
+        'tabFornecedores
+        '
+        Me.tabFornecedores.Controls.Add(Me.btnAdicionaFornecedor)
+        Me.tabFornecedores.Controls.Add(Me.Label3)
+        Me.tabFornecedores.Controls.Add(Me.dgvDadosFornecedores)
+        resources.ApplyResources(Me.tabFornecedores, "tabFornecedores")
+        Me.tabFornecedores.Name = "tabFornecedores"
+        Me.tabFornecedores.UseVisualStyleBackColor = True
+        '
+        'btnAdicionaFornecedor
+        '
+        Me.btnAdicionaFornecedor.BackColor = System.Drawing.Color.FromArgb(CType(CType(174, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(65, Byte), Integer))
+        Me.btnAdicionaFornecedor.ForeColor = System.Drawing.Color.White
+        resources.ApplyResources(Me.btnAdicionaFornecedor, "btnAdicionaFornecedor")
+        Me.btnAdicionaFornecedor.Name = "btnAdicionaFornecedor"
+        Me.btnAdicionaFornecedor.UseVisualStyleBackColor = False
+        '
         'Label3
         '
         resources.ApplyResources(Me.Label3, "Label3")
@@ -501,6 +563,23 @@ Partial Class Dashboard
         resources.ApplyResources(Me.DataGridViewImageColumn6, "DataGridViewImageColumn6")
         Me.DataGridViewImageColumn6.Image = CType(resources.GetObject("DataGridViewImageColumn6.Image"), System.Drawing.Image)
         Me.DataGridViewImageColumn6.Name = "DataGridViewImageColumn6"
+        '
+        'tabUsuarios
+        '
+        Me.tabUsuarios.Controls.Add(Me.btnAdicionaUsuario)
+        Me.tabUsuarios.Controls.Add(Me.Label4)
+        Me.tabUsuarios.Controls.Add(Me.dgvDadosUsuarios)
+        resources.ApplyResources(Me.tabUsuarios, "tabUsuarios")
+        Me.tabUsuarios.Name = "tabUsuarios"
+        Me.tabUsuarios.UseVisualStyleBackColor = True
+        '
+        'btnAdicionaUsuario
+        '
+        Me.btnAdicionaUsuario.BackColor = System.Drawing.Color.FromArgb(CType(CType(174, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(65, Byte), Integer))
+        resources.ApplyResources(Me.btnAdicionaUsuario, "btnAdicionaUsuario")
+        Me.btnAdicionaUsuario.ForeColor = System.Drawing.Color.White
+        Me.btnAdicionaUsuario.Name = "btnAdicionaUsuario"
+        Me.btnAdicionaUsuario.UseVisualStyleBackColor = False
         '
         'Label4
         '
@@ -574,32 +653,18 @@ Partial Class Dashboard
         Me.DataGridViewImageColumn8.Image = CType(resources.GetObject("DataGridViewImageColumn8.Image"), System.Drawing.Image)
         Me.DataGridViewImageColumn8.Name = "DataGridViewImageColumn8"
         '
-        'Chart1
+        'DataGridViewImageColumn9
         '
-        ChartArea1.Name = "ChartArea1"
-        Me.Chart1.ChartAreas.Add(ChartArea1)
-        Legend1.Name = "Bebidas"
-        Legend1.Title = "Produto"
-        Me.Chart1.Legends.Add(Legend1)
-        resources.ApplyResources(Me.Chart1, "Chart1")
-        Me.Chart1.Name = "Chart1"
-        Me.Chart1.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Chocolate
-        Series1.ChartArea = "ChartArea1"
-        Series1.Legend = "Bebidas"
-        Series1.LegendText = "Vinho"
-        Series1.Name = "Series1"
-        Series2.ChartArea = "ChartArea1"
-        Series2.Legend = "Bebidas"
-        Series2.LegendText = "Espumante"
-        Series2.Name = "Series2"
-        Me.Chart1.Series.Add(Series1)
-        Me.Chart1.Series.Add(Series2)
+        resources.ApplyResources(Me.DataGridViewImageColumn9, "DataGridViewImageColumn9")
+        Me.DataGridViewImageColumn9.Image = CType(resources.GetObject("DataGridViewImageColumn9.Image"), System.Drawing.Image)
+        Me.DataGridViewImageColumn9.Name = "DataGridViewImageColumn9"
+        Me.DataGridViewImageColumn9.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
         '
-        'Label5
+        'DataGridViewImageColumn10
         '
-        resources.ApplyResources(Me.Label5, "Label5")
-        Me.Label5.ForeColor = System.Drawing.Color.Black
-        Me.Label5.Name = "Label5"
+        resources.ApplyResources(Me.DataGridViewImageColumn10, "DataGridViewImageColumn10")
+        Me.DataGridViewImageColumn10.Image = CType(resources.GetObject("DataGridViewImageColumn10.Image"), System.Drawing.Image)
+        Me.DataGridViewImageColumn10.Name = "DataGridViewImageColumn10"
         '
         'Dashboard
         '
@@ -608,6 +673,7 @@ Partial Class Dashboard
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(89, Byte), Integer), CType(CType(8, Byte), Integer), CType(CType(2, Byte), Integer))
         Me.Controls.Add(Me.tabControlDashboard)
         Me.Controls.Add(Me.MenuStrip1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Name = "Dashboard"
         CType(Me.dgvDadosVinho, System.ComponentModel.ISupportInitialize).EndInit()
         Me.MenuStrip1.ResumeLayout(False)
@@ -617,19 +683,19 @@ Partial Class Dashboard
         Me.tabProdutos.PerformLayout()
         Me.tabProducao.ResumeLayout(False)
         Me.tabProducao.PerformLayout()
+        CType(Me.dgvDadosProducao, System.ComponentModel.ISupportInitialize).EndInit()
         Me.tabVendas.ResumeLayout(False)
         Me.tabVendas.PerformLayout()
+        CType(Me.Chart1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.tabEventos.ResumeLayout(False)
         Me.tabEventos.PerformLayout()
+        CType(Me.dgvDadosEvento, System.ComponentModel.ISupportInitialize).EndInit()
         Me.tabFornecedores.ResumeLayout(False)
         Me.tabFornecedores.PerformLayout()
+        CType(Me.dgvDadosFornecedores, System.ComponentModel.ISupportInitialize).EndInit()
         Me.tabUsuarios.ResumeLayout(False)
         Me.tabUsuarios.PerformLayout()
-        CType(Me.dgvDadosProducao, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.dgvDadosEvento, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.dgvDadosFornecedores, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.dgvDadosUsuarios, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Chart1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -712,4 +778,11 @@ Partial Class Dashboard
     Friend WithEvents DataGridViewImageColumn8 As DataGridViewImageColumn
     Friend WithEvents Label5 As Label
     Friend WithEvents Chart1 As DataVisualization.Charting.Chart
+    Friend WithEvents btnAdicionaVinho As Button
+    Friend WithEvents btnAdicionaProducao As Button
+    Friend WithEvents btnAdicionaEvento As Button
+    Friend WithEvents btnAdicionaFornecedor As Button
+    Friend WithEvents btnAdicionaUsuario As Button
+    Friend WithEvents DataGridViewImageColumn9 As DataGridViewImageColumn
+    Friend WithEvents DataGridViewImageColumn10 As DataGridViewImageColumn
 End Class

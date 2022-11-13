@@ -131,4 +131,44 @@
                    "Tente novamente mais tarde", MsgBoxStyle.Critical + MsgBoxStyle.OkOnly, "ATENÇÃO")
         End Try
     End Sub
+
+    Sub limpaLogin()
+        Try
+            With Login
+                .txtUsuario.Clear()
+                .txtSenha.Clear()
+                .txtUsuario.Focus()
+            End With
+        Catch ex As Exception
+            Exit Sub
+        End Try
+    End Sub
+
+    Sub limpaCadastro()
+        Try
+            With frmCadastraUsuario
+                .txtNome.Clear()
+                .txtSobrenome.Clear()
+                .txtDataNascimento.Clear()
+                .txtCpf.Clear()
+                .txtFone.Clear()
+                .txtCep.Clear()
+                .txtEmail.Clear()
+                .txtSenha.Clear()
+                .txtRepeteSenha.Clear()
+                .txtNome.Focus()
+            End With
+        Catch ex As Exception
+            Exit Sub
+        End Try
+    End Sub
+
+    Sub limpaRecuperaSenha()
+        With frmRecuperaSenha
+            .txtEmail.Clear()
+            .txtSenha.Clear()
+            .txtRepeteSenha.Clear()
+            .txtEmail.Focus()
+        End With
+    End Sub
 End Module

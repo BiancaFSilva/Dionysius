@@ -8,6 +8,43 @@
         Call carregaDadosUsuario()
     End Sub
 
+    Private Sub DionysiusToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles DionysiusToolStripMenuItem.Click
+        Try
+            Home.ShowDialog()
+        Catch ex As Exception
+            MsgBox("Ocorreu um erro durante o carregamento da página", MsgBoxStyle.Critical + MsgBoxStyle.OkOnly, "ATENÇÃO")
+            Exit Sub
+        End Try
+    End Sub
+
+    Private Sub CatálogoToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CatálogoToolStripMenuItem.Click
+        Try
+            Catalogo.ShowDialog()
+        Catch ex As Exception
+            MsgBox("Ocorreu um erro durante o carregamento da página", MsgBoxStyle.Critical + MsgBoxStyle.OkOnly, "ATENÇÃO")
+            Exit Sub
+        End Try
+    End Sub
+
+    Private Sub FornecedoresToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles FornecedoresToolStripMenuItem.Click
+        Try
+            Fornecedores.ShowDialog()
+        Catch ex As Exception
+            MsgBox("Ocorreu um erro durante o carregamento da página", MsgBoxStyle.Critical + MsgBoxStyle.OkOnly, "ATENÇÃO")
+            Exit Sub
+        End Try
+    End Sub
+
+    Private Sub EventosToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles EventosToolStripMenuItem.Click
+        Try
+            Eventos.ShowDialog()
+            Me.Close()
+        Catch ex As Exception
+            MsgBox("Ocorreu um erro durante o carregamento da página", MsgBoxStyle.Critical + MsgBoxStyle.OkOnly, "ATENÇÃO")
+            Exit Sub
+        End Try
+    End Sub
+
     Private Sub dgvDadosVinho_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvDadosVinho.CellContentClick
         Try
             With dgvDadosVinho
@@ -27,15 +64,6 @@
             End With
         Catch ex As Exception
             MsgBox("Ocorreu um erro durante o carregamento da seleção" + vbNewLine &
-                   "Tente novamente mais tarde", MsgBoxStyle.Critical + MsgBoxStyle.OkOnly, "ATENÇÃO")
-        End Try
-    End Sub
-
-    Private Sub LoginToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles LoginToolStripMenuItem.Click
-        Try
-            Home.ShowDialog()
-        Catch ex As Exception
-            MsgBox("Ocorreu um erro durante o processamento" + vbNewLine &
                    "Tente novamente mais tarde", MsgBoxStyle.Critical + MsgBoxStyle.OkOnly, "ATENÇÃO")
         End Try
     End Sub

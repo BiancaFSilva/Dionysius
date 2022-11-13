@@ -18,3 +18,8 @@ C:\Users\wagne\OneDrive\Área de Trabalho\Dionysius\obj\Debug\Dionysius.Dashboar
 C:\Users\wagne\OneDrive\Área de Trabalho\Dionysius\obj\Debug\pt-BR\Dionysius.resources.dll
 C:\Users\wagne\OneDrive\Área de Trabalho\Dionysius\obj\Debug\Interop.ADODB.dll
 C:\Users\wagne\OneDrive\Área de Trabalho\Dionysius\obj\Debug\Dionysius.vbproj.ResolveComReference.cache
+C:\Users\wagne\OneDrive\Área de Trabalho\Dionysius\obj\Debug\Dionysius.frmCadastraUsuario.resources
+C:\Users\wagne\OneDrive\Área de Trabalho\Dionysius\obj\Debug\Dionysius.frmRecuperaSenha.resources
+C:\Users\wagne\OneDrive\Área de Trabalho\Dionysius\obj\Debug\Dionysius.Catalogo.resources
+C:\Users\wagne\OneDrive\Área de Trabalho\Dionysius\obj\Debug\Dionysius.Eventos.resources
+C:\Users\wagne\OneDrive\Área de Trabalho\Dionysius\obj\Debug\Dionysius.Fornecedores.resources

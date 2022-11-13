@@ -77,10 +77,40 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Catalogo.Designer.vb">
+      <DependentUpon>Catalogo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogo.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Dashboard.Designer.vb">
       <DependentUpon>Dashboard.vb</DependentUpon>
     </Compile>
     <Compile Include="Dashboard.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Eventos.Designer.vb">
+      <DependentUpon>Eventos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Eventos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fornecedores.Designer.vb">
+      <DependentUpon>Fornecedores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Fornecedores.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadastraUsuario.Designer.vb">
+      <DependentUpon>frmCadastraUsuario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCadastraUsuario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRecuperaSenha.Designer.vb">
+      <DependentUpon>frmRecuperaSenha.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmRecuperaSenha.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Home.Designer.vb">
@@ -115,11 +145,26 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Catalogo.resx">
+      <DependentUpon>Catalogo.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Dashboard.pt-BR.resx">
       <DependentUpon>Dashboard.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Dashboard.resx">
       <DependentUpon>Dashboard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Eventos.resx">
+      <DependentUpon>Eventos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fornecedores.resx">
+      <DependentUpon>Fornecedores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCadastraUsuario.resx">
+      <DependentUpon>frmCadastraUsuario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRecuperaSenha.resx">
+      <DependentUpon>frmRecuperaSenha.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Home.resx">
       <DependentUpon>Home.vb</DependentUpon>
