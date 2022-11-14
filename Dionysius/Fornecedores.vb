@@ -32,4 +32,8 @@
             Exit Sub
         End Try
     End Sub
+
+    Private Sub lblContatoFornecedor_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles lblContatoFornecedor.LinkClicked
+        frmCadastraFornecedor.ShowDialog()
+    End Sub
 End Class

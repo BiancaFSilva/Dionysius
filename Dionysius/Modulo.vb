@@ -76,7 +76,7 @@
                 .Rows.Clear()
 
                 Do While rs.EOF = False
-                    .Rows.Add(cont, rs.Fields(1).Value, rs.Fields(2).Value, rs.Fields(3).Value, rs.Fields(4).Value, rs.Fields(5).Value, rs.Fields(6).Value, rs.Fields(7).Value, rs.Fields(8).Value, Nothing, Nothing)
+                    .Rows.Add(cont, rs.Fields(1).Value, rs.Fields(2).Value, rs.Fields(3).Value, rs.Fields(4).Value, rs.Fields(5).Value, rs.Fields(6).Value, rs.Fields(7).Value, rs.Fields(8).Value, rs.Fields(9).Value, Nothing, Nothing)
                     rs.MoveNext()
 
                     cont = cont + 1
@@ -120,7 +120,7 @@
                 .Rows.Clear()
 
                 Do While rs.EOF = False
-                    .Rows.Add(cont, rs.Fields(1).Value, rs.Fields(2).Value, rs.Fields(3).Value, rs.Fields(4).Value, rs.Fields(7).Value, rs.Fields(5).Value, rs.Fields(6).Value, rs.Fields(8).Value, Nothing, Nothing)
+                    .Rows.Add(cont, rs.Fields(1).Value, rs.Fields(2).Value, rs.Fields(3).Value, rs.Fields(4).Value, rs.Fields(7).Value, rs.Fields(5).Value, rs.Fields(6).Value, rs.Fields(8).Value, rs.Fields(10).Value, Nothing, Nothing)
                     rs.MoveNext()
 
                     cont = cont + 1
@@ -170,5 +170,66 @@
             .txtRepeteSenha.Clear()
             .txtEmail.Focus()
         End With
+    End Sub
+
+    Sub limpaEvento()
+        Try
+            With frmAdicionaEvento
+                .txtNome.Clear()
+                .txtDescricao.Clear()
+                .txtData.Clear()
+                .txtHora.Clear()
+                .txtCep.Clear()
+                .txtEndereco.Clear()
+                .txtBairro.Clear()
+                .txtCidade.Clear()
+                .txtUf.Clear()
+                .cmbParticipantes.SelectedIndex = 0
+
+                .txtNome.Focus()
+            End With
+        Catch ex As Exception
+            Exit Sub
+        End Try
+    End Sub
+
+    Sub limpaProduto()
+        Try
+            With frmAdicionaProduto
+                .txtNome.Clear()
+                .txtDescricao.Clear()
+                .cmbTipo.SelectedIndex = 0
+                .cmbClasse.SelectedIndex = 0
+                .cmbUva.SelectedIndex = 0
+                .txtSafra.Clear()
+                .txtPais.Clear()
+                .txtRegião.Clear()
+                .txtPreco.Clear()
+                .txtProdutores.Clear()
+                .txtTeorAlcoolico.Clear()
+                .txtHarmonizacao.Clear()
+                .txtVisual.Clear()
+                .txtQtdeEmEstoque.Clear()
+                .imgProduto.Load(Application.StartupPath & "\img\add_image.png")
+
+                .txtNome.Focus()
+            End With
+        Catch ex As Exception
+            Exit Sub
+        End Try
+    End Sub
+
+    Sub limpaProducao()
+        Try
+            With frmAdicionaProducao
+                .cmbProcesso.SelectedIndex = 0
+                .txtDataInicio.Clear()
+                .TxtDataFim.Clear()
+                .cmbFornecedores.SelectedIndex = 0
+                .cmbProduto.SelectedIndex = 0
+            End With
+        Catch ex As Exception
+            Exit Sub
+        End Try
     End Sub
 End Module

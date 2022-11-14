@@ -350,7 +350,7 @@ Partial Class frmCadastraUsuario
         Me.MaximizeBox = False
         Me.Name = "frmCadastraUsuario"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "frmCadastraUsuario"
+        Me.Text = "Dionysius - Usuário"
         CType(Me.imgVerSenha, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)

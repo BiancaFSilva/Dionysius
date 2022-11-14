@@ -22,11 +22,21 @@ Partial Class Dashboard
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Dashboard))
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim ChartArea1 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
         Dim Legend1 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
         Dim Series1 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
         Dim Series2 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle7 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle8 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle9 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle10 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.dgvDadosVinho = New System.Windows.Forms.DataGridView()
         Me.Column = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Nome = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -40,14 +50,10 @@ Partial Class Dashboard
         Me.Column8 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column9 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column10 = New System.Windows.Forms.DataGridViewLinkColumn()
-        Me.Editar = New System.Windows.Forms.DataGridViewImageColumn()
-        Me.Excluir = New System.Windows.Forms.DataGridViewImageColumn()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
-        Me.DionysiusToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.CatálogoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.FornecedoresToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.EventosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.LoginToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.tabControlDashboard = New System.Windows.Forms.TabControl()
         Me.tabProdutos = New System.Windows.Forms.TabPage()
         Me.btnAdicionaVinho = New System.Windows.Forms.Button()
@@ -62,8 +68,6 @@ Partial Class Dashboard
         Me.DataGridViewTextBoxColumn4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewImageColumn1 = New System.Windows.Forms.DataGridViewImageColumn()
-        Me.DataGridViewImageColumn2 = New System.Windows.Forms.DataGridViewImageColumn()
         Me.tabVendas = New System.Windows.Forms.TabPage()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Chart1 = New System.Windows.Forms.DataVisualization.Charting.Chart()
@@ -71,17 +75,6 @@ Partial Class Dashboard
         Me.btnAdicionaEvento = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.dgvDadosEvento = New System.Windows.Forms.DataGridView()
-        Me.DataGridViewTextBoxColumn7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn8 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column13 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn9 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn10 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn11 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn12 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column11 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column12 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewImageColumn3 = New System.Windows.Forms.DataGridViewImageColumn()
-        Me.DataGridViewImageColumn4 = New System.Windows.Forms.DataGridViewImageColumn()
         Me.tabFornecedores = New System.Windows.Forms.TabPage()
         Me.btnAdicionaFornecedor = New System.Windows.Forms.Button()
         Me.Label3 = New System.Windows.Forms.Label()
@@ -93,8 +86,6 @@ Partial Class Dashboard
         Me.DataGridViewTextBoxColumn17 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn19 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn18 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewImageColumn5 = New System.Windows.Forms.DataGridViewImageColumn()
-        Me.DataGridViewImageColumn6 = New System.Windows.Forms.DataGridViewImageColumn()
         Me.tabUsuarios = New System.Windows.Forms.TabPage()
         Me.btnAdicionaUsuario = New System.Windows.Forms.Button()
         Me.Label4 = New System.Windows.Forms.Label()
@@ -108,10 +99,31 @@ Partial Class Dashboard
         Me.Column14 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn25 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column15 = New System.Windows.Forms.DataGridViewCheckBoxColumn()
+        Me.Column16 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewImageColumn1 = New System.Windows.Forms.DataGridViewImageColumn()
+        Me.DataGridViewImageColumn2 = New System.Windows.Forms.DataGridViewImageColumn()
+        Me.DataGridViewImageColumn5 = New System.Windows.Forms.DataGridViewImageColumn()
+        Me.DataGridViewImageColumn6 = New System.Windows.Forms.DataGridViewImageColumn()
         Me.DataGridViewImageColumn7 = New System.Windows.Forms.DataGridViewImageColumn()
         Me.DataGridViewImageColumn8 = New System.Windows.Forms.DataGridViewImageColumn()
         Me.DataGridViewImageColumn9 = New System.Windows.Forms.DataGridViewImageColumn()
         Me.DataGridViewImageColumn10 = New System.Windows.Forms.DataGridViewImageColumn()
+        Me.Editar = New System.Windows.Forms.DataGridViewImageColumn()
+        Me.Excluir = New System.Windows.Forms.DataGridViewImageColumn()
+        Me.DionysiusToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.LoginToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.DataGridViewTextBoxColumn7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn8 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column13 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn9 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn10 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn11 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column17 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn12 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column11 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column12 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewImageColumn3 = New System.Windows.Forms.DataGridViewImageColumn()
+        Me.DataGridViewImageColumn4 = New System.Windows.Forms.DataGridViewImageColumn()
         CType(Me.dgvDadosVinho, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.MenuStrip1.SuspendLayout()
         Me.tabControlDashboard.SuspendLayout()
@@ -130,9 +142,26 @@ Partial Class Dashboard
         '
         'dgvDadosVinho
         '
+        Me.dgvDadosVinho.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(230, Byte), Integer), CType(CType(217, Byte), Integer))
         Me.dgvDadosVinho.BorderStyle = System.Windows.Forms.BorderStyle.None
+        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(170, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(65, Byte), Integer))
+        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgvDadosVinho.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
         Me.dgvDadosVinho.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvDadosVinho.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column, Me.Nome, Me.Column1, Me.Column2, Me.Column3, Me.Column4, Me.Column5, Me.Column6, Me.Column7, Me.Column8, Me.Column9, Me.Column10, Me.Editar, Me.Excluir})
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(170, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(65, Byte), Integer))
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.dgvDadosVinho.DefaultCellStyle = DataGridViewCellStyle2
         resources.ApplyResources(Me.dgvDadosVinho, "dgvDadosVinho")
         Me.dgvDadosVinho.Name = "dgvDadosVinho"
         '
@@ -197,32 +226,12 @@ Partial Class Dashboard
         Me.Column10.Name = "Column10"
         Me.Column10.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
         '
-        'Editar
-        '
-        resources.ApplyResources(Me.Editar, "Editar")
-        Me.Editar.Image = CType(resources.GetObject("Editar.Image"), System.Drawing.Image)
-        Me.Editar.Name = "Editar"
-        Me.Editar.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
-        '
-        'Excluir
-        '
-        resources.ApplyResources(Me.Excluir, "Excluir")
-        Me.Excluir.Image = CType(resources.GetObject("Excluir.Image"), System.Drawing.Image)
-        Me.Excluir.Name = "Excluir"
-        '
         'MenuStrip1
         '
         Me.MenuStrip1.BackColor = System.Drawing.Color.FromArgb(CType(CType(89, Byte), Integer), CType(CType(8, Byte), Integer), CType(CType(2, Byte), Integer))
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.DionysiusToolStripMenuItem, Me.CatálogoToolStripMenuItem, Me.FornecedoresToolStripMenuItem, Me.EventosToolStripMenuItem, Me.LoginToolStripMenuItem})
         resources.ApplyResources(Me.MenuStrip1, "MenuStrip1")
         Me.MenuStrip1.Name = "MenuStrip1"
-        '
-        'DionysiusToolStripMenuItem
-        '
-        resources.ApplyResources(Me.DionysiusToolStripMenuItem, "DionysiusToolStripMenuItem")
-        Me.DionysiusToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(230, Byte), Integer), CType(CType(217, Byte), Integer))
-        Me.DionysiusToolStripMenuItem.Name = "DionysiusToolStripMenuItem"
-        Me.DionysiusToolStripMenuItem.Padding = New System.Windows.Forms.Padding(4, 0, 280, 0)
         '
         'CatálogoToolStripMenuItem
         '
@@ -244,12 +253,6 @@ Partial Class Dashboard
         Me.EventosToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(230, Byte), Integer), CType(CType(217, Byte), Integer))
         Me.EventosToolStripMenuItem.Name = "EventosToolStripMenuItem"
         Me.EventosToolStripMenuItem.Padding = New System.Windows.Forms.Padding(20, 0, 20, 0)
-        '
-        'LoginToolStripMenuItem
-        '
-        Me.LoginToolStripMenuItem.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right
-        resources.ApplyResources(Me.LoginToolStripMenuItem, "LoginToolStripMenuItem")
-        Me.LoginToolStripMenuItem.Name = "LoginToolStripMenuItem"
         '
         'tabControlDashboard
         '
@@ -312,9 +315,26 @@ Partial Class Dashboard
         '
         'dgvDadosProducao
         '
+        Me.dgvDadosProducao.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(230, Byte), Integer), CType(CType(217, Byte), Integer))
         Me.dgvDadosProducao.BorderStyle = System.Windows.Forms.BorderStyle.None
+        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(170, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(65, Byte), Integer))
+        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgvDadosProducao.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle3
         Me.dgvDadosProducao.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvDadosProducao.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn4, Me.DataGridViewTextBoxColumn5, Me.DataGridViewTextBoxColumn6, Me.DataGridViewImageColumn1, Me.DataGridViewImageColumn2})
+        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle4.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(170, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(65, Byte), Integer))
+        DataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.dgvDadosProducao.DefaultCellStyle = DataGridViewCellStyle4
         resources.ApplyResources(Me.dgvDadosProducao, "dgvDadosProducao")
         Me.dgvDadosProducao.Name = "dgvDadosProducao"
         '
@@ -347,19 +367,6 @@ Partial Class Dashboard
         '
         resources.ApplyResources(Me.DataGridViewTextBoxColumn6, "DataGridViewTextBoxColumn6")
         Me.DataGridViewTextBoxColumn6.Name = "DataGridViewTextBoxColumn6"
-        '
-        'DataGridViewImageColumn1
-        '
-        resources.ApplyResources(Me.DataGridViewImageColumn1, "DataGridViewImageColumn1")
-        Me.DataGridViewImageColumn1.Image = CType(resources.GetObject("DataGridViewImageColumn1.Image"), System.Drawing.Image)
-        Me.DataGridViewImageColumn1.Name = "DataGridViewImageColumn1"
-        Me.DataGridViewImageColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
-        '
-        'DataGridViewImageColumn2
-        '
-        resources.ApplyResources(Me.DataGridViewImageColumn2, "DataGridViewImageColumn2")
-        Me.DataGridViewImageColumn2.Image = CType(resources.GetObject("DataGridViewImageColumn2.Image"), System.Drawing.Image)
-        Me.DataGridViewImageColumn2.Name = "DataGridViewImageColumn2"
         '
         'tabVendas
         '
@@ -421,69 +428,28 @@ Partial Class Dashboard
         '
         'dgvDadosEvento
         '
+        Me.dgvDadosEvento.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(230, Byte), Integer), CType(CType(217, Byte), Integer))
         Me.dgvDadosEvento.BorderStyle = System.Windows.Forms.BorderStyle.None
+        DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle5.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(170, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(65, Byte), Integer))
+        DataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgvDadosEvento.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle5
         Me.dgvDadosEvento.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvDadosEvento.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn7, Me.DataGridViewTextBoxColumn8, Me.Column13, Me.DataGridViewTextBoxColumn9, Me.DataGridViewTextBoxColumn10, Me.DataGridViewTextBoxColumn11, Me.DataGridViewTextBoxColumn12, Me.Column11, Me.Column12, Me.DataGridViewImageColumn3, Me.DataGridViewImageColumn4})
+        Me.dgvDadosEvento.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn7, Me.DataGridViewTextBoxColumn8, Me.Column13, Me.DataGridViewTextBoxColumn9, Me.DataGridViewTextBoxColumn10, Me.DataGridViewTextBoxColumn11, Me.Column17, Me.DataGridViewTextBoxColumn12, Me.Column11, Me.Column12, Me.DataGridViewImageColumn3, Me.DataGridViewImageColumn4})
+        DataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle6.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(170, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(65, Byte), Integer))
+        DataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.dgvDadosEvento.DefaultCellStyle = DataGridViewCellStyle6
         resources.ApplyResources(Me.dgvDadosEvento, "dgvDadosEvento")
         Me.dgvDadosEvento.Name = "dgvDadosEvento"
-        '
-        'DataGridViewTextBoxColumn7
-        '
-        resources.ApplyResources(Me.DataGridViewTextBoxColumn7, "DataGridViewTextBoxColumn7")
-        Me.DataGridViewTextBoxColumn7.Name = "DataGridViewTextBoxColumn7"
-        '
-        'DataGridViewTextBoxColumn8
-        '
-        resources.ApplyResources(Me.DataGridViewTextBoxColumn8, "DataGridViewTextBoxColumn8")
-        Me.DataGridViewTextBoxColumn8.Name = "DataGridViewTextBoxColumn8"
-        '
-        'Column13
-        '
-        resources.ApplyResources(Me.Column13, "Column13")
-        Me.Column13.Name = "Column13"
-        '
-        'DataGridViewTextBoxColumn9
-        '
-        resources.ApplyResources(Me.DataGridViewTextBoxColumn9, "DataGridViewTextBoxColumn9")
-        Me.DataGridViewTextBoxColumn9.Name = "DataGridViewTextBoxColumn9"
-        '
-        'DataGridViewTextBoxColumn10
-        '
-        resources.ApplyResources(Me.DataGridViewTextBoxColumn10, "DataGridViewTextBoxColumn10")
-        Me.DataGridViewTextBoxColumn10.Name = "DataGridViewTextBoxColumn10"
-        '
-        'DataGridViewTextBoxColumn11
-        '
-        resources.ApplyResources(Me.DataGridViewTextBoxColumn11, "DataGridViewTextBoxColumn11")
-        Me.DataGridViewTextBoxColumn11.Name = "DataGridViewTextBoxColumn11"
-        '
-        'DataGridViewTextBoxColumn12
-        '
-        resources.ApplyResources(Me.DataGridViewTextBoxColumn12, "DataGridViewTextBoxColumn12")
-        Me.DataGridViewTextBoxColumn12.Name = "DataGridViewTextBoxColumn12"
-        '
-        'Column11
-        '
-        resources.ApplyResources(Me.Column11, "Column11")
-        Me.Column11.Name = "Column11"
-        '
-        'Column12
-        '
-        resources.ApplyResources(Me.Column12, "Column12")
-        Me.Column12.Name = "Column12"
-        '
-        'DataGridViewImageColumn3
-        '
-        resources.ApplyResources(Me.DataGridViewImageColumn3, "DataGridViewImageColumn3")
-        Me.DataGridViewImageColumn3.Image = CType(resources.GetObject("DataGridViewImageColumn3.Image"), System.Drawing.Image)
-        Me.DataGridViewImageColumn3.Name = "DataGridViewImageColumn3"
-        Me.DataGridViewImageColumn3.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
-        '
-        'DataGridViewImageColumn4
-        '
-        resources.ApplyResources(Me.DataGridViewImageColumn4, "DataGridViewImageColumn4")
-        Me.DataGridViewImageColumn4.Image = CType(resources.GetObject("DataGridViewImageColumn4.Image"), System.Drawing.Image)
-        Me.DataGridViewImageColumn4.Name = "DataGridViewImageColumn4"
         '
         'tabFornecedores
         '
@@ -510,9 +476,26 @@ Partial Class Dashboard
         '
         'dgvDadosFornecedores
         '
+        Me.dgvDadosFornecedores.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(230, Byte), Integer), CType(CType(217, Byte), Integer))
         Me.dgvDadosFornecedores.BorderStyle = System.Windows.Forms.BorderStyle.None
+        DataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle7.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(170, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(65, Byte), Integer))
+        DataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgvDadosFornecedores.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle7
         Me.dgvDadosFornecedores.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvDadosFornecedores.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn13, Me.DataGridViewTextBoxColumn14, Me.DataGridViewTextBoxColumn15, Me.DataGridViewTextBoxColumn16, Me.DataGridViewTextBoxColumn17, Me.DataGridViewTextBoxColumn19, Me.DataGridViewTextBoxColumn18, Me.DataGridViewImageColumn5, Me.DataGridViewImageColumn6})
+        DataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle8.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(170, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(65, Byte), Integer))
+        DataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.dgvDadosFornecedores.DefaultCellStyle = DataGridViewCellStyle8
         resources.ApplyResources(Me.dgvDadosFornecedores, "dgvDadosFornecedores")
         Me.dgvDadosFornecedores.Name = "dgvDadosFornecedores"
         '
@@ -551,19 +534,6 @@ Partial Class Dashboard
         resources.ApplyResources(Me.DataGridViewTextBoxColumn18, "DataGridViewTextBoxColumn18")
         Me.DataGridViewTextBoxColumn18.Name = "DataGridViewTextBoxColumn18"
         '
-        'DataGridViewImageColumn5
-        '
-        resources.ApplyResources(Me.DataGridViewImageColumn5, "DataGridViewImageColumn5")
-        Me.DataGridViewImageColumn5.Image = CType(resources.GetObject("DataGridViewImageColumn5.Image"), System.Drawing.Image)
-        Me.DataGridViewImageColumn5.Name = "DataGridViewImageColumn5"
-        Me.DataGridViewImageColumn5.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
-        '
-        'DataGridViewImageColumn6
-        '
-        resources.ApplyResources(Me.DataGridViewImageColumn6, "DataGridViewImageColumn6")
-        Me.DataGridViewImageColumn6.Image = CType(resources.GetObject("DataGridViewImageColumn6.Image"), System.Drawing.Image)
-        Me.DataGridViewImageColumn6.Name = "DataGridViewImageColumn6"
-        '
         'tabUsuarios
         '
         Me.tabUsuarios.Controls.Add(Me.btnAdicionaUsuario)
@@ -589,9 +559,26 @@ Partial Class Dashboard
         '
         'dgvDadosUsuarios
         '
+        Me.dgvDadosUsuarios.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(230, Byte), Integer), CType(CType(217, Byte), Integer))
         Me.dgvDadosUsuarios.BorderStyle = System.Windows.Forms.BorderStyle.None
+        DataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle9.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(170, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(65, Byte), Integer))
+        DataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgvDadosUsuarios.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle9
         Me.dgvDadosUsuarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvDadosUsuarios.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn20, Me.DataGridViewTextBoxColumn21, Me.DataGridViewTextBoxColumn22, Me.DataGridViewTextBoxColumn23, Me.DataGridViewTextBoxColumn24, Me.DataGridViewTextBoxColumn26, Me.Column14, Me.DataGridViewTextBoxColumn25, Me.Column15, Me.DataGridViewImageColumn7, Me.DataGridViewImageColumn8})
+        Me.dgvDadosUsuarios.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn20, Me.DataGridViewTextBoxColumn21, Me.DataGridViewTextBoxColumn22, Me.DataGridViewTextBoxColumn23, Me.DataGridViewTextBoxColumn24, Me.DataGridViewTextBoxColumn26, Me.Column14, Me.DataGridViewTextBoxColumn25, Me.Column15, Me.Column16, Me.DataGridViewImageColumn7, Me.DataGridViewImageColumn8})
+        DataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle10.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle10.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(170, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(65, Byte), Integer))
+        DataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.dgvDadosUsuarios.DefaultCellStyle = DataGridViewCellStyle10
         resources.ApplyResources(Me.dgvDadosUsuarios, "dgvDadosUsuarios")
         Me.dgvDadosUsuarios.Name = "dgvDadosUsuarios"
         '
@@ -640,6 +627,37 @@ Partial Class Dashboard
         resources.ApplyResources(Me.Column15, "Column15")
         Me.Column15.Name = "Column15"
         '
+        'Column16
+        '
+        resources.ApplyResources(Me.Column16, "Column16")
+        Me.Column16.Name = "Column16"
+        '
+        'DataGridViewImageColumn1
+        '
+        resources.ApplyResources(Me.DataGridViewImageColumn1, "DataGridViewImageColumn1")
+        Me.DataGridViewImageColumn1.Image = CType(resources.GetObject("DataGridViewImageColumn1.Image"), System.Drawing.Image)
+        Me.DataGridViewImageColumn1.Name = "DataGridViewImageColumn1"
+        Me.DataGridViewImageColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
+        '
+        'DataGridViewImageColumn2
+        '
+        resources.ApplyResources(Me.DataGridViewImageColumn2, "DataGridViewImageColumn2")
+        Me.DataGridViewImageColumn2.Image = CType(resources.GetObject("DataGridViewImageColumn2.Image"), System.Drawing.Image)
+        Me.DataGridViewImageColumn2.Name = "DataGridViewImageColumn2"
+        '
+        'DataGridViewImageColumn5
+        '
+        resources.ApplyResources(Me.DataGridViewImageColumn5, "DataGridViewImageColumn5")
+        Me.DataGridViewImageColumn5.Image = CType(resources.GetObject("DataGridViewImageColumn5.Image"), System.Drawing.Image)
+        Me.DataGridViewImageColumn5.Name = "DataGridViewImageColumn5"
+        Me.DataGridViewImageColumn5.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
+        '
+        'DataGridViewImageColumn6
+        '
+        resources.ApplyResources(Me.DataGridViewImageColumn6, "DataGridViewImageColumn6")
+        Me.DataGridViewImageColumn6.Image = CType(resources.GetObject("DataGridViewImageColumn6.Image"), System.Drawing.Image)
+        Me.DataGridViewImageColumn6.Name = "DataGridViewImageColumn6"
+        '
         'DataGridViewImageColumn7
         '
         resources.ApplyResources(Me.DataGridViewImageColumn7, "DataGridViewImageColumn7")
@@ -665,6 +683,95 @@ Partial Class Dashboard
         resources.ApplyResources(Me.DataGridViewImageColumn10, "DataGridViewImageColumn10")
         Me.DataGridViewImageColumn10.Image = CType(resources.GetObject("DataGridViewImageColumn10.Image"), System.Drawing.Image)
         Me.DataGridViewImageColumn10.Name = "DataGridViewImageColumn10"
+        '
+        'Editar
+        '
+        resources.ApplyResources(Me.Editar, "Editar")
+        Me.Editar.Image = CType(resources.GetObject("Editar.Image"), System.Drawing.Image)
+        Me.Editar.Name = "Editar"
+        Me.Editar.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
+        '
+        'Excluir
+        '
+        resources.ApplyResources(Me.Excluir, "Excluir")
+        Me.Excluir.Image = CType(resources.GetObject("Excluir.Image"), System.Drawing.Image)
+        Me.Excluir.Name = "Excluir"
+        '
+        'DionysiusToolStripMenuItem
+        '
+        resources.ApplyResources(Me.DionysiusToolStripMenuItem, "DionysiusToolStripMenuItem")
+        Me.DionysiusToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(230, Byte), Integer), CType(CType(217, Byte), Integer))
+        Me.DionysiusToolStripMenuItem.Name = "DionysiusToolStripMenuItem"
+        Me.DionysiusToolStripMenuItem.Padding = New System.Windows.Forms.Padding(4, 0, 280, 0)
+        '
+        'LoginToolStripMenuItem
+        '
+        Me.LoginToolStripMenuItem.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right
+        resources.ApplyResources(Me.LoginToolStripMenuItem, "LoginToolStripMenuItem")
+        Me.LoginToolStripMenuItem.Name = "LoginToolStripMenuItem"
+        '
+        'DataGridViewTextBoxColumn7
+        '
+        resources.ApplyResources(Me.DataGridViewTextBoxColumn7, "DataGridViewTextBoxColumn7")
+        Me.DataGridViewTextBoxColumn7.Name = "DataGridViewTextBoxColumn7"
+        '
+        'DataGridViewTextBoxColumn8
+        '
+        resources.ApplyResources(Me.DataGridViewTextBoxColumn8, "DataGridViewTextBoxColumn8")
+        Me.DataGridViewTextBoxColumn8.Name = "DataGridViewTextBoxColumn8"
+        '
+        'Column13
+        '
+        resources.ApplyResources(Me.Column13, "Column13")
+        Me.Column13.Name = "Column13"
+        '
+        'DataGridViewTextBoxColumn9
+        '
+        resources.ApplyResources(Me.DataGridViewTextBoxColumn9, "DataGridViewTextBoxColumn9")
+        Me.DataGridViewTextBoxColumn9.Name = "DataGridViewTextBoxColumn9"
+        '
+        'DataGridViewTextBoxColumn10
+        '
+        resources.ApplyResources(Me.DataGridViewTextBoxColumn10, "DataGridViewTextBoxColumn10")
+        Me.DataGridViewTextBoxColumn10.Name = "DataGridViewTextBoxColumn10"
+        '
+        'DataGridViewTextBoxColumn11
+        '
+        resources.ApplyResources(Me.DataGridViewTextBoxColumn11, "DataGridViewTextBoxColumn11")
+        Me.DataGridViewTextBoxColumn11.Name = "DataGridViewTextBoxColumn11"
+        '
+        'Column17
+        '
+        resources.ApplyResources(Me.Column17, "Column17")
+        Me.Column17.Name = "Column17"
+        '
+        'DataGridViewTextBoxColumn12
+        '
+        resources.ApplyResources(Me.DataGridViewTextBoxColumn12, "DataGridViewTextBoxColumn12")
+        Me.DataGridViewTextBoxColumn12.Name = "DataGridViewTextBoxColumn12"
+        '
+        'Column11
+        '
+        resources.ApplyResources(Me.Column11, "Column11")
+        Me.Column11.Name = "Column11"
+        '
+        'Column12
+        '
+        resources.ApplyResources(Me.Column12, "Column12")
+        Me.Column12.Name = "Column12"
+        '
+        'DataGridViewImageColumn3
+        '
+        resources.ApplyResources(Me.DataGridViewImageColumn3, "DataGridViewImageColumn3")
+        Me.DataGridViewImageColumn3.Image = CType(resources.GetObject("DataGridViewImageColumn3.Image"), System.Drawing.Image)
+        Me.DataGridViewImageColumn3.Name = "DataGridViewImageColumn3"
+        Me.DataGridViewImageColumn3.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
+        '
+        'DataGridViewImageColumn4
+        '
+        resources.ApplyResources(Me.DataGridViewImageColumn4, "DataGridViewImageColumn4")
+        Me.DataGridViewImageColumn4.Image = CType(resources.GetObject("DataGridViewImageColumn4.Image"), System.Drawing.Image)
+        Me.DataGridViewImageColumn4.Name = "DataGridViewImageColumn4"
         '
         'Dashboard
         '
@@ -741,17 +848,6 @@ Partial Class Dashboard
     Friend WithEvents DataGridViewImageColumn2 As DataGridViewImageColumn
     Friend WithEvents Label2 As Label
     Friend WithEvents dgvDadosEvento As DataGridView
-    Friend WithEvents DataGridViewTextBoxColumn7 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn8 As DataGridViewTextBoxColumn
-    Friend WithEvents Column13 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn9 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn10 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn11 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn12 As DataGridViewTextBoxColumn
-    Friend WithEvents Column11 As DataGridViewTextBoxColumn
-    Friend WithEvents Column12 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewImageColumn3 As DataGridViewImageColumn
-    Friend WithEvents DataGridViewImageColumn4 As DataGridViewImageColumn
     Friend WithEvents Label3 As Label
     Friend WithEvents dgvDadosFornecedores As DataGridView
     Friend WithEvents DataGridViewTextBoxColumn13 As DataGridViewTextBoxColumn
@@ -765,17 +861,6 @@ Partial Class Dashboard
     Friend WithEvents DataGridViewImageColumn6 As DataGridViewImageColumn
     Friend WithEvents Label4 As Label
     Friend WithEvents dgvDadosUsuarios As DataGridView
-    Friend WithEvents DataGridViewTextBoxColumn20 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn21 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn22 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn23 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn24 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn26 As DataGridViewTextBoxColumn
-    Friend WithEvents Column14 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn25 As DataGridViewTextBoxColumn
-    Friend WithEvents Column15 As DataGridViewCheckBoxColumn
-    Friend WithEvents DataGridViewImageColumn7 As DataGridViewImageColumn
-    Friend WithEvents DataGridViewImageColumn8 As DataGridViewImageColumn
     Friend WithEvents Label5 As Label
     Friend WithEvents Chart1 As DataVisualization.Charting.Chart
     Friend WithEvents btnAdicionaVinho As Button
@@ -785,4 +870,28 @@ Partial Class Dashboard
     Friend WithEvents btnAdicionaUsuario As Button
     Friend WithEvents DataGridViewImageColumn9 As DataGridViewImageColumn
     Friend WithEvents DataGridViewImageColumn10 As DataGridViewImageColumn
+    Friend WithEvents DataGridViewTextBoxColumn20 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn21 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn22 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn23 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn24 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn26 As DataGridViewTextBoxColumn
+    Friend WithEvents Column14 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn25 As DataGridViewTextBoxColumn
+    Friend WithEvents Column15 As DataGridViewCheckBoxColumn
+    Friend WithEvents Column16 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewImageColumn7 As DataGridViewImageColumn
+    Friend WithEvents DataGridViewImageColumn8 As DataGridViewImageColumn
+    Friend WithEvents DataGridViewTextBoxColumn7 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn8 As DataGridViewTextBoxColumn
+    Friend WithEvents Column13 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn9 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn10 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn11 As DataGridViewTextBoxColumn
+    Friend WithEvents Column17 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn12 As DataGridViewTextBoxColumn
+    Friend WithEvents Column11 As DataGridViewTextBoxColumn
+    Friend WithEvents Column12 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewImageColumn3 As DataGridViewImageColumn
+    Friend WithEvents DataGridViewImageColumn4 As DataGridViewImageColumn
 End Class

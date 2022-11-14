@@ -980,6 +980,12 @@
   <data name="DataGridViewTextBoxColumn11.HeaderText" xml:space="preserve">
     <value>Endereço</value>
   </data>
+  <metadata name="Column17.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="Column17.HeaderText" xml:space="preserve">
+    <value>Bairro</value>
+  </data>
   <metadata name="DataGridViewTextBoxColumn12.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -1388,6 +1394,12 @@
   </metadata>
   <data name="Column15.HeaderText" xml:space="preserve">
     <value>Assinante</value>
+  </data>
+  <metadata name="Column16.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="Column16.HeaderText" xml:space="preserve">
+    <value>Status</value>
   </data>
   <metadata name="DataGridViewImageColumn7.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -1844,24 +1856,6 @@
   <data name="&gt;&gt;Column10.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewLinkColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;Editar.Name" xml:space="preserve">
-    <value>Editar</value>
-  </data>
-  <data name="&gt;&gt;Editar.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewImageColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Excluir.Name" xml:space="preserve">
-    <value>Excluir</value>
-  </data>
-  <data name="&gt;&gt;Excluir.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewImageColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;DionysiusToolStripMenuItem.Name" xml:space="preserve">
-    <value>DionysiusToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;DionysiusToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="&gt;&gt;CatálogoToolStripMenuItem.Name" xml:space="preserve">
     <value>CatálogoToolStripMenuItem</value>
   </data>
@@ -1878,12 +1872,6 @@
     <value>EventosToolStripMenuItem</value>
   </data>
   <data name="&gt;&gt;EventosToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;LoginToolStripMenuItem.Name" xml:space="preserve">
-    <value>LoginToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;LoginToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;DataGridViewTextBoxColumn1.Name" xml:space="preserve">
@@ -1921,84 +1909,6 @@
   </data>
   <data name="&gt;&gt;DataGridViewTextBoxColumn6.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;DataGridViewImageColumn1.Name" xml:space="preserve">
-    <value>DataGridViewImageColumn1</value>
-  </data>
-  <data name="&gt;&gt;DataGridViewImageColumn1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewImageColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;DataGridViewImageColumn2.Name" xml:space="preserve">
-    <value>DataGridViewImageColumn2</value>
-  </data>
-  <data name="&gt;&gt;DataGridViewImageColumn2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewImageColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;DataGridViewTextBoxColumn7.Name" xml:space="preserve">
-    <value>DataGridViewTextBoxColumn7</value>
-  </data>
-  <data name="&gt;&gt;DataGridViewTextBoxColumn7.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;DataGridViewTextBoxColumn8.Name" xml:space="preserve">
-    <value>DataGridViewTextBoxColumn8</value>
-  </data>
-  <data name="&gt;&gt;DataGridViewTextBoxColumn8.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Column13.Name" xml:space="preserve">
-    <value>Column13</value>
-  </data>
-  <data name="&gt;&gt;Column13.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;DataGridViewTextBoxColumn9.Name" xml:space="preserve">
-    <value>DataGridViewTextBoxColumn9</value>
-  </data>
-  <data name="&gt;&gt;DataGridViewTextBoxColumn9.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;DataGridViewTextBoxColumn10.Name" xml:space="preserve">
-    <value>DataGridViewTextBoxColumn10</value>
-  </data>
-  <data name="&gt;&gt;DataGridViewTextBoxColumn10.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;DataGridViewTextBoxColumn11.Name" xml:space="preserve">
-    <value>DataGridViewTextBoxColumn11</value>
-  </data>
-  <data name="&gt;&gt;DataGridViewTextBoxColumn11.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;DataGridViewTextBoxColumn12.Name" xml:space="preserve">
-    <value>DataGridViewTextBoxColumn12</value>
-  </data>
-  <data name="&gt;&gt;DataGridViewTextBoxColumn12.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Column11.Name" xml:space="preserve">
-    <value>Column11</value>
-  </data>
-  <data name="&gt;&gt;Column11.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Column12.Name" xml:space="preserve">
-    <value>Column12</value>
-  </data>
-  <data name="&gt;&gt;Column12.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;DataGridViewImageColumn3.Name" xml:space="preserve">
-    <value>DataGridViewImageColumn3</value>
-  </data>
-  <data name="&gt;&gt;DataGridViewImageColumn3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewImageColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;DataGridViewImageColumn4.Name" xml:space="preserve">
-    <value>DataGridViewImageColumn4</value>
-  </data>
-  <data name="&gt;&gt;DataGridViewImageColumn4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewImageColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;DataGridViewTextBoxColumn13.Name" xml:space="preserve">
     <value>DataGridViewTextBoxColumn13</value>
@@ -2041,18 +1951,6 @@
   </data>
   <data name="&gt;&gt;DataGridViewTextBoxColumn18.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;DataGridViewImageColumn5.Name" xml:space="preserve">
-    <value>DataGridViewImageColumn5</value>
-  </data>
-  <data name="&gt;&gt;DataGridViewImageColumn5.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewImageColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;DataGridViewImageColumn6.Name" xml:space="preserve">
-    <value>DataGridViewImageColumn6</value>
-  </data>
-  <data name="&gt;&gt;DataGridViewImageColumn6.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewImageColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;DataGridViewTextBoxColumn20.Name" xml:space="preserve">
     <value>DataGridViewTextBoxColumn20</value>
@@ -2108,6 +2006,36 @@
   <data name="&gt;&gt;Column15.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewCheckBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="&gt;&gt;Column16.Name" xml:space="preserve">
+    <value>Column16</value>
+  </data>
+  <data name="&gt;&gt;Column16.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DataGridViewImageColumn1.Name" xml:space="preserve">
+    <value>DataGridViewImageColumn1</value>
+  </data>
+  <data name="&gt;&gt;DataGridViewImageColumn1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewImageColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DataGridViewImageColumn2.Name" xml:space="preserve">
+    <value>DataGridViewImageColumn2</value>
+  </data>
+  <data name="&gt;&gt;DataGridViewImageColumn2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewImageColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DataGridViewImageColumn5.Name" xml:space="preserve">
+    <value>DataGridViewImageColumn5</value>
+  </data>
+  <data name="&gt;&gt;DataGridViewImageColumn5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewImageColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DataGridViewImageColumn6.Name" xml:space="preserve">
+    <value>DataGridViewImageColumn6</value>
+  </data>
+  <data name="&gt;&gt;DataGridViewImageColumn6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewImageColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;DataGridViewImageColumn7.Name" xml:space="preserve">
     <value>DataGridViewImageColumn7</value>
   </data>
@@ -2130,6 +2058,102 @@
     <value>DataGridViewImageColumn10</value>
   </data>
   <data name="&gt;&gt;DataGridViewImageColumn10.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewImageColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Editar.Name" xml:space="preserve">
+    <value>Editar</value>
+  </data>
+  <data name="&gt;&gt;Editar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewImageColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Excluir.Name" xml:space="preserve">
+    <value>Excluir</value>
+  </data>
+  <data name="&gt;&gt;Excluir.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewImageColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DionysiusToolStripMenuItem.Name" xml:space="preserve">
+    <value>DionysiusToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;DionysiusToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LoginToolStripMenuItem.Name" xml:space="preserve">
+    <value>LoginToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;LoginToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DataGridViewTextBoxColumn7.Name" xml:space="preserve">
+    <value>DataGridViewTextBoxColumn7</value>
+  </data>
+  <data name="&gt;&gt;DataGridViewTextBoxColumn7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DataGridViewTextBoxColumn8.Name" xml:space="preserve">
+    <value>DataGridViewTextBoxColumn8</value>
+  </data>
+  <data name="&gt;&gt;DataGridViewTextBoxColumn8.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Column13.Name" xml:space="preserve">
+    <value>Column13</value>
+  </data>
+  <data name="&gt;&gt;Column13.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DataGridViewTextBoxColumn9.Name" xml:space="preserve">
+    <value>DataGridViewTextBoxColumn9</value>
+  </data>
+  <data name="&gt;&gt;DataGridViewTextBoxColumn9.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DataGridViewTextBoxColumn10.Name" xml:space="preserve">
+    <value>DataGridViewTextBoxColumn10</value>
+  </data>
+  <data name="&gt;&gt;DataGridViewTextBoxColumn10.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DataGridViewTextBoxColumn11.Name" xml:space="preserve">
+    <value>DataGridViewTextBoxColumn11</value>
+  </data>
+  <data name="&gt;&gt;DataGridViewTextBoxColumn11.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Column17.Name" xml:space="preserve">
+    <value>Column17</value>
+  </data>
+  <data name="&gt;&gt;Column17.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DataGridViewTextBoxColumn12.Name" xml:space="preserve">
+    <value>DataGridViewTextBoxColumn12</value>
+  </data>
+  <data name="&gt;&gt;DataGridViewTextBoxColumn12.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Column11.Name" xml:space="preserve">
+    <value>Column11</value>
+  </data>
+  <data name="&gt;&gt;Column11.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Column12.Name" xml:space="preserve">
+    <value>Column12</value>
+  </data>
+  <data name="&gt;&gt;Column12.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DataGridViewImageColumn3.Name" xml:space="preserve">
+    <value>DataGridViewImageColumn3</value>
+  </data>
+  <data name="&gt;&gt;DataGridViewImageColumn3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewImageColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DataGridViewImageColumn4.Name" xml:space="preserve">
+    <value>DataGridViewImageColumn4</value>
+  </data>
+  <data name="&gt;&gt;DataGridViewImageColumn4.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewImageColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">

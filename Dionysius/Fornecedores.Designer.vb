@@ -24,9 +24,11 @@ Partial Class Fornecedores
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Fornecedores))
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.DionysiusToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.CatálogoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.FornecedoresToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.EventosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.LoginToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.lblContatoFornecedor = New System.Windows.Forms.LinkLabel()
         Me.Label20 = New System.Windows.Forms.Label()
         Me.Label19 = New System.Windows.Forms.Label()
@@ -39,8 +41,6 @@ Partial Class Fornecedores
         Me.PictureBox6 = New System.Windows.Forms.PictureBox()
         Me.PictureBox5 = New System.Windows.Forms.PictureBox()
         Me.PictureBox4 = New System.Windows.Forms.PictureBox()
-        Me.DionysiusToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.LoginToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -57,6 +57,17 @@ Partial Class Fornecedores
         Me.MenuStrip1.Size = New System.Drawing.Size(1174, 43)
         Me.MenuStrip1.TabIndex = 5
         Me.MenuStrip1.Text = "MenuStrip1"
+        '
+        'DionysiusToolStripMenuItem
+        '
+        Me.DionysiusToolStripMenuItem.Font = New System.Drawing.Font("Bahnschrift", 12.0!)
+        Me.DionysiusToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(230, Byte), Integer), CType(CType(217, Byte), Integer))
+        Me.DionysiusToolStripMenuItem.Image = CType(resources.GetObject("DionysiusToolStripMenuItem.Image"), System.Drawing.Image)
+        Me.DionysiusToolStripMenuItem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.DionysiusToolStripMenuItem.Name = "DionysiusToolStripMenuItem"
+        Me.DionysiusToolStripMenuItem.Padding = New System.Windows.Forms.Padding(4, 0, 280, 0)
+        Me.DionysiusToolStripMenuItem.Size = New System.Drawing.Size(383, 23)
+        Me.DionysiusToolStripMenuItem.Text = "Dionysius"
         '
         'CatálogoToolStripMenuItem
         '
@@ -84,6 +95,14 @@ Partial Class Fornecedores
         Me.EventosToolStripMenuItem.Padding = New System.Windows.Forms.Padding(20, 0, 20, 0)
         Me.EventosToolStripMenuItem.Size = New System.Drawing.Size(98, 23)
         Me.EventosToolStripMenuItem.Text = "Eventos"
+        '
+        'LoginToolStripMenuItem
+        '
+        Me.LoginToolStripMenuItem.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right
+        Me.LoginToolStripMenuItem.Image = CType(resources.GetObject("LoginToolStripMenuItem.Image"), System.Drawing.Image)
+        Me.LoginToolStripMenuItem.Name = "LoginToolStripMenuItem"
+        Me.LoginToolStripMenuItem.Size = New System.Drawing.Size(28, 23)
+        Me.LoginToolStripMenuItem.TextAlign = System.Drawing.ContentAlignment.TopRight
         '
         'lblContatoFornecedor
         '
@@ -203,25 +222,6 @@ Partial Class Fornecedores
         Me.PictureBox4.Size = New System.Drawing.Size(200, 195)
         Me.PictureBox4.TabIndex = 13
         Me.PictureBox4.TabStop = False
-        '
-        'DionysiusToolStripMenuItem
-        '
-        Me.DionysiusToolStripMenuItem.Font = New System.Drawing.Font("Bahnschrift", 12.0!)
-        Me.DionysiusToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(230, Byte), Integer), CType(CType(217, Byte), Integer))
-        Me.DionysiusToolStripMenuItem.Image = CType(resources.GetObject("DionysiusToolStripMenuItem.Image"), System.Drawing.Image)
-        Me.DionysiusToolStripMenuItem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.DionysiusToolStripMenuItem.Name = "DionysiusToolStripMenuItem"
-        Me.DionysiusToolStripMenuItem.Padding = New System.Windows.Forms.Padding(4, 0, 280, 0)
-        Me.DionysiusToolStripMenuItem.Size = New System.Drawing.Size(383, 23)
-        Me.DionysiusToolStripMenuItem.Text = "Dionysius"
-        '
-        'LoginToolStripMenuItem
-        '
-        Me.LoginToolStripMenuItem.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right
-        Me.LoginToolStripMenuItem.Image = CType(resources.GetObject("LoginToolStripMenuItem.Image"), System.Drawing.Image)
-        Me.LoginToolStripMenuItem.Name = "LoginToolStripMenuItem"
-        Me.LoginToolStripMenuItem.Size = New System.Drawing.Size(28, 23)
-        Me.LoginToolStripMenuItem.TextAlign = System.Drawing.ContentAlignment.TopRight
         '
         'Fornecedores
         '
