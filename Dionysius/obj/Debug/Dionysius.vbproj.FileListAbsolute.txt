@@ -23,3 +23,7 @@ C:\Users\wagne\OneDrive\Área de Trabalho\Dionysius\obj\Debug\Dionysius.frmRecup
 C:\Users\wagne\OneDrive\Área de Trabalho\Dionysius\obj\Debug\Dionysius.Catalogo.resources
 C:\Users\wagne\OneDrive\Área de Trabalho\Dionysius\obj\Debug\Dionysius.Eventos.resources
 C:\Users\wagne\OneDrive\Área de Trabalho\Dionysius\obj\Debug\Dionysius.Fornecedores.resources
+C:\Users\wagne\OneDrive\Área de Trabalho\Dionysius\obj\Debug\Dionysius.frmAdicionaProduto.resources
+C:\Users\wagne\OneDrive\Área de Trabalho\Dionysius\obj\Debug\Dionysius.frmAdicionaEvento.resources
+C:\Users\wagne\OneDrive\Área de Trabalho\Dionysius\obj\Debug\Dionysius.frmAdicionaProducao.resources
+C:\Users\wagne\OneDrive\Área de Trabalho\Dionysius\obj\Debug\Dionysius.frmCadastraFornecedor.resources
