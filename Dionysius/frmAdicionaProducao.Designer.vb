@@ -36,6 +36,8 @@ Partial Class frmAdicionaProducao
         Me.Label3 = New System.Windows.Forms.Label()
         Me.cmbProduto = New System.Windows.Forms.ComboBox()
         Me.btnCadastraProducao = New System.Windows.Forms.Button()
+        Me.lblId = New System.Windows.Forms.Label()
+        Me.txtId = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
         '
         'cmbFornecedores
@@ -178,8 +180,32 @@ Partial Class frmAdicionaProducao
         Me.btnCadastraProducao.Name = "btnCadastraProducao"
         Me.btnCadastraProducao.Size = New System.Drawing.Size(191, 43)
         Me.btnCadastraProducao.TabIndex = 118
-        Me.btnCadastraProducao.Text = "Adicionar Evento"
+        Me.btnCadastraProducao.Text = "Adicionar Processo"
         Me.btnCadastraProducao.UseVisualStyleBackColor = False
+        '
+        'lblId
+        '
+        Me.lblId.AutoSize = True
+        Me.lblId.ForeColor = System.Drawing.Color.FromArgb(CType(CType(175, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(124, Byte), Integer))
+        Me.lblId.Location = New System.Drawing.Point(400, 87)
+        Me.lblId.Name = "lblId"
+        Me.lblId.Size = New System.Drawing.Size(21, 13)
+        Me.lblId.TabIndex = 120
+        Me.lblId.Text = "ID:"
+        Me.lblId.Visible = False
+        '
+        'txtId
+        '
+        Me.txtId.BackColor = System.Drawing.Color.FromArgb(CType(CType(89, Byte), Integer), CType(CType(8, Byte), Integer), CType(CType(2, Byte), Integer))
+        Me.txtId.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txtId.ForeColor = System.Drawing.Color.FromArgb(CType(CType(175, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(124, Byte), Integer))
+        Me.txtId.Location = New System.Drawing.Point(418, 87)
+        Me.txtId.Name = "txtId"
+        Me.txtId.ReadOnly = True
+        Me.txtId.Size = New System.Drawing.Size(25, 13)
+        Me.txtId.TabIndex = 119
+        Me.txtId.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+        Me.txtId.Visible = False
         '
         'frmAdicionaProducao
         '
@@ -187,6 +213,8 @@ Partial Class frmAdicionaProducao
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(89, Byte), Integer), CType(CType(8, Byte), Integer), CType(CType(2, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(500, 480)
+        Me.Controls.Add(Me.lblId)
+        Me.Controls.Add(Me.txtId)
         Me.Controls.Add(Me.btnCadastraProducao)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.cmbProduto)
@@ -224,4 +252,6 @@ Partial Class frmAdicionaProducao
     Friend WithEvents Label3 As Label
     Friend WithEvents cmbProduto As ComboBox
     Friend WithEvents btnCadastraProducao As Button
+    Friend WithEvents lblId As Label
+    Friend WithEvents txtId As TextBox
 End Class

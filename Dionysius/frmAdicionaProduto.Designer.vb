@@ -56,6 +56,8 @@ Partial Class frmAdicionaProduto
         Me.btnAdicionaProduto = New System.Windows.Forms.Button()
         Me.imgProduto = New System.Windows.Forms.PictureBox()
         Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
+        Me.lblId = New System.Windows.Forms.Label()
+        Me.txtId = New System.Windows.Forms.TextBox()
         CType(Me.imgProduto, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -196,6 +198,7 @@ Partial Class frmAdicionaProduto
         'cmbTipo
         '
         Me.cmbTipo.BackColor = System.Drawing.Color.FromArgb(CType(CType(89, Byte), Integer), CType(CType(8, Byte), Integer), CType(CType(2, Byte), Integer))
+        Me.cmbTipo.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.cmbTipo.ForeColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(230, Byte), Integer), CType(CType(217, Byte), Integer))
         Me.cmbTipo.FormattingEnabled = True
         Me.cmbTipo.Location = New System.Drawing.Point(461, 204)
@@ -216,6 +219,7 @@ Partial Class frmAdicionaProduto
         'cmbUva
         '
         Me.cmbUva.BackColor = System.Drawing.Color.FromArgb(CType(CType(89, Byte), Integer), CType(CType(8, Byte), Integer), CType(CType(2, Byte), Integer))
+        Me.cmbUva.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.cmbUva.ForeColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(230, Byte), Integer), CType(CType(217, Byte), Integer))
         Me.cmbUva.FormattingEnabled = True
         Me.cmbUva.Location = New System.Drawing.Point(54, 317)
@@ -236,6 +240,7 @@ Partial Class frmAdicionaProduto
         'cmbClasse
         '
         Me.cmbClasse.BackColor = System.Drawing.Color.FromArgb(CType(CType(89, Byte), Integer), CType(CType(8, Byte), Integer), CType(CType(2, Byte), Integer))
+        Me.cmbClasse.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.cmbClasse.ForeColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(230, Byte), Integer), CType(CType(217, Byte), Integer))
         Me.cmbClasse.FormattingEnabled = True
         Me.cmbClasse.Location = New System.Drawing.Point(461, 261)
@@ -392,6 +397,30 @@ Partial Class frmAdicionaProduto
         '
         Me.OpenFileDialog1.FileName = "OpenFileDialog1"
         '
+        'lblId
+        '
+        Me.lblId.AutoSize = True
+        Me.lblId.ForeColor = System.Drawing.Color.FromArgb(CType(CType(175, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(124, Byte), Integer))
+        Me.lblId.Location = New System.Drawing.Point(401, 87)
+        Me.lblId.Name = "lblId"
+        Me.lblId.Size = New System.Drawing.Size(21, 13)
+        Me.lblId.TabIndex = 119
+        Me.lblId.Text = "ID:"
+        Me.lblId.Visible = False
+        '
+        'txtId
+        '
+        Me.txtId.BackColor = System.Drawing.Color.FromArgb(CType(CType(89, Byte), Integer), CType(CType(8, Byte), Integer), CType(CType(2, Byte), Integer))
+        Me.txtId.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txtId.ForeColor = System.Drawing.Color.FromArgb(CType(CType(175, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(124, Byte), Integer))
+        Me.txtId.Location = New System.Drawing.Point(419, 87)
+        Me.txtId.Name = "txtId"
+        Me.txtId.ReadOnly = True
+        Me.txtId.Size = New System.Drawing.Size(25, 13)
+        Me.txtId.TabIndex = 118
+        Me.txtId.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+        Me.txtId.Visible = False
+        '
         'frmAdicionaProduto
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -399,6 +428,8 @@ Partial Class frmAdicionaProduto
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(89, Byte), Integer), CType(CType(8, Byte), Integer), CType(CType(2, Byte), Integer))
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.ClientSize = New System.Drawing.Size(650, 630)
+        Me.Controls.Add(Me.lblId)
+        Me.Controls.Add(Me.txtId)
         Me.Controls.Add(Me.imgProduto)
         Me.Controls.Add(Me.btnAdicionaProduto)
         Me.Controls.Add(Me.txtQtdeEmEstoque)
@@ -477,4 +508,6 @@ Partial Class frmAdicionaProduto
     Friend WithEvents btnAdicionaProduto As Button
     Friend WithEvents imgProduto As PictureBox
     Friend WithEvents OpenFileDialog1 As OpenFileDialog
+    Friend WithEvents lblId As Label
+    Friend WithEvents txtId As TextBox
 End Class

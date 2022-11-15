@@ -8,6 +8,7 @@
         Call carregaDadosUsuario()
     End Sub
 
+    ' Ações do MenuStrip
     Private Sub DionysiusToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles DionysiusToolStripMenuItem.Click
         Try
             Home.ShowDialog()
@@ -44,8 +45,18 @@
         End Try
     End Sub
 
+    Private Sub SairDoSistemaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SairDoSistemaToolStripMenuItem.Click
+        Try
+            Application.Exit()
+        Catch ex As Exception
+            Exit Sub
+        End Try
+    End Sub
+
+    ' Ações do TapControl
     Private Sub btnAdicionaVinho_Click(sender As Object, e As EventArgs) Handles btnAdicionaVinho.Click
         Try
+            frmAdicionaProduto.btnAdicionaProduto.Text = "Adicionar Produto"
             frmAdicionaProduto.ShowDialog()
         Catch ex As Exception
             MsgBox("Ocorreu um erro durante o carregamento", MsgBoxStyle.Critical + MsgBoxStyle.OkOnly, "ATENÇÃO")
@@ -55,6 +66,7 @@
 
     Private Sub btnAdicionaProducao_Click(sender As Object, e As EventArgs) Handles btnAdicionaProducao.Click
         Try
+            frmAdicionaProducao.btnCadastraProducao.Text = "Adicionar Processo"
             frmAdicionaProducao.ShowDialog()
         Catch ex As Exception
             MsgBox("Ocorreu um erro durante o carregamento", MsgBoxStyle.Critical + MsgBoxStyle.OkOnly, "ATENÇÃO")
@@ -64,6 +76,7 @@
 
     Private Sub btnAdicionaEvento_Click(sender As Object, e As EventArgs) Handles btnAdicionaEvento.Click
         Try
+            frmAdicionaEvento.btnAdicionarEvento.Text = "Adicionar Evento"
             frmAdicionaEvento.ShowDialog()
         Catch ex As Exception
             MsgBox("Ocorreu um erro durante o carregamento", MsgBoxStyle.Critical + MsgBoxStyle.OkOnly, "ATENÇÃO")
@@ -73,6 +86,7 @@
 
     Private Sub btnAdicionaFornecedor_Click(sender As Object, e As EventArgs) Handles btnAdicionaFornecedor.Click
         Try
+            frmCadastraFornecedor.btnCadastrar.Text = "Adicionar Fornecedor"
             frmCadastraFornecedor.ShowDialog()
         Catch ex As Exception
             MsgBox("Ocorreu um erro durante o carregamento", MsgBoxStyle.Critical + MsgBoxStyle.OkOnly, "ATENÇÃO")
@@ -82,21 +96,24 @@
 
     Private Sub btnAdicionaUsuario_Click(sender As Object, e As EventArgs) Handles btnAdicionaUsuario.Click
         Try
-
+            frmCadastraUsuario.btnCadastrar.Text = "Cadastrar"
+            frmCadastraUsuario.ShowDialog()
         Catch ex As Exception
             MsgBox("Ocorreu um erro durante o carregamento", MsgBoxStyle.Critical + MsgBoxStyle.OkOnly, "ATENÇÃO")
             Exit Sub
         End Try
     End Sub
 
+    ' Ações do DataGridView
     Private Sub dgvDadosVinho_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvDadosVinho.CellContentClick
         Try
             With dgvDadosVinho
                 aux = .CurrentRow.Cells(1).Value
 
-                If .CurrentRow.Cells(12).Selected Then
+                If .CurrentRow.Cells(13).Selected Then
+                    frmAdicionaProduto.btnAdicionaProduto.Text = "Atualizar Produto"
                     frmAdicionaProduto.ShowDialog()
-                ElseIf .CurrentRow.Cells(13).Selected Then
+                ElseIf .CurrentRow.Cells(14).Selected Then
                     resp = MsgBox("Deseja realmente excluir os dados referentes à este produto?", MsgBoxStyle.Question + MsgBoxStyle.YesNo, "ATENÇÃO")
                     If resp = vbYes Then
                         sql = "DELETE * FROM tb_vinhos WHERE nome = '" & aux & "'"
@@ -121,6 +138,7 @@
                 aux = .CurrentRow.Cells(1).Value
 
                 If .CurrentRow.Cells(6).Selected Then
+                    frmAdicionaProducao.btnCadastraProducao.Text = "Atualizar Processo"
                     frmAdicionaProducao.ShowDialog()
                 ElseIf .CurrentRow.Cells(7).Selected Then
                     resp = MsgBox("Deseja realmente excluir os dados referentes à este processo de fabricação?", MsgBoxStyle.Question + MsgBoxStyle.YesNo, "ATENÇÃO")
@@ -147,6 +165,7 @@
                 aux = .CurrentRow.Cells(1).Value
 
                 If .CurrentRow.Cells(10).Selected Then
+                    frmAdicionaEvento.btnAdicionarEvento.Text = "Atualizar Evento"
                     frmAdicionaEvento.ShowDialog()
                 ElseIf .CurrentRow.Cells(11).Selected Then
                     resp = MsgBox("Deseja realmente excluir os dados referentes à este evento?", MsgBoxStyle.Question + MsgBoxStyle.YesNo, "ATENÇÃO")
@@ -173,6 +192,7 @@
                 aux = .CurrentRow.Cells(1).Value
 
                 If .CurrentRow.Cells(7).Selected Then
+                    frmCadastraFornecedor.btnCadastrar.Text = "Atualizar Fornecedor"
                     frmCadastraFornecedor.ShowDialog()
                 ElseIf .CurrentRow.Cells(8).Selected Then
                     resp = MsgBox("Deseja realmente excluir os dados referentes à este fornecedor?", MsgBoxStyle.Question + MsgBoxStyle.YesNo, "ATENÇÃO")
@@ -199,7 +219,8 @@
                 aux = .CurrentRow.Cells(1).Value
 
                 If .CurrentRow.Cells(10).Selected Then
-
+                    frmCadastraUsuario.btnCadastrar.Text = "Atualizar"
+                    frmCadastraUsuario.ShowDialog()
                 ElseIf .CurrentRow.Cells(11).Selected Then
                     resp = MsgBox("Deseja realmente excluir os dados referentes à este usuário?", MsgBoxStyle.Question + MsgBoxStyle.YesNo, "ATENÇÃO")
                     If resp = vbYes Then
@@ -215,6 +236,56 @@
         Catch ex As Exception
             MsgBox("Ocorreu um erro durante o carregamento da seleção" + vbNewLine &
                    "Tente novamente mais tarde", MsgBoxStyle.Critical + MsgBoxStyle.OkOnly, "ATENÇÃO")
+            Exit Sub
+        End Try
+    End Sub
+
+    ' Transfere dados do DataGridView para Form
+    Private Sub dgvDadosVinho_CellEnter(sender As Object, e As DataGridViewCellEventArgs) Handles dgvDadosVinho.CellEnter
+        Try
+            With dgvDadosVinho.Rows(dgvDadosVinho.CurrentCell.RowIndex)
+                camposProduto(0) = .Cells("IdProduto").Value
+            End With
+        Catch ex As Exception
+            Exit Sub
+        End Try
+    End Sub
+
+    Private Sub dgvDadosProducao_CellEnter(sender As Object, e As DataGridViewCellEventArgs) Handles dgvDadosProducao.CellEnter
+        Try
+
+        Catch ex As Exception
+            Exit Sub
+        End Try
+    End Sub
+
+    Private Sub dgvDadosEvento_CellEnter(sender As Object, e As DataGridViewCellEventArgs) Handles dgvDadosEvento.CellEnter
+        Try
+
+        Catch ex As Exception
+            Exit Sub
+        End Try
+    End Sub
+    Private Sub dgvDadosFornecedores_CellEnter(sender As Object, e As DataGridViewCellEventArgs) Handles dgvDadosFornecedores.CellEnter
+        Try
+            With dgvDadosFornecedores.Rows(dgvDadosFornecedores.CurrentCell.RowIndex)
+                camposFornecedor(0) = .Cells("IdFornecedor").Value
+                camposFornecedor(1) = .Cells("NomeFornecedor").Value
+                camposFornecedor(2) = .Cells("RamoDoFornecedor").Value
+                camposFornecedor(3) = .Cells("EmailDoFornecedor").Value
+                camposFornecedor(4) = .Cells("TelefoneDoFornecedor").Value
+                camposFornecedor(5) = .Cells("ProdutoFornecidoPeloFornecedor").Value
+                camposFornecedor(6) = .Cells("EnderecoDoFornecedor").Value
+            End With
+        Catch ex As Exception
+            Exit Sub
+        End Try
+    End Sub
+
+    Private Sub dgvDadosUsuarios_CellEnter(sender As Object, e As DataGridViewCellEventArgs) Handles dgvDadosUsuarios.CellEnter
+        Try
+
+        Catch ex As Exception
             Exit Sub
         End Try
     End Sub

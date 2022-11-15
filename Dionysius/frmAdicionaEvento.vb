@@ -3,9 +3,26 @@
         Call conectaDataBase()
         Call limpaEvento()
 
+        If btnAdicionarEvento.Text = "Atualizar Evento" Then
+            lblId.Visible = True
+            txtId.Visible = True
+        End If
+
         With cmbParticipantes.Items
-            .Add("")
-            .Add("Participante Genérico")
+            Try
+                sql = "SELECT * FROM tb_clientes"
+                rs = db.Execute(sql)
+
+                Do While rs.EOF = False
+                    .Add(rs.Fields(1).Value & " " & rs.Fields(2).Value)
+
+                    rs.MoveNext()
+                    cont += 1
+                Loop
+            Catch ex As Exception
+                MsgBox("Ocorreu um erro durante o carregamento dos items.", MsgBoxStyle.Critical + MsgBoxStyle.OkOnly, "ATENÇÃO")
+                Exit Sub
+            End Try
         End With
     End Sub
 

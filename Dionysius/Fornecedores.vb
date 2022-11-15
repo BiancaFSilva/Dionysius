@@ -33,7 +33,23 @@
         End Try
     End Sub
 
+    Private Sub SairDoSistemaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SairDoSistemaToolStripMenuItem.Click
+        Try
+            Application.Exit()
+        Catch ex As Exception
+            Exit Sub
+        End Try
+    End Sub
+
+    Private Sub FavoritosToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles FavoritosToolStripMenuItem.Click
+
+    End Sub
+
     Private Sub lblContatoFornecedor_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles lblContatoFornecedor.LinkClicked
-        frmCadastraFornecedor.ShowDialog()
+        Try
+            frmCadastraFornecedor.ShowDialog()
+        Catch ex As Exception
+            Exit Sub
+        End Try
     End Sub
 End Class

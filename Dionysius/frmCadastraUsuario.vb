@@ -1,6 +1,11 @@
 ﻿Public Class frmCadastraUsuario
     Private Sub frmCadastraUsuario_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Call conectaDataBase()
+
+        If btnCadastrar.Text = "Atualizar" Then
+            lblId.Visible = True
+            txtId.Visible = True
+        End If
     End Sub
 
     Private Sub CheckBox1_CheckedChanged(sender As Object, e As EventArgs) Handles chkVerSenha.CheckedChanged

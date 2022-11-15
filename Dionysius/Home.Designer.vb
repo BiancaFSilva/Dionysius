@@ -34,6 +34,8 @@ Partial Class Home
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
+        Me.SairDoSistemaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.FavoritosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -90,6 +92,7 @@ Partial Class Home
         'LoginToolStripMenuItem
         '
         Me.LoginToolStripMenuItem.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right
+        Me.LoginToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SairDoSistemaToolStripMenuItem, Me.FavoritosToolStripMenuItem})
         Me.LoginToolStripMenuItem.Image = CType(resources.GetObject("LoginToolStripMenuItem.Image"), System.Drawing.Image)
         Me.LoginToolStripMenuItem.Name = "LoginToolStripMenuItem"
         Me.LoginToolStripMenuItem.Size = New System.Drawing.Size(28, 23)
@@ -156,6 +159,24 @@ Partial Class Home
         Me.Label6.TabIndex = 14
         Me.Label6.Text = "Vinhos e Espumantes"
         '
+        'SairDoSistemaToolStripMenuItem
+        '
+        Me.SairDoSistemaToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(89, Byte), Integer), CType(CType(8, Byte), Integer), CType(CType(2, Byte), Integer))
+        Me.SairDoSistemaToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(230, Byte), Integer), CType(CType(217, Byte), Integer))
+        Me.SairDoSistemaToolStripMenuItem.Image = CType(resources.GetObject("SairDoSistemaToolStripMenuItem.Image"), System.Drawing.Image)
+        Me.SairDoSistemaToolStripMenuItem.Name = "SairDoSistemaToolStripMenuItem"
+        Me.SairDoSistemaToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.SairDoSistemaToolStripMenuItem.Text = "Sair do Sistema"
+        '
+        'FavoritosToolStripMenuItem
+        '
+        Me.FavoritosToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(89, Byte), Integer), CType(CType(8, Byte), Integer), CType(CType(2, Byte), Integer))
+        Me.FavoritosToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(230, Byte), Integer), CType(CType(217, Byte), Integer))
+        Me.FavoritosToolStripMenuItem.Image = CType(resources.GetObject("FavoritosToolStripMenuItem.Image"), System.Drawing.Image)
+        Me.FavoritosToolStripMenuItem.Name = "FavoritosToolStripMenuItem"
+        Me.FavoritosToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.FavoritosToolStripMenuItem.Text = "Favoritos"
+        '
         'Home
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 16.0!)
@@ -193,4 +214,6 @@ Partial Class Home
     Friend WithEvents Label4 As Label
     Friend WithEvents Label5 As Label
     Friend WithEvents Label6 As Label
+    Friend WithEvents SairDoSistemaToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents FavoritosToolStripMenuItem As ToolStripMenuItem
 End Class

@@ -1,8 +1,4 @@
 ﻿Public Class Home
-    Private Sub Home_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Call conectaDataBase()
-    End Sub
-
     Private Sub btnVerCatalogo_Click(sender As Object, e As EventArgs)
         Try
             Catalogo.ShowDialog()
@@ -41,5 +37,17 @@
             MsgBox("Ocorreu um erro durante o carregamento da página", MsgBoxStyle.Critical + MsgBoxStyle.OkOnly, "ATENÇÃO")
             Exit Sub
         End Try
+    End Sub
+
+    Private Sub SairDoSistemaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SairDoSistemaToolStripMenuItem.Click
+        Try
+            Application.Exit()
+        Catch ex As Exception
+            Exit Sub
+        End Try
+    End Sub
+
+    Private Sub FavoritosToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles FavoritosToolStripMenuItem.Click
+
     End Sub
 End Class

@@ -3,8 +3,12 @@
         Call conectaDataBase()
         Call limpaProducao()
 
+        If btnCadastraProducao.Text = "Atualizar Processo" Then
+            lblId.Visible = True
+            txtId.Visible = True
+        End If
+
         With cmbProcesso.Items
-            .Add("")
             .Add("01 - Plantio das uvas")
             .Add("02 - Cultivo da videira e amadurecimento das uvas")
             .Add("03 - Colheita das uvas")
@@ -24,7 +28,6 @@
         End With
 
         With cmbFornecedores.Items
-            .Add("")
             Try
                 sql = "SELECT * FROM tb_fornecedores"
                 rs = db.Execute(sql)
@@ -42,7 +45,6 @@
         End With
 
         With cmbProduto.Items
-            .Add("")
             Try
                 sql = "SELECT * FROM tb_vinhos"
                 rs = db.Execute(sql)

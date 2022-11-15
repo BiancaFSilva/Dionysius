@@ -39,6 +39,8 @@ Partial Class frmCadastraFornecedor
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.txtProdutoFornecido = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
+        Me.txtId = New System.Windows.Forms.TextBox()
+        Me.lblId = New System.Windows.Forms.Label()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -210,12 +212,38 @@ Partial Class frmCadastraFornecedor
         Me.Label5.TabIndex = 64
         Me.Label5.Text = "Produto Fornecido"
         '
+        'txtId
+        '
+        Me.txtId.BackColor = System.Drawing.Color.FromArgb(CType(CType(89, Byte), Integer), CType(CType(8, Byte), Integer), CType(CType(2, Byte), Integer))
+        Me.txtId.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txtId.ForeColor = System.Drawing.Color.FromArgb(CType(CType(175, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(124, Byte), Integer))
+        Me.txtId.Location = New System.Drawing.Point(918, 87)
+        Me.txtId.Name = "txtId"
+        Me.txtId.ReadOnly = True
+        Me.txtId.Size = New System.Drawing.Size(25, 13)
+        Me.txtId.TabIndex = 66
+        Me.txtId.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+        Me.txtId.Visible = False
+        '
+        'lblId
+        '
+        Me.lblId.AutoSize = True
+        Me.lblId.ForeColor = System.Drawing.Color.FromArgb(CType(CType(175, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(124, Byte), Integer))
+        Me.lblId.Location = New System.Drawing.Point(900, 87)
+        Me.lblId.Name = "lblId"
+        Me.lblId.Size = New System.Drawing.Size(21, 13)
+        Me.lblId.TabIndex = 67
+        Me.lblId.Text = "ID:"
+        Me.lblId.Visible = False
+        '
         'frmCadastraFornecedor
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(89, Byte), Integer), CType(CType(8, Byte), Integer), CType(CType(2, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1009, 611)
+        Me.Controls.Add(Me.lblId)
+        Me.Controls.Add(Me.txtId)
         Me.Controls.Add(Me.txtProdutoFornecido)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.txtCep)
@@ -258,4 +286,6 @@ Partial Class frmCadastraFornecedor
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents txtProdutoFornecido As TextBox
     Friend WithEvents Label5 As Label
+    Friend WithEvents txtId As TextBox
+    Friend WithEvents lblId As Label
 End Class

@@ -25,6 +25,21 @@
             If txtUsuario.Text = "admin" And txtSenha.Text = "admin" Then
                 MsgBox("Login realizado com sucesso!", MsgBoxStyle.Information + MsgBoxStyle.OkOnly, "AVISO")
 
+                With Dashboard
+                    .tabControlDashboard.TabPages.RemoveByKey("tabProdutos")
+                    .tabControlDashboard.TabPages.RemoveByKey("tabProducao")
+                    .tabControlDashboard.TabPages.RemoveByKey("tabFornecedores")
+                End With
+
+                Dashboard.ShowDialog()
+                Me.Close()
+            ElseIf (txtUsuario.Text = "enólogo" Or txtUsuario.Text = "viticultor") And txtSenha.Text = "admin" Then
+                MsgBox("Login realizado com sucesso!", MsgBoxStyle.Information + MsgBoxStyle.OkOnly, "AVISO")
+
+                With Dashboard
+                    .tabControlDashboard.TabPages.RemoveByKey("tabUsuarios")
+                End With
+
                 Dashboard.ShowDialog()
                 Me.Close()
             End If

@@ -4,10 +4,14 @@
     Public rs As New ADODB.Recordset
     Public dirDb = Application.StartupPath & "\db\Dionysius.mdb"
 
-    ' Variáveis
+    ' Variáveis Globais
     Public dir, sql As String
     Public resp, aux As String
     Public cont As Integer
+
+    ' Variáveis para comunicação entre DataGridView e Form
+    Public camposProduto(1) As String
+    Public camposFornecedor(7) As String
 
     Sub conectaDataBase()
         Try
@@ -32,7 +36,7 @@
                 .Rows.Clear()
 
                 Do While rs.EOF = False
-                    .Rows.Add(cont, rs.Fields(1).Value, rs.Fields(2).Value, rs.Fields(3).Value, rs.Fields(4).Value, rs.Fields(5).Value, rs.Fields(6).Value, rs.Fields(7).Value, rs.Fields(11).Value, rs.Fields(12).Value, rs.Fields(14).Value, rs.Fields(15).Value, Nothing, Nothing)
+                    .Rows.Add(rs.Fields(0).Value, rs.Fields(1).Value, rs.Fields(2).Value, rs.Fields(3).Value, rs.Fields(4).Value, rs.Fields(5).Value, rs.Fields(6).Value, rs.Fields(7).Value & ", " & rs.Fields(8).Value, rs.Fields(11).Value, rs.Fields(12).Value, rs.Fields(14).Value, rs.Fields(9).Value, rs.Fields(15).Value, Nothing, Nothing)
                     rs.MoveNext()
 
                     cont = cont + 1
@@ -54,7 +58,7 @@
                 .Rows.Clear()
 
                 Do While rs.EOF = False
-                    .Rows.Add(cont, rs.Fields(5).Value, rs.Fields(1).Value, rs.Fields(2).Value, rs.Fields(3).Value, rs.Fields(4).Value, Nothing, Nothing)
+                    .Rows.Add(rs.Fields(0).Value, rs.Fields(5).Value, rs.Fields(1).Value, rs.Fields(2).Value, rs.Fields(3).Value, rs.Fields(4).Value, Nothing, Nothing)
                     rs.MoveNext()
 
                     cont = cont + 1
@@ -76,7 +80,7 @@
                 .Rows.Clear()
 
                 Do While rs.EOF = False
-                    .Rows.Add(cont, rs.Fields(1).Value, rs.Fields(2).Value, rs.Fields(3).Value, rs.Fields(4).Value, rs.Fields(5).Value, rs.Fields(6).Value, rs.Fields(7).Value, rs.Fields(8).Value, rs.Fields(9).Value, Nothing, Nothing)
+                    .Rows.Add(rs.Fields(0).Value, rs.Fields(1).Value, rs.Fields(2).Value, rs.Fields(3).Value, rs.Fields(4).Value, rs.Fields(5).Value, rs.Fields(6).Value, rs.Fields(7).Value, rs.Fields(8).Value, rs.Fields(9).Value, Nothing, Nothing)
                     rs.MoveNext()
 
                     cont = cont + 1
@@ -98,10 +102,10 @@
                 .Rows.Clear()
 
                 Do While rs.EOF = False
-                    .Rows.Add(cont, rs.Fields(1).Value, rs.Fields(2).Value, rs.Fields(4).Value, rs.Fields(5).Value, rs.Fields(3).Value, rs.Fields(6).Value, Nothing, Nothing)
+                    .Rows.Add(rs.Fields(0).Value, rs.Fields(1).Value, rs.Fields(2).Value, rs.Fields(4).Value, rs.Fields(5).Value, rs.Fields(3).Value, rs.Fields(6).Value, Nothing, Nothing)
                     rs.MoveNext()
 
-                    cont = cont + 1
+                    cont += 1
                 Loop
             End With
         Catch ex As Exception
@@ -120,7 +124,7 @@
                 .Rows.Clear()
 
                 Do While rs.EOF = False
-                    .Rows.Add(cont, rs.Fields(1).Value, rs.Fields(2).Value, rs.Fields(3).Value, rs.Fields(4).Value, rs.Fields(7).Value, rs.Fields(5).Value, rs.Fields(6).Value, rs.Fields(8).Value, rs.Fields(10).Value, Nothing, Nothing)
+                    .Rows.Add(rs.Fields(0).Value, rs.Fields(1).Value, rs.Fields(2).Value, rs.Fields(3).Value, rs.Fields(4).Value, rs.Fields(7).Value, rs.Fields(5).Value, rs.Fields(6).Value, rs.Fields(8).Value, rs.Fields(10).Value, Nothing, Nothing)
                     rs.MoveNext()
 
                     cont = cont + 1
@@ -137,6 +141,7 @@
             With Login
                 .txtUsuario.Clear()
                 .txtSenha.Clear()
+
                 .txtUsuario.Focus()
             End With
         Catch ex As Exception
@@ -156,6 +161,7 @@
                 .txtEmail.Clear()
                 .txtSenha.Clear()
                 .txtRepeteSenha.Clear()
+
                 .txtNome.Focus()
             End With
         Catch ex As Exception
@@ -168,6 +174,7 @@
             .txtEmail.Clear()
             .txtSenha.Clear()
             .txtRepeteSenha.Clear()
+
             .txtEmail.Focus()
         End With
     End Sub
@@ -184,7 +191,9 @@
                 .txtBairro.Clear()
                 .txtCidade.Clear()
                 .txtUf.Clear()
-                .cmbParticipantes.SelectedIndex = 0
+                .cmbParticipantes.Items.Clear()
+
+                .cmbParticipantes.SelectedIndex = -1
 
                 .txtNome.Focus()
             End With
@@ -198,9 +207,9 @@
             With frmAdicionaProduto
                 .txtNome.Clear()
                 .txtDescricao.Clear()
-                .cmbTipo.SelectedIndex = 0
-                .cmbClasse.SelectedIndex = 0
-                .cmbUva.SelectedIndex = 0
+                .cmbTipo.Items.Clear()
+                .cmbClasse.Items.Clear()
+                .cmbUva.Items.Clear()
                 .txtSafra.Clear()
                 .txtPais.Clear()
                 .txtRegião.Clear()
@@ -210,7 +219,12 @@
                 .txtHarmonizacao.Clear()
                 .txtVisual.Clear()
                 .txtQtdeEmEstoque.Clear()
+                .imgProduto.Refresh()
                 .imgProduto.Load(Application.StartupPath & "\img\add_image.png")
+
+                .cmbTipo.SelectedIndex = -1
+                .cmbClasse.SelectedIndex = -1
+                .cmbUva.SelectedIndex = -1
 
                 .txtNome.Focus()
             End With
@@ -222,11 +236,32 @@
     Sub limpaProducao()
         Try
             With frmAdicionaProducao
-                .cmbProcesso.SelectedIndex = 0
+                .cmbProcesso.Items.Clear()
                 .txtDataInicio.Clear()
                 .TxtDataFim.Clear()
-                .cmbFornecedores.SelectedIndex = 0
-                .cmbProduto.SelectedIndex = 0
+                .cmbFornecedores.Items.Clear()
+                .cmbProduto.Items.Clear()
+
+                .cmbProcesso.SelectedIndex = -1
+                .cmbFornecedores.SelectedIndex = -1
+                .cmbProduto.SelectedIndex = -1
+            End With
+        Catch ex As Exception
+            Exit Sub
+        End Try
+    End Sub
+
+    Sub limpaFornecedores()
+        Try
+            With frmCadastraFornecedor
+                .txtNome.Clear()
+                .txtRamo.Clear()
+                .txtProdutoFornecido.Clear()
+                .txtEmail.Clear()
+                .txtFone.Clear()
+                .txtCep.Clear()
+
+                .txtNome.Focus()
             End With
         Catch ex As Exception
             Exit Sub
