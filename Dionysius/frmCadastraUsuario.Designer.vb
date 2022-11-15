@@ -29,7 +29,7 @@ Partial Class frmCadastraUsuario
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.btnCadastrar = New System.Windows.Forms.Button()
-        Me.Label1 = New System.Windows.Forms.Label()
+        Me.lblCadastraUsuario = New System.Windows.Forms.Label()
         Me.txtNome = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.txtSobrenome = New System.Windows.Forms.TextBox()
@@ -49,6 +49,7 @@ Partial Class frmCadastraUsuario
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.lblId = New System.Windows.Forms.Label()
         Me.txtId = New System.Windows.Forms.TextBox()
+        Me.cmbStatusUsuario = New System.Windows.Forms.ComboBox()
         CType(Me.imgVerSenha, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -120,17 +121,17 @@ Partial Class frmCadastraUsuario
         Me.btnCadastrar.Text = "Cadastrar"
         Me.btnCadastrar.UseVisualStyleBackColor = False
         '
-        'Label1
+        'lblCadastraUsuario
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Bahnschrift", 26.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(230, Byte), Integer), CType(CType(217, Byte), Integer))
-        Me.Label1.Location = New System.Drawing.Point(546, 63)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(198, 42)
-        Me.Label1.TabIndex = 12
-        Me.Label1.Text = "Criar Conta"
+        Me.lblCadastraUsuario.AutoSize = True
+        Me.lblCadastraUsuario.Font = New System.Drawing.Font("Bahnschrift", 26.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblCadastraUsuario.ForeColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(230, Byte), Integer), CType(CType(217, Byte), Integer))
+        Me.lblCadastraUsuario.Location = New System.Drawing.Point(546, 63)
+        Me.lblCadastraUsuario.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblCadastraUsuario.Name = "lblCadastraUsuario"
+        Me.lblCadastraUsuario.Size = New System.Drawing.Size(198, 42)
+        Me.lblCadastraUsuario.TabIndex = 12
+        Me.lblCadastraUsuario.Text = "Criar Conta"
         '
         'txtNome
         '
@@ -319,7 +320,7 @@ Partial Class frmCadastraUsuario
         '
         Me.lblId.AutoSize = True
         Me.lblId.ForeColor = System.Drawing.Color.FromArgb(CType(CType(175, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(124, Byte), Integer))
-        Me.lblId.Location = New System.Drawing.Point(900, 85)
+        Me.lblId.Location = New System.Drawing.Point(900, 50)
         Me.lblId.Name = "lblId"
         Me.lblId.Size = New System.Drawing.Size(23, 16)
         Me.lblId.TabIndex = 69
@@ -331,7 +332,7 @@ Partial Class frmCadastraUsuario
         Me.txtId.BackColor = System.Drawing.Color.FromArgb(CType(CType(89, Byte), Integer), CType(CType(8, Byte), Integer), CType(CType(2, Byte), Integer))
         Me.txtId.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.txtId.ForeColor = System.Drawing.Color.FromArgb(CType(CType(175, Byte), Integer), CType(CType(126, Byte), Integer), CType(CType(124, Byte), Integer))
-        Me.txtId.Location = New System.Drawing.Point(918, 85)
+        Me.txtId.Location = New System.Drawing.Point(918, 50)
         Me.txtId.Name = "txtId"
         Me.txtId.ReadOnly = True
         Me.txtId.Size = New System.Drawing.Size(25, 16)
@@ -339,12 +340,26 @@ Partial Class frmCadastraUsuario
         Me.txtId.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         Me.txtId.Visible = False
         '
+        'cmbStatusUsuario
+        '
+        Me.cmbStatusUsuario.BackColor = System.Drawing.Color.FromArgb(CType(CType(89, Byte), Integer), CType(CType(8, Byte), Integer), CType(CType(2, Byte), Integer))
+        Me.cmbStatusUsuario.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.cmbStatusUsuario.Font = New System.Drawing.Font("Bahnschrift", 10.0!)
+        Me.cmbStatusUsuario.ForeColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(230, Byte), Integer), CType(CType(217, Byte), Integer))
+        Me.cmbStatusUsuario.FormattingEnabled = True
+        Me.cmbStatusUsuario.Location = New System.Drawing.Point(828, 81)
+        Me.cmbStatusUsuario.Name = "cmbStatusUsuario"
+        Me.cmbStatusUsuario.Size = New System.Drawing.Size(115, 24)
+        Me.cmbStatusUsuario.TabIndex = 70
+        Me.cmbStatusUsuario.Visible = False
+        '
         'frmCadastraUsuario
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(89, Byte), Integer), CType(CType(8, Byte), Integer), CType(CType(2, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1009, 611)
+        Me.Controls.Add(Me.cmbStatusUsuario)
         Me.Controls.Add(Me.lblId)
         Me.Controls.Add(Me.txtId)
         Me.Controls.Add(Me.imgVerSenha)
@@ -367,7 +382,7 @@ Partial Class frmCadastraUsuario
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.btnCadastrar)
-        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.lblCadastraUsuario)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.txtRepeteSenha)
         Me.Controls.Add(Me.chkVerSenha)
@@ -393,7 +408,7 @@ Partial Class frmCadastraUsuario
     Friend WithEvents Label3 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents btnCadastrar As Button
-    Friend WithEvents Label1 As Label
+    Friend WithEvents lblCadastraUsuario As Label
     Friend WithEvents txtNome As TextBox
     Friend WithEvents Label4 As Label
     Friend WithEvents txtSobrenome As TextBox
@@ -412,4 +427,5 @@ Partial Class frmCadastraUsuario
     Friend WithEvents imgVerSenha As PictureBox
     Friend WithEvents lblId As Label
     Friend WithEvents txtId As TextBox
+    Friend WithEvents cmbStatusUsuario As ComboBox
 End Class

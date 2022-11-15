@@ -53,7 +53,7 @@
         End Try
     End Sub
 
-    ' Ações do TapControl
+    ' Ações do TabControl
     Private Sub btnAdicionaVinho_Click(sender As Object, e As EventArgs) Handles btnAdicionaVinho.Click
         Try
             frmAdicionaProduto.btnAdicionaProduto.Text = "Adicionar Produto"
@@ -164,10 +164,10 @@
             With dgvDadosEvento
                 aux = .CurrentRow.Cells(1).Value
 
-                If .CurrentRow.Cells(10).Selected Then
+                If .CurrentRow.Cells(11).Selected Then
                     frmAdicionaEvento.btnAdicionarEvento.Text = "Atualizar Evento"
                     frmAdicionaEvento.ShowDialog()
-                ElseIf .CurrentRow.Cells(11).Selected Then
+                ElseIf .CurrentRow.Cells(12).Selected Then
                     resp = MsgBox("Deseja realmente excluir os dados referentes à este evento?", MsgBoxStyle.Question + MsgBoxStyle.YesNo, "ATENÇÃO")
                     If resp = vbYes Then
                         sql = "DELETE * FROM tb_eventos WHERE nome = '" & aux & "'"
@@ -219,6 +219,7 @@
                 aux = .CurrentRow.Cells(1).Value
 
                 If .CurrentRow.Cells(10).Selected Then
+                    frmCadastraUsuario.lblCadastraUsuario.Text = "Atualizar Conta"
                     frmCadastraUsuario.btnCadastrar.Text = "Atualizar"
                     frmCadastraUsuario.ShowDialog()
                 ElseIf .CurrentRow.Cells(11).Selected Then
@@ -253,7 +254,9 @@
 
     Private Sub dgvDadosProducao_CellEnter(sender As Object, e As DataGridViewCellEventArgs) Handles dgvDadosProducao.CellEnter
         Try
-
+            With dgvDadosProducao.Rows(dgvDadosProducao.CurrentCell.RowIndex)
+                camposProducao(0) = .Cells("IdProducao").Value
+            End With
         Catch ex As Exception
             Exit Sub
         End Try
@@ -261,21 +264,18 @@
 
     Private Sub dgvDadosEvento_CellEnter(sender As Object, e As DataGridViewCellEventArgs) Handles dgvDadosEvento.CellEnter
         Try
-
+            With dgvDadosEvento.Rows(dgvDadosEvento.CurrentCell.RowIndex)
+                camposEvento(0) = .Cells("IdEvento").Value
+            End With
         Catch ex As Exception
             Exit Sub
         End Try
     End Sub
+
     Private Sub dgvDadosFornecedores_CellEnter(sender As Object, e As DataGridViewCellEventArgs) Handles dgvDadosFornecedores.CellEnter
         Try
             With dgvDadosFornecedores.Rows(dgvDadosFornecedores.CurrentCell.RowIndex)
                 camposFornecedor(0) = .Cells("IdFornecedor").Value
-                camposFornecedor(1) = .Cells("NomeFornecedor").Value
-                camposFornecedor(2) = .Cells("RamoDoFornecedor").Value
-                camposFornecedor(3) = .Cells("EmailDoFornecedor").Value
-                camposFornecedor(4) = .Cells("TelefoneDoFornecedor").Value
-                camposFornecedor(5) = .Cells("ProdutoFornecidoPeloFornecedor").Value
-                camposFornecedor(6) = .Cells("EnderecoDoFornecedor").Value
             End With
         Catch ex As Exception
             Exit Sub
@@ -284,7 +284,9 @@
 
     Private Sub dgvDadosUsuarios_CellEnter(sender As Object, e As DataGridViewCellEventArgs) Handles dgvDadosUsuarios.CellEnter
         Try
-
+            With dgvDadosUsuarios.Rows(dgvDadosUsuarios.CurrentCell.RowIndex)
+                camposUsuario(0) = .Cells("IdUsuario").Value
+            End With
         Catch ex As Exception
             Exit Sub
         End Try

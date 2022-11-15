@@ -1,7 +1,6 @@
 ﻿Public Class frmAdicionaProduto
     Private Sub frmAdicionaProduto_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Call conectaDataBase()
-        Call limpaProduto()
 
         If btnAdicionaProduto.Text = "Atualizar Produto" Then
             lblId.Visible = True
@@ -28,7 +27,7 @@
                 txtVisual.Text = rs.Fields(13).Value
                 txtQtdeEmEstoque.Text = rs.Fields(14).Value
             Catch ex As Exception
-                Exit Sub
+                Exit Try
             End Try
         Else
             Call limpaProduto()
@@ -105,19 +104,22 @@
 
                 If rs.EOF = False Then
                     If btnAdicionaProduto.Text = "Atualizar Produto" Then
-                        sql = "UPDATE tb_vinhos SET nome = '" & txtNome.Text & "', descricao = '" & txtDescricao.Text & "', tipo = '" & cmbTipo.SelectedItem & "', classificacao = '" & cmbClasse.SelectedItem & "', " &
-                          "safra = '" & txtSafra.Text & "', uva = '" & cmbUva.SelectedItem & "', pais = '" & txtPais.Text & "', regiao = '" & txtRegião.Text & "', preco = '" & txtPreco.Text & "', produtor = '" & txtProdutores.Text & "', " &
-                          "teor_alcoolico = '" & txtTeorAlcoolico.Text & "', harmonizacao = '" & txtHarmonizacao.Text & "', visual = '" & txtVisual.Text & "', qtde_estoque = '" & txtQtdeEmEstoque.Text & "', " &
-                          "img = '" & dir & "' WHERE id_vinho = " & txtId.Text & ""
+                        sql = "UPDATE tb_vinhos SET nome = '" & txtNome.Text & "', descricao = '" & txtDescricao.Text & "', tipo = '" & cmbTipo.Text & "', classificacao = '" & cmbClasse.Text & "', " &
+                              "safra = '" & txtSafra.Text & "', uva = '" & cmbUva.Text & "', pais = '" & txtPais.Text & "', regiao = '" & txtRegião.Text & "', preco = '" & txtPreco.Text & "', produtor = '" & txtProdutores.Text & "', " &
+                              "teor_alcoolico = '" & txtTeorAlcoolico.Text & "', harmonizacao = '" & txtHarmonizacao.Text & "', visual = '" & txtVisual.Text & "', qtde_estoque = '" & txtQtdeEmEstoque.Text & "', " &
+                              "img = '" & dir & "' WHERE id_vinho = " & txtId.Text & ""
                         rs = db.Execute(UCase(sql))
 
                         Call carregaDadosVinho()
+                        Call limpaProduto()
 
                         MsgBox("Dados do produto " & txtNome.Text & " alterados com sucesso!", MsgBoxStyle.Information + MsgBoxStyle.OkOnly, "AVISO")
-                        Call limpaProduto()
+                        Me.Close()
+                    Else
+                        Exit Sub
                     End If
                 Else
-                        sql = "INSERT INTO tb_vinhos (nome, descricao, tipo, classificacao, safra, uva, pais, regiao, preco, produtor, teor_alcoolico, harmonizacao, visual, qtde_estoque, img)" &
+                    sql = "INSERT INTO tb_vinhos (nome, descricao, tipo, classificacao, safra, uva, pais, regiao, preco, produtor, teor_alcoolico, harmonizacao, visual, qtde_estoque, img)" &
                           "VALUES ('" & txtNome.Text & "', '" & txtDescricao.Text & "', '" & cmbTipo.SelectedItem & "', '" & cmbClasse.SelectedItem & "', '" & txtSafra.Text & "', '" & cmbUva.SelectedItem & "', " &
                           "'" & txtPais.Text & "', '" & txtRegião.Text & "', '" & txtPreco.Text & "', '" & txtProdutores.Text & "', '" & txtTeorAlcoolico.Text & "', '" & txtHarmonizacao.Text & "', " &
                           "'" & txtVisual.Text & "', '" & txtQtdeEmEstoque.Text & "', '" & dir & "')"

@@ -24,6 +24,7 @@ Partial Class Dashboard
     Private Sub InitializeComponent()
         Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Dashboard))
         Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim ChartArea1 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
@@ -36,8 +37,22 @@ Partial Class Dashboard
         Dim DataGridViewCellStyle8 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle9 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle10 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Dashboard))
         Me.dgvDadosVinho = New System.Windows.Forms.DataGridView()
+        Me.IdProduto = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.NomeProduto = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DescricaoProduto = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.TipoProduto = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.AcucarProduto = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.SafraProduto = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.UvaProduto = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.PaisRegiaoProduto = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.TeorAlcoolicoProduto = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.HarmonizacaoProduto = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.QtdeEmEstoqueProduto = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.PrecoProduto = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.VisualProduto = New System.Windows.Forms.DataGridViewLinkColumn()
+        Me.Editar = New System.Windows.Forms.DataGridViewImageColumn()
+        Me.Excluir = New System.Windows.Forms.DataGridViewImageColumn()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.DionysiusToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.CatálogoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -53,14 +68,6 @@ Partial Class Dashboard
         Me.btnAdicionaProducao = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.dgvDadosProducao = New System.Windows.Forms.DataGridView()
-        Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewImageColumn1 = New System.Windows.Forms.DataGridViewImageColumn()
-        Me.DataGridViewImageColumn2 = New System.Windows.Forms.DataGridViewImageColumn()
         Me.tabVendas = New System.Windows.Forms.TabPage()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Chart1 = New System.Windows.Forms.DataVisualization.Charting.Chart()
@@ -68,18 +75,6 @@ Partial Class Dashboard
         Me.btnAdicionaEvento = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.dgvDadosEvento = New System.Windows.Forms.DataGridView()
-        Me.DataGridViewTextBoxColumn7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn8 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column13 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn9 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn10 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn11 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column17 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn12 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column11 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column12 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewImageColumn3 = New System.Windows.Forms.DataGridViewImageColumn()
-        Me.DataGridViewImageColumn4 = New System.Windows.Forms.DataGridViewImageColumn()
         Me.tabFornecedores = New System.Windows.Forms.TabPage()
         Me.btnAdicionaFornecedor = New System.Windows.Forms.Button()
         Me.Label3 = New System.Windows.Forms.Label()
@@ -97,7 +92,17 @@ Partial Class Dashboard
         Me.btnAdicionaUsuario = New System.Windows.Forms.Button()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.dgvDadosUsuarios = New System.Windows.Forms.DataGridView()
-        Me.DataGridViewTextBoxColumn20 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewImageColumn9 = New System.Windows.Forms.DataGridViewImageColumn()
+        Me.DataGridViewImageColumn10 = New System.Windows.Forms.DataGridViewImageColumn()
+        Me.IdProducao = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewImageColumn1 = New System.Windows.Forms.DataGridViewImageColumn()
+        Me.DataGridViewImageColumn2 = New System.Windows.Forms.DataGridViewImageColumn()
+        Me.IdUsuario = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn21 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn22 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn23 = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -109,23 +114,19 @@ Partial Class Dashboard
         Me.Column16 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewImageColumn7 = New System.Windows.Forms.DataGridViewImageColumn()
         Me.DataGridViewImageColumn8 = New System.Windows.Forms.DataGridViewImageColumn()
-        Me.DataGridViewImageColumn9 = New System.Windows.Forms.DataGridViewImageColumn()
-        Me.DataGridViewImageColumn10 = New System.Windows.Forms.DataGridViewImageColumn()
-        Me.IdProduto = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.NomeProduto = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DescricaoProduto = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.TipoProduto = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.AcucarProduto = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.SafraProduto = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.UvaProduto = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.PaisRegiaoProduto = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.TeorAlcoolicoProduto = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.HarmonizacaoProduto = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.QtdeEmEstoqueProduto = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.PrecoProduto = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.VisualProduto = New System.Windows.Forms.DataGridViewLinkColumn()
-        Me.Editar = New System.Windows.Forms.DataGridViewImageColumn()
-        Me.Excluir = New System.Windows.Forms.DataGridViewImageColumn()
+        Me.IdEvento = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn8 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column13 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn9 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn10 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn11 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column17 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn12 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column11 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column12 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewImageColumn3 = New System.Windows.Forms.DataGridViewImageColumn()
+        Me.DataGridViewImageColumn4 = New System.Windows.Forms.DataGridViewImageColumn()
         CType(Me.dgvDadosVinho, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.MenuStrip1.SuspendLayout()
         Me.tabControlDashboard.SuspendLayout()
@@ -166,6 +167,85 @@ Partial Class Dashboard
         Me.dgvDadosVinho.DefaultCellStyle = DataGridViewCellStyle2
         resources.ApplyResources(Me.dgvDadosVinho, "dgvDadosVinho")
         Me.dgvDadosVinho.Name = "dgvDadosVinho"
+        '
+        'IdProduto
+        '
+        resources.ApplyResources(Me.IdProduto, "IdProduto")
+        Me.IdProduto.Name = "IdProduto"
+        '
+        'NomeProduto
+        '
+        resources.ApplyResources(Me.NomeProduto, "NomeProduto")
+        Me.NomeProduto.Name = "NomeProduto"
+        '
+        'DescricaoProduto
+        '
+        resources.ApplyResources(Me.DescricaoProduto, "DescricaoProduto")
+        Me.DescricaoProduto.Name = "DescricaoProduto"
+        '
+        'TipoProduto
+        '
+        resources.ApplyResources(Me.TipoProduto, "TipoProduto")
+        Me.TipoProduto.Name = "TipoProduto"
+        '
+        'AcucarProduto
+        '
+        resources.ApplyResources(Me.AcucarProduto, "AcucarProduto")
+        Me.AcucarProduto.Name = "AcucarProduto"
+        '
+        'SafraProduto
+        '
+        resources.ApplyResources(Me.SafraProduto, "SafraProduto")
+        Me.SafraProduto.Name = "SafraProduto"
+        '
+        'UvaProduto
+        '
+        resources.ApplyResources(Me.UvaProduto, "UvaProduto")
+        Me.UvaProduto.Name = "UvaProduto"
+        '
+        'PaisRegiaoProduto
+        '
+        resources.ApplyResources(Me.PaisRegiaoProduto, "PaisRegiaoProduto")
+        Me.PaisRegiaoProduto.Name = "PaisRegiaoProduto"
+        '
+        'TeorAlcoolicoProduto
+        '
+        resources.ApplyResources(Me.TeorAlcoolicoProduto, "TeorAlcoolicoProduto")
+        Me.TeorAlcoolicoProduto.Name = "TeorAlcoolicoProduto"
+        '
+        'HarmonizacaoProduto
+        '
+        resources.ApplyResources(Me.HarmonizacaoProduto, "HarmonizacaoProduto")
+        Me.HarmonizacaoProduto.Name = "HarmonizacaoProduto"
+        '
+        'QtdeEmEstoqueProduto
+        '
+        resources.ApplyResources(Me.QtdeEmEstoqueProduto, "QtdeEmEstoqueProduto")
+        Me.QtdeEmEstoqueProduto.Name = "QtdeEmEstoqueProduto"
+        '
+        'PrecoProduto
+        '
+        resources.ApplyResources(Me.PrecoProduto, "PrecoProduto")
+        Me.PrecoProduto.Name = "PrecoProduto"
+        '
+        'VisualProduto
+        '
+        resources.ApplyResources(Me.VisualProduto, "VisualProduto")
+        Me.VisualProduto.Name = "VisualProduto"
+        Me.VisualProduto.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
+        '
+        'Editar
+        '
+        resources.ApplyResources(Me.Editar, "Editar")
+        Me.Editar.Image = CType(resources.GetObject("Editar.Image"), System.Drawing.Image)
+        Me.Editar.Name = "Editar"
+        Me.Editar.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
+        '
+        'Excluir
+        '
+        resources.ApplyResources(Me.Excluir, "Excluir")
+        Me.Excluir.Image = CType(resources.GetObject("Excluir.Image"), System.Drawing.Image)
+        Me.Excluir.Name = "Excluir"
         '
         'MenuStrip1
         '
@@ -288,7 +368,7 @@ Partial Class Dashboard
         DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.dgvDadosProducao.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle3
         Me.dgvDadosProducao.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvDadosProducao.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn4, Me.DataGridViewTextBoxColumn5, Me.DataGridViewTextBoxColumn6, Me.DataGridViewImageColumn1, Me.DataGridViewImageColumn2})
+        Me.dgvDadosProducao.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.IdProducao, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn4, Me.DataGridViewTextBoxColumn5, Me.DataGridViewTextBoxColumn6, Me.DataGridViewImageColumn1, Me.DataGridViewImageColumn2})
         DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window
         DataGridViewCellStyle4.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -299,49 +379,6 @@ Partial Class Dashboard
         Me.dgvDadosProducao.DefaultCellStyle = DataGridViewCellStyle4
         resources.ApplyResources(Me.dgvDadosProducao, "dgvDadosProducao")
         Me.dgvDadosProducao.Name = "dgvDadosProducao"
-        '
-        'DataGridViewTextBoxColumn1
-        '
-        resources.ApplyResources(Me.DataGridViewTextBoxColumn1, "DataGridViewTextBoxColumn1")
-        Me.DataGridViewTextBoxColumn1.Name = "DataGridViewTextBoxColumn1"
-        '
-        'DataGridViewTextBoxColumn2
-        '
-        resources.ApplyResources(Me.DataGridViewTextBoxColumn2, "DataGridViewTextBoxColumn2")
-        Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
-        '
-        'DataGridViewTextBoxColumn3
-        '
-        resources.ApplyResources(Me.DataGridViewTextBoxColumn3, "DataGridViewTextBoxColumn3")
-        Me.DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3"
-        '
-        'DataGridViewTextBoxColumn4
-        '
-        resources.ApplyResources(Me.DataGridViewTextBoxColumn4, "DataGridViewTextBoxColumn4")
-        Me.DataGridViewTextBoxColumn4.Name = "DataGridViewTextBoxColumn4"
-        '
-        'DataGridViewTextBoxColumn5
-        '
-        resources.ApplyResources(Me.DataGridViewTextBoxColumn5, "DataGridViewTextBoxColumn5")
-        Me.DataGridViewTextBoxColumn5.Name = "DataGridViewTextBoxColumn5"
-        '
-        'DataGridViewTextBoxColumn6
-        '
-        resources.ApplyResources(Me.DataGridViewTextBoxColumn6, "DataGridViewTextBoxColumn6")
-        Me.DataGridViewTextBoxColumn6.Name = "DataGridViewTextBoxColumn6"
-        '
-        'DataGridViewImageColumn1
-        '
-        resources.ApplyResources(Me.DataGridViewImageColumn1, "DataGridViewImageColumn1")
-        Me.DataGridViewImageColumn1.Image = CType(resources.GetObject("DataGridViewImageColumn1.Image"), System.Drawing.Image)
-        Me.DataGridViewImageColumn1.Name = "DataGridViewImageColumn1"
-        Me.DataGridViewImageColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
-        '
-        'DataGridViewImageColumn2
-        '
-        resources.ApplyResources(Me.DataGridViewImageColumn2, "DataGridViewImageColumn2")
-        Me.DataGridViewImageColumn2.Image = CType(resources.GetObject("DataGridViewImageColumn2.Image"), System.Drawing.Image)
-        Me.DataGridViewImageColumn2.Name = "DataGridViewImageColumn2"
         '
         'tabVendas
         '
@@ -414,7 +451,7 @@ Partial Class Dashboard
         DataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.dgvDadosEvento.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle5
         Me.dgvDadosEvento.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvDadosEvento.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn7, Me.DataGridViewTextBoxColumn8, Me.Column13, Me.DataGridViewTextBoxColumn9, Me.DataGridViewTextBoxColumn10, Me.DataGridViewTextBoxColumn11, Me.Column17, Me.DataGridViewTextBoxColumn12, Me.Column11, Me.Column12, Me.DataGridViewImageColumn3, Me.DataGridViewImageColumn4})
+        Me.dgvDadosEvento.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.IdEvento, Me.DataGridViewTextBoxColumn8, Me.Column13, Me.DataGridViewTextBoxColumn9, Me.DataGridViewTextBoxColumn10, Me.DataGridViewTextBoxColumn11, Me.Column17, Me.DataGridViewTextBoxColumn12, Me.Column11, Me.Column12, Me.Column1, Me.DataGridViewImageColumn3, Me.DataGridViewImageColumn4})
         DataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window
         DataGridViewCellStyle6.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -425,69 +462,6 @@ Partial Class Dashboard
         Me.dgvDadosEvento.DefaultCellStyle = DataGridViewCellStyle6
         resources.ApplyResources(Me.dgvDadosEvento, "dgvDadosEvento")
         Me.dgvDadosEvento.Name = "dgvDadosEvento"
-        '
-        'DataGridViewTextBoxColumn7
-        '
-        resources.ApplyResources(Me.DataGridViewTextBoxColumn7, "DataGridViewTextBoxColumn7")
-        Me.DataGridViewTextBoxColumn7.Name = "DataGridViewTextBoxColumn7"
-        '
-        'DataGridViewTextBoxColumn8
-        '
-        resources.ApplyResources(Me.DataGridViewTextBoxColumn8, "DataGridViewTextBoxColumn8")
-        Me.DataGridViewTextBoxColumn8.Name = "DataGridViewTextBoxColumn8"
-        '
-        'Column13
-        '
-        resources.ApplyResources(Me.Column13, "Column13")
-        Me.Column13.Name = "Column13"
-        '
-        'DataGridViewTextBoxColumn9
-        '
-        resources.ApplyResources(Me.DataGridViewTextBoxColumn9, "DataGridViewTextBoxColumn9")
-        Me.DataGridViewTextBoxColumn9.Name = "DataGridViewTextBoxColumn9"
-        '
-        'DataGridViewTextBoxColumn10
-        '
-        resources.ApplyResources(Me.DataGridViewTextBoxColumn10, "DataGridViewTextBoxColumn10")
-        Me.DataGridViewTextBoxColumn10.Name = "DataGridViewTextBoxColumn10"
-        '
-        'DataGridViewTextBoxColumn11
-        '
-        resources.ApplyResources(Me.DataGridViewTextBoxColumn11, "DataGridViewTextBoxColumn11")
-        Me.DataGridViewTextBoxColumn11.Name = "DataGridViewTextBoxColumn11"
-        '
-        'Column17
-        '
-        resources.ApplyResources(Me.Column17, "Column17")
-        Me.Column17.Name = "Column17"
-        '
-        'DataGridViewTextBoxColumn12
-        '
-        resources.ApplyResources(Me.DataGridViewTextBoxColumn12, "DataGridViewTextBoxColumn12")
-        Me.DataGridViewTextBoxColumn12.Name = "DataGridViewTextBoxColumn12"
-        '
-        'Column11
-        '
-        resources.ApplyResources(Me.Column11, "Column11")
-        Me.Column11.Name = "Column11"
-        '
-        'Column12
-        '
-        resources.ApplyResources(Me.Column12, "Column12")
-        Me.Column12.Name = "Column12"
-        '
-        'DataGridViewImageColumn3
-        '
-        resources.ApplyResources(Me.DataGridViewImageColumn3, "DataGridViewImageColumn3")
-        Me.DataGridViewImageColumn3.Image = CType(resources.GetObject("DataGridViewImageColumn3.Image"), System.Drawing.Image)
-        Me.DataGridViewImageColumn3.Name = "DataGridViewImageColumn3"
-        Me.DataGridViewImageColumn3.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
-        '
-        'DataGridViewImageColumn4
-        '
-        resources.ApplyResources(Me.DataGridViewImageColumn4, "DataGridViewImageColumn4")
-        Me.DataGridViewImageColumn4.Image = CType(resources.GetObject("DataGridViewImageColumn4.Image"), System.Drawing.Image)
-        Me.DataGridViewImageColumn4.Name = "DataGridViewImageColumn4"
         '
         'tabFornecedores
         '
@@ -621,7 +595,7 @@ Partial Class Dashboard
         DataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.dgvDadosUsuarios.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle9
         Me.dgvDadosUsuarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvDadosUsuarios.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn20, Me.DataGridViewTextBoxColumn21, Me.DataGridViewTextBoxColumn22, Me.DataGridViewTextBoxColumn23, Me.DataGridViewTextBoxColumn24, Me.DataGridViewTextBoxColumn26, Me.Column14, Me.DataGridViewTextBoxColumn25, Me.Column15, Me.Column16, Me.DataGridViewImageColumn7, Me.DataGridViewImageColumn8})
+        Me.dgvDadosUsuarios.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.IdUsuario, Me.DataGridViewTextBoxColumn21, Me.DataGridViewTextBoxColumn22, Me.DataGridViewTextBoxColumn23, Me.DataGridViewTextBoxColumn24, Me.DataGridViewTextBoxColumn26, Me.Column14, Me.DataGridViewTextBoxColumn25, Me.Column15, Me.Column16, Me.DataGridViewImageColumn7, Me.DataGridViewImageColumn8})
         DataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle10.BackColor = System.Drawing.SystemColors.Window
         DataGridViewCellStyle10.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -633,10 +607,66 @@ Partial Class Dashboard
         resources.ApplyResources(Me.dgvDadosUsuarios, "dgvDadosUsuarios")
         Me.dgvDadosUsuarios.Name = "dgvDadosUsuarios"
         '
-        'DataGridViewTextBoxColumn20
+        'DataGridViewImageColumn9
         '
-        resources.ApplyResources(Me.DataGridViewTextBoxColumn20, "DataGridViewTextBoxColumn20")
-        Me.DataGridViewTextBoxColumn20.Name = "DataGridViewTextBoxColumn20"
+        resources.ApplyResources(Me.DataGridViewImageColumn9, "DataGridViewImageColumn9")
+        Me.DataGridViewImageColumn9.Image = CType(resources.GetObject("DataGridViewImageColumn9.Image"), System.Drawing.Image)
+        Me.DataGridViewImageColumn9.Name = "DataGridViewImageColumn9"
+        Me.DataGridViewImageColumn9.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
+        '
+        'DataGridViewImageColumn10
+        '
+        resources.ApplyResources(Me.DataGridViewImageColumn10, "DataGridViewImageColumn10")
+        Me.DataGridViewImageColumn10.Image = CType(resources.GetObject("DataGridViewImageColumn10.Image"), System.Drawing.Image)
+        Me.DataGridViewImageColumn10.Name = "DataGridViewImageColumn10"
+        '
+        'IdProducao
+        '
+        resources.ApplyResources(Me.IdProducao, "IdProducao")
+        Me.IdProducao.Name = "IdProducao"
+        '
+        'DataGridViewTextBoxColumn2
+        '
+        resources.ApplyResources(Me.DataGridViewTextBoxColumn2, "DataGridViewTextBoxColumn2")
+        Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
+        '
+        'DataGridViewTextBoxColumn3
+        '
+        resources.ApplyResources(Me.DataGridViewTextBoxColumn3, "DataGridViewTextBoxColumn3")
+        Me.DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3"
+        '
+        'DataGridViewTextBoxColumn4
+        '
+        resources.ApplyResources(Me.DataGridViewTextBoxColumn4, "DataGridViewTextBoxColumn4")
+        Me.DataGridViewTextBoxColumn4.Name = "DataGridViewTextBoxColumn4"
+        '
+        'DataGridViewTextBoxColumn5
+        '
+        resources.ApplyResources(Me.DataGridViewTextBoxColumn5, "DataGridViewTextBoxColumn5")
+        Me.DataGridViewTextBoxColumn5.Name = "DataGridViewTextBoxColumn5"
+        '
+        'DataGridViewTextBoxColumn6
+        '
+        resources.ApplyResources(Me.DataGridViewTextBoxColumn6, "DataGridViewTextBoxColumn6")
+        Me.DataGridViewTextBoxColumn6.Name = "DataGridViewTextBoxColumn6"
+        '
+        'DataGridViewImageColumn1
+        '
+        resources.ApplyResources(Me.DataGridViewImageColumn1, "DataGridViewImageColumn1")
+        Me.DataGridViewImageColumn1.Image = CType(resources.GetObject("DataGridViewImageColumn1.Image"), System.Drawing.Image)
+        Me.DataGridViewImageColumn1.Name = "DataGridViewImageColumn1"
+        Me.DataGridViewImageColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
+        '
+        'DataGridViewImageColumn2
+        '
+        resources.ApplyResources(Me.DataGridViewImageColumn2, "DataGridViewImageColumn2")
+        Me.DataGridViewImageColumn2.Image = CType(resources.GetObject("DataGridViewImageColumn2.Image"), System.Drawing.Image)
+        Me.DataGridViewImageColumn2.Name = "DataGridViewImageColumn2"
+        '
+        'IdUsuario
+        '
+        resources.ApplyResources(Me.IdUsuario, "IdUsuario")
+        Me.IdUsuario.Name = "IdUsuario"
         '
         'DataGridViewTextBoxColumn21
         '
@@ -696,97 +726,73 @@ Partial Class Dashboard
         Me.DataGridViewImageColumn8.Image = CType(resources.GetObject("DataGridViewImageColumn8.Image"), System.Drawing.Image)
         Me.DataGridViewImageColumn8.Name = "DataGridViewImageColumn8"
         '
-        'DataGridViewImageColumn9
+        'IdEvento
         '
-        resources.ApplyResources(Me.DataGridViewImageColumn9, "DataGridViewImageColumn9")
-        Me.DataGridViewImageColumn9.Image = CType(resources.GetObject("DataGridViewImageColumn9.Image"), System.Drawing.Image)
-        Me.DataGridViewImageColumn9.Name = "DataGridViewImageColumn9"
-        Me.DataGridViewImageColumn9.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
+        resources.ApplyResources(Me.IdEvento, "IdEvento")
+        Me.IdEvento.Name = "IdEvento"
         '
-        'DataGridViewImageColumn10
+        'DataGridViewTextBoxColumn8
         '
-        resources.ApplyResources(Me.DataGridViewImageColumn10, "DataGridViewImageColumn10")
-        Me.DataGridViewImageColumn10.Image = CType(resources.GetObject("DataGridViewImageColumn10.Image"), System.Drawing.Image)
-        Me.DataGridViewImageColumn10.Name = "DataGridViewImageColumn10"
+        resources.ApplyResources(Me.DataGridViewTextBoxColumn8, "DataGridViewTextBoxColumn8")
+        Me.DataGridViewTextBoxColumn8.Name = "DataGridViewTextBoxColumn8"
         '
-        'IdProduto
+        'Column13
         '
-        resources.ApplyResources(Me.IdProduto, "IdProduto")
-        Me.IdProduto.Name = "IdProduto"
+        resources.ApplyResources(Me.Column13, "Column13")
+        Me.Column13.Name = "Column13"
         '
-        'NomeProduto
+        'DataGridViewTextBoxColumn9
         '
-        resources.ApplyResources(Me.NomeProduto, "NomeProduto")
-        Me.NomeProduto.Name = "NomeProduto"
+        resources.ApplyResources(Me.DataGridViewTextBoxColumn9, "DataGridViewTextBoxColumn9")
+        Me.DataGridViewTextBoxColumn9.Name = "DataGridViewTextBoxColumn9"
         '
-        'DescricaoProduto
+        'DataGridViewTextBoxColumn10
         '
-        resources.ApplyResources(Me.DescricaoProduto, "DescricaoProduto")
-        Me.DescricaoProduto.Name = "DescricaoProduto"
+        resources.ApplyResources(Me.DataGridViewTextBoxColumn10, "DataGridViewTextBoxColumn10")
+        Me.DataGridViewTextBoxColumn10.Name = "DataGridViewTextBoxColumn10"
         '
-        'TipoProduto
+        'DataGridViewTextBoxColumn11
         '
-        resources.ApplyResources(Me.TipoProduto, "TipoProduto")
-        Me.TipoProduto.Name = "TipoProduto"
+        resources.ApplyResources(Me.DataGridViewTextBoxColumn11, "DataGridViewTextBoxColumn11")
+        Me.DataGridViewTextBoxColumn11.Name = "DataGridViewTextBoxColumn11"
         '
-        'AcucarProduto
+        'Column17
         '
-        resources.ApplyResources(Me.AcucarProduto, "AcucarProduto")
-        Me.AcucarProduto.Name = "AcucarProduto"
+        resources.ApplyResources(Me.Column17, "Column17")
+        Me.Column17.Name = "Column17"
         '
-        'SafraProduto
+        'DataGridViewTextBoxColumn12
         '
-        resources.ApplyResources(Me.SafraProduto, "SafraProduto")
-        Me.SafraProduto.Name = "SafraProduto"
+        resources.ApplyResources(Me.DataGridViewTextBoxColumn12, "DataGridViewTextBoxColumn12")
+        Me.DataGridViewTextBoxColumn12.Name = "DataGridViewTextBoxColumn12"
         '
-        'UvaProduto
+        'Column11
         '
-        resources.ApplyResources(Me.UvaProduto, "UvaProduto")
-        Me.UvaProduto.Name = "UvaProduto"
+        resources.ApplyResources(Me.Column11, "Column11")
+        Me.Column11.Name = "Column11"
         '
-        'PaisRegiaoProduto
+        'Column12
         '
-        resources.ApplyResources(Me.PaisRegiaoProduto, "PaisRegiaoProduto")
-        Me.PaisRegiaoProduto.Name = "PaisRegiaoProduto"
+        resources.ApplyResources(Me.Column12, "Column12")
+        Me.Column12.Name = "Column12"
         '
-        'TeorAlcoolicoProduto
+        'Column1
         '
-        resources.ApplyResources(Me.TeorAlcoolicoProduto, "TeorAlcoolicoProduto")
-        Me.TeorAlcoolicoProduto.Name = "TeorAlcoolicoProduto"
+        resources.ApplyResources(Me.Column1, "Column1")
+        Me.Column1.Name = "Column1"
         '
-        'HarmonizacaoProduto
+        'DataGridViewImageColumn3
         '
-        resources.ApplyResources(Me.HarmonizacaoProduto, "HarmonizacaoProduto")
-        Me.HarmonizacaoProduto.Name = "HarmonizacaoProduto"
+        resources.ApplyResources(Me.DataGridViewImageColumn3, "DataGridViewImageColumn3")
+        Me.DataGridViewImageColumn3.Image = CType(resources.GetObject("DataGridViewImageColumn3.Image"), System.Drawing.Image)
+        Me.DataGridViewImageColumn3.Name = "DataGridViewImageColumn3"
+        Me.DataGridViewImageColumn3.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
         '
-        'QtdeEmEstoqueProduto
+        'DataGridViewImageColumn4
         '
-        resources.ApplyResources(Me.QtdeEmEstoqueProduto, "QtdeEmEstoqueProduto")
-        Me.QtdeEmEstoqueProduto.Name = "QtdeEmEstoqueProduto"
-        '
-        'PrecoProduto
-        '
-        resources.ApplyResources(Me.PrecoProduto, "PrecoProduto")
-        Me.PrecoProduto.Name = "PrecoProduto"
-        '
-        'VisualProduto
-        '
-        resources.ApplyResources(Me.VisualProduto, "VisualProduto")
-        Me.VisualProduto.Name = "VisualProduto"
-        Me.VisualProduto.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
-        '
-        'Editar
-        '
-        resources.ApplyResources(Me.Editar, "Editar")
-        Me.Editar.Image = CType(resources.GetObject("Editar.Image"), System.Drawing.Image)
-        Me.Editar.Name = "Editar"
-        Me.Editar.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
-        '
-        'Excluir
-        '
-        resources.ApplyResources(Me.Excluir, "Excluir")
-        Me.Excluir.Image = CType(resources.GetObject("Excluir.Image"), System.Drawing.Image)
-        Me.Excluir.Name = "Excluir"
+        resources.ApplyResources(Me.DataGridViewImageColumn4, "DataGridViewImageColumn4")
+        Me.DataGridViewImageColumn4.Image = CType(resources.GetObject("DataGridViewImageColumn4.Image"), System.Drawing.Image)
+        Me.DataGridViewImageColumn4.Name = "DataGridViewImageColumn4"
         '
         'Dashboard
         '
@@ -855,26 +861,6 @@ Partial Class Dashboard
     Friend WithEvents DataGridViewImageColumn9 As DataGridViewImageColumn
     Friend WithEvents DataGridViewImageColumn10 As DataGridViewImageColumn
     Friend WithEvents SairDoSistemaToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents DataGridViewTextBoxColumn1 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn2 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn3 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn4 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn5 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn6 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewImageColumn1 As DataGridViewImageColumn
-    Friend WithEvents DataGridViewImageColumn2 As DataGridViewImageColumn
-    Friend WithEvents DataGridViewTextBoxColumn7 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn8 As DataGridViewTextBoxColumn
-    Friend WithEvents Column13 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn9 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn10 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn11 As DataGridViewTextBoxColumn
-    Friend WithEvents Column17 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn12 As DataGridViewTextBoxColumn
-    Friend WithEvents Column11 As DataGridViewTextBoxColumn
-    Friend WithEvents Column12 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewImageColumn3 As DataGridViewImageColumn
-    Friend WithEvents DataGridViewImageColumn4 As DataGridViewImageColumn
     Friend WithEvents IdFornecedor As DataGridViewTextBoxColumn
     Friend WithEvents NomeFornecedor As DataGridViewTextBoxColumn
     Friend WithEvents RamoDoFornecedor As DataGridViewTextBoxColumn
@@ -884,18 +870,6 @@ Partial Class Dashboard
     Friend WithEvents EnderecoDoFornecedor As DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewImageColumn5 As DataGridViewImageColumn
     Friend WithEvents DataGridViewImageColumn6 As DataGridViewImageColumn
-    Friend WithEvents DataGridViewTextBoxColumn20 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn21 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn22 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn23 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn24 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn26 As DataGridViewTextBoxColumn
-    Friend WithEvents Column14 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn25 As DataGridViewTextBoxColumn
-    Friend WithEvents Column15 As DataGridViewCheckBoxColumn
-    Friend WithEvents Column16 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewImageColumn7 As DataGridViewImageColumn
-    Friend WithEvents DataGridViewImageColumn8 As DataGridViewImageColumn
     Friend WithEvents IdProduto As DataGridViewTextBoxColumn
     Friend WithEvents NomeProduto As DataGridViewTextBoxColumn
     Friend WithEvents DescricaoProduto As DataGridViewTextBoxColumn
@@ -911,4 +885,37 @@ Partial Class Dashboard
     Friend WithEvents VisualProduto As DataGridViewLinkColumn
     Friend WithEvents Editar As DataGridViewImageColumn
     Friend WithEvents Excluir As DataGridViewImageColumn
+    Friend WithEvents IdProducao As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn2 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn3 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn4 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn5 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn6 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewImageColumn1 As DataGridViewImageColumn
+    Friend WithEvents DataGridViewImageColumn2 As DataGridViewImageColumn
+    Friend WithEvents IdUsuario As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn21 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn22 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn23 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn24 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn26 As DataGridViewTextBoxColumn
+    Friend WithEvents Column14 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn25 As DataGridViewTextBoxColumn
+    Friend WithEvents Column15 As DataGridViewCheckBoxColumn
+    Friend WithEvents Column16 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewImageColumn7 As DataGridViewImageColumn
+    Friend WithEvents DataGridViewImageColumn8 As DataGridViewImageColumn
+    Friend WithEvents IdEvento As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn8 As DataGridViewTextBoxColumn
+    Friend WithEvents Column13 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn9 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn10 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn11 As DataGridViewTextBoxColumn
+    Friend WithEvents Column17 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn12 As DataGridViewTextBoxColumn
+    Friend WithEvents Column11 As DataGridViewTextBoxColumn
+    Friend WithEvents Column12 As DataGridViewTextBoxColumn
+    Friend WithEvents Column1 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewImageColumn3 As DataGridViewImageColumn
+    Friend WithEvents DataGridViewImageColumn4 As DataGridViewImageColumn
 End Class

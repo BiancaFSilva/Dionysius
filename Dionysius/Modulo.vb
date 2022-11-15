@@ -11,7 +11,10 @@
 
     ' Variáveis para comunicação entre DataGridView e Form
     Public camposProduto(1) As String
-    Public camposFornecedor(7) As String
+    Public camposProducao(1) As String
+    Public camposEvento(1) As String
+    Public camposFornecedor(1) As String
+    Public camposUsuario(1) As String
 
     Sub conectaDataBase()
         Try
@@ -80,7 +83,7 @@
                 .Rows.Clear()
 
                 Do While rs.EOF = False
-                    .Rows.Add(rs.Fields(0).Value, rs.Fields(1).Value, rs.Fields(2).Value, rs.Fields(3).Value, rs.Fields(4).Value, rs.Fields(5).Value, rs.Fields(6).Value, rs.Fields(7).Value, rs.Fields(8).Value, rs.Fields(9).Value, Nothing, Nothing)
+                    .Rows.Add(rs.Fields(0).Value, rs.Fields(1).Value, rs.Fields(2).Value, rs.Fields(3).Value, rs.Fields(4).Value, rs.Fields(5).Value, rs.Fields(6).Value, rs.Fields(7).Value, rs.Fields(8).Value, rs.Fields(9).Value, rs.Fields(10).Value, Nothing, Nothing)
                     rs.MoveNext()
 
                     cont = cont + 1
@@ -161,6 +164,7 @@
                 .txtEmail.Clear()
                 .txtSenha.Clear()
                 .txtRepeteSenha.Clear()
+                .cmbStatusUsuario.Items.Clear()
 
                 .txtNome.Focus()
             End With

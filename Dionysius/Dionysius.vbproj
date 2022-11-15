@@ -131,6 +131,12 @@
     <Compile Include="frmCadastraUsuario.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frmFavoritos.Designer.vb">
+      <DependentUpon>frmFavoritos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmFavoritos.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmRecuperaSenha.Designer.vb">
       <DependentUpon>frmRecuperaSenha.vb</DependentUpon>
     </Compile>
@@ -198,6 +204,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmCadastraUsuario.resx">
       <DependentUpon>frmCadastraUsuario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFavoritos.resx">
+      <DependentUpon>frmFavoritos.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmRecuperaSenha.resx">
       <DependentUpon>frmRecuperaSenha.vb</DependentUpon>

@@ -1,6 +1,8 @@
 ﻿Public Class Login
     Private Sub Login_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Call conectaDataBase()
+
+        txtUsuario.Focus()
     End Sub
 
     Private Sub btnCriaConta_Click(sender As Object, e As EventArgs) Handles btnCriaConta.Click
@@ -49,6 +51,14 @@
 
             ' Login dos usuários comuns
             If rs.EOF = False Then
+                aux = rs.Fields(8).Value
+
+                If aux = "BLOQUEADO" Then
+                    MsgBox("Este usuário está bloqueado!", MsgBoxStyle.Critical + MsgBoxStyle.OkOnly, "ATENÇÃO")
+                    Call limpaLogin()
+                    Exit Sub
+                End If
+
                 MsgBox("Login realizado com sucesso!", MsgBoxStyle.Information + MsgBoxStyle.OkOnly, "AVISO")
 
                 Home.ShowDialog()
@@ -57,6 +67,7 @@
                 MsgBox("Usuário e/ou senha inválidos!" + vbNewLine &
                        "Tente novamente ou cadastre-se.", MsgBoxStyle.Information + MsgBoxStyle.OkOnly, "AVISO")
                 Call limpaLogin()
+                Exit Sub
             End If
         Catch ex As Exception
             MsgBox("Ocorreu um erro durante o processamento." + vbNewLine &

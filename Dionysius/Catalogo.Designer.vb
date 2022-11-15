@@ -29,6 +29,8 @@ Partial Class Catalogo
         Me.FornecedoresToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.EventosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.LoginToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.FavoritosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.SairDoSistemaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.FlowLayoutPanel1 = New System.Windows.Forms.FlowLayoutPanel()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label7 = New System.Windows.Forms.Label()
@@ -44,8 +46,11 @@ Partial Class Catalogo
         Me.Label1 = New System.Windows.Forms.Label()
         Me.txtBusca = New System.Windows.Forms.TextBox()
         Me.btnBusca = New System.Windows.Forms.Button()
-        Me.SairDoSistemaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.FavoritosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.btnCatalogo = New System.Windows.Forms.Button()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.Button3 = New System.Windows.Forms.Button()
+        Me.Button4 = New System.Windows.Forms.Button()
         Me.MenuStrip1.SuspendLayout()
         Me.FlowLayoutPanel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -105,11 +110,30 @@ Partial Class Catalogo
         'LoginToolStripMenuItem
         '
         Me.LoginToolStripMenuItem.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right
-        Me.LoginToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SairDoSistemaToolStripMenuItem, Me.FavoritosToolStripMenuItem})
+        Me.LoginToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FavoritosToolStripMenuItem, Me.SairDoSistemaToolStripMenuItem})
         Me.LoginToolStripMenuItem.Image = CType(resources.GetObject("LoginToolStripMenuItem.Image"), System.Drawing.Image)
         Me.LoginToolStripMenuItem.Name = "LoginToolStripMenuItem"
         Me.LoginToolStripMenuItem.Size = New System.Drawing.Size(28, 23)
         Me.LoginToolStripMenuItem.TextAlign = System.Drawing.ContentAlignment.TopRight
+        '
+        'FavoritosToolStripMenuItem
+        '
+        Me.FavoritosToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(89, Byte), Integer), CType(CType(8, Byte), Integer), CType(CType(2, Byte), Integer))
+        Me.FavoritosToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(230, Byte), Integer), CType(CType(217, Byte), Integer))
+        Me.FavoritosToolStripMenuItem.Image = CType(resources.GetObject("FavoritosToolStripMenuItem.Image"), System.Drawing.Image)
+        Me.FavoritosToolStripMenuItem.Name = "FavoritosToolStripMenuItem"
+        Me.FavoritosToolStripMenuItem.Size = New System.Drawing.Size(154, 22)
+        Me.FavoritosToolStripMenuItem.Text = "Favoritos"
+        '
+        'SairDoSistemaToolStripMenuItem
+        '
+        Me.SairDoSistemaToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(89, Byte), Integer), CType(CType(8, Byte), Integer), CType(CType(2, Byte), Integer))
+        Me.SairDoSistemaToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(230, Byte), Integer), CType(CType(217, Byte), Integer))
+        Me.SairDoSistemaToolStripMenuItem.Image = CType(resources.GetObject("SairDoSistemaToolStripMenuItem.Image"), System.Drawing.Image)
+        Me.SairDoSistemaToolStripMenuItem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.SairDoSistemaToolStripMenuItem.Name = "SairDoSistemaToolStripMenuItem"
+        Me.SairDoSistemaToolStripMenuItem.Size = New System.Drawing.Size(154, 22)
+        Me.SairDoSistemaToolStripMenuItem.Text = "Sair do Sistema"
         '
         'FlowLayoutPanel1
         '
@@ -282,24 +306,90 @@ Partial Class Catalogo
         Me.btnBusca.TabIndex = 13
         Me.btnBusca.UseVisualStyleBackColor = True
         '
-        'SairDoSistemaToolStripMenuItem
+        'btnCatalogo
         '
-        Me.SairDoSistemaToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(89, Byte), Integer), CType(CType(8, Byte), Integer), CType(CType(2, Byte), Integer))
-        Me.SairDoSistemaToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(230, Byte), Integer), CType(CType(217, Byte), Integer))
-        Me.SairDoSistemaToolStripMenuItem.Image = CType(resources.GetObject("SairDoSistemaToolStripMenuItem.Image"), System.Drawing.Image)
-        Me.SairDoSistemaToolStripMenuItem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.SairDoSistemaToolStripMenuItem.Name = "SairDoSistemaToolStripMenuItem"
-        Me.SairDoSistemaToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
-        Me.SairDoSistemaToolStripMenuItem.Text = "Sair do Sistema"
+        Me.btnCatalogo.BackColor = System.Drawing.Color.FromArgb(CType(CType(89, Byte), Integer), CType(CType(8, Byte), Integer), CType(CType(2, Byte), Integer))
+        Me.btnCatalogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.btnCatalogo.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnCatalogo.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnCatalogo.ForeColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(230, Byte), Integer), CType(CType(217, Byte), Integer))
+        Me.btnCatalogo.Image = CType(resources.GetObject("btnCatalogo.Image"), System.Drawing.Image)
+        Me.btnCatalogo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnCatalogo.Location = New System.Drawing.Point(950, 189)
+        Me.btnCatalogo.Name = "btnCatalogo"
+        Me.btnCatalogo.Size = New System.Drawing.Size(109, 36)
+        Me.btnCatalogo.TabIndex = 18
+        Me.btnCatalogo.Text = "   Catálogo " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "  Completo"
+        Me.btnCatalogo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.btnCatalogo.UseVisualStyleBackColor = False
         '
-        'FavoritosToolStripMenuItem
+        'Button1
         '
-        Me.FavoritosToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(89, Byte), Integer), CType(CType(8, Byte), Integer), CType(CType(2, Byte), Integer))
-        Me.FavoritosToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(230, Byte), Integer), CType(CType(217, Byte), Integer))
-        Me.FavoritosToolStripMenuItem.Image = CType(resources.GetObject("FavoritosToolStripMenuItem.Image"), System.Drawing.Image)
-        Me.FavoritosToolStripMenuItem.Name = "FavoritosToolStripMenuItem"
-        Me.FavoritosToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
-        Me.FavoritosToolStripMenuItem.Text = "Favoritos"
+        Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(89, Byte), Integer), CType(CType(8, Byte), Integer), CType(CType(2, Byte), Integer))
+        Me.Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(230, Byte), Integer), CType(CType(217, Byte), Integer))
+        Me.Button1.Image = CType(resources.GetObject("Button1.Image"), System.Drawing.Image)
+        Me.Button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Button1.Location = New System.Drawing.Point(805, 189)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(121, 36)
+        Me.Button1.TabIndex = 19
+        Me.Button1.Text = "  Lista de" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "  Espumantes" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
+        Me.Button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.Button1.UseVisualStyleBackColor = False
+        '
+        'Button2
+        '
+        Me.Button2.BackColor = System.Drawing.Color.FromArgb(CType(CType(89, Byte), Integer), CType(CType(8, Byte), Integer), CType(CType(2, Byte), Integer))
+        Me.Button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(230, Byte), Integer), CType(CType(217, Byte), Integer))
+        Me.Button2.Image = CType(resources.GetObject("Button2.Image"), System.Drawing.Image)
+        Me.Button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Button2.Location = New System.Drawing.Point(661, 189)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(121, 36)
+        Me.Button2.TabIndex = 20
+        Me.Button2.Text = "  Lista de" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "  Vinhos Rosé" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
+        Me.Button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.Button2.UseVisualStyleBackColor = False
+        '
+        'Button3
+        '
+        Me.Button3.BackColor = System.Drawing.Color.FromArgb(CType(CType(89, Byte), Integer), CType(CType(8, Byte), Integer), CType(CType(2, Byte), Integer))
+        Me.Button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Button3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(230, Byte), Integer), CType(CType(217, Byte), Integer))
+        Me.Button3.Image = CType(resources.GetObject("Button3.Image"), System.Drawing.Image)
+        Me.Button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Button3.Location = New System.Drawing.Point(511, 189)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(129, 36)
+        Me.Button3.TabIndex = 21
+        Me.Button3.Text = "  Lista de" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "  Vinhos Branco" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
+        Me.Button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.Button3.UseVisualStyleBackColor = False
+        '
+        'Button4
+        '
+        Me.Button4.BackColor = System.Drawing.Color.FromArgb(CType(CType(89, Byte), Integer), CType(CType(8, Byte), Integer), CType(CType(2, Byte), Integer))
+        Me.Button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Button4.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(230, Byte), Integer), CType(CType(217, Byte), Integer))
+        Me.Button4.Image = CType(resources.GetObject("Button4.Image"), System.Drawing.Image)
+        Me.Button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Button4.Location = New System.Drawing.Point(366, 189)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(121, 36)
+        Me.Button4.TabIndex = 22
+        Me.Button4.Text = "  Lista de" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "  Vinhos Tinto" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
+        Me.Button4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.Button4.UseVisualStyleBackColor = False
         '
         'Catalogo
         '
@@ -307,6 +397,11 @@ Partial Class Catalogo
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(174, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(65, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1174, 701)
+        Me.Controls.Add(Me.Button4)
+        Me.Controls.Add(Me.Button3)
+        Me.Controls.Add(Me.Button2)
+        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.btnCatalogo)
         Me.Controls.Add(Me.FlowLayoutPanel1)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
@@ -356,4 +451,9 @@ Partial Class Catalogo
     Friend WithEvents txtBusca As TextBox
     Friend WithEvents SairDoSistemaToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents FavoritosToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents btnCatalogo As Button
+    Friend WithEvents Button1 As Button
+    Friend WithEvents Button2 As Button
+    Friend WithEvents Button3 As Button
+    Friend WithEvents Button4 As Button
 End Class

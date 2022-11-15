@@ -1,11 +1,27 @@
 ﻿Public Class frmAdicionaProducao
     Private Sub frmAdicionaProducao_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Call conectaDataBase()
-        Call limpaProducao()
 
         If btnCadastraProducao.Text = "Atualizar Processo" Then
             lblId.Visible = True
             txtId.Visible = True
+
+            aux = camposProducao(0)
+            sql = "SELECT * FROM tb_fabricacao WHERE id_fabricacao = " & aux & ""
+            rs = db.Execute(sql)
+
+            Try
+                txtId.Text = rs.Fields(0).Value
+                cmbProcesso.Text = rs.Fields(1).Value
+                txtDataInicio.Text = rs.Fields(2).Value
+                TxtDataFim.Text = rs.Fields(3).Value
+                cmbFornecedores.Text = rs.Fields(4).Value
+                cmbProduto.Text = rs.Fields(5).Value
+            Catch ex As Exception
+                Exit Try
+            End Try
+        Else
+            Call limpaProducao()
         End If
 
         With cmbProcesso.Items
@@ -76,7 +92,7 @@
 
     Private Sub TxtDataFim_LostFocus(sender As Object, e As EventArgs) Handles TxtDataFim.LostFocus
         Try
-            If (CDate(TxtDataFim.Text).Day <= 0 Or CDate(TxtDataFim.Text).Day > 31) Or (CDate(TxtDataFim.Text).Month <= 0 Or CDate(TxtDataFim.Text).Month > 12) Or (CDate(TxtDataFim.Text).Year < Date.Now.Year Or CDate(TxtDataFim.Text).Year >= 2500) Then
+            If (CDate(TxtDataFim.Text).Day <= 0 Or CDate(TxtDataFim.Text).Day > 31) Or (CDate(TxtDataFim.Text).Month <= 0 Or CDate(TxtDataFim.Text).Month > 12) Or (CDate(TxtDataFim.Text).Year < CDate(txtDataInicio.Text).Year Or CDate(TxtDataFim.Text).Year >= 2500) Then
                 MsgBox("Informe uma data de término válida!", MsgBoxStyle.Critical + MsgBoxStyle.OkOnly, "AVISO")
                 TxtDataFim.Clear()
                 TxtDataFim.Focus()
@@ -96,9 +112,19 @@
                 rs = db.Execute(sql)
 
                 If rs.EOF = False Then
-                    MsgBox("Este processo já está cadastrado!", MsgBoxStyle.Information + MsgBoxStyle.OkOnly, "AVISO")
-                    Call limpaProducao()
-                    Exit Sub
+                    If btnCadastraProducao.Text = "Atualizar Processo" Then
+                        sql = "UPDATE tb_fabricacao SET processo = '" & cmbProcesso.Text & "', data_inicio = '" & txtDataInicio.Text & "', data_final = '" & TxtDataFim.Text & "', " &
+                              "fornecedores_relacionados = '" & cmbFornecedores.Text & "', produto_relacionado = '" & cmbProduto.Text & "' WHERE id_fabricacao = " & txtId.Text & ""
+                        rs = db.Execute(UCase(sql))
+
+                        Call carregaDadosProducao()
+                        Call limpaProducao()
+
+                        MsgBox("Dados do processo de fabricação alterados com sucesso!", MsgBoxStyle.Information + MsgBoxStyle.OkOnly, "AVISO")
+                        Me.Close()
+                    Else
+                        Exit Sub
+                    End If
                 Else
                     sql = "INSERT INTO tb_fabricacao (processo, data_inicio, data_final, fornecedores_relacionados, produto_relacionado)" &
                           "VALUES ('" & cmbProcesso.SelectedItem & "', '" & txtDataInicio.Text & "', '" & TxtDataFim.Text & "', '" & cmbFornecedores.SelectedItem & "', '" & cmbProduto.SelectedItem & "')"

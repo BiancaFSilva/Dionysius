@@ -6,6 +6,28 @@
         If btnAdicionarEvento.Text = "Atualizar Evento" Then
             lblId.Visible = True
             txtId.Visible = True
+
+            aux = camposEvento(0)
+            sql = "SELECT * FROM tb_eventos WHERE id_evento  = " & aux & ""
+            rs = db.Execute(sql)
+
+            Try
+                txtId.Text = rs.Fields(0).Value
+                txtNome.Text = rs.Fields(1).Value
+                txtDescricao.Text = rs.Fields(2).Value
+                txtData.Text = rs.Fields(3).Value
+                txtHora.Text = rs.Fields(4).Value
+                txtEndereco.Text = rs.Fields(5).Value
+                txtBairro.Text = rs.Fields(6).Value
+                txtCidade.Text = rs.Fields(7).Value
+                txtUf.Text = rs.Fields(8).Value
+                txtCep.Text = rs.Fields(9).Value
+                cmbParticipantes.Text = rs.Fields(10).Value
+            Catch ex As Exception
+                Exit Try
+            End Try
+        Else
+            Call limpaEvento()
         End If
 
         With cmbParticipantes.Items
@@ -84,12 +106,25 @@
                 rs = db.Execute(sql)
 
                 If rs.EOF = False Then
-                    MsgBox("Este evento já está cadastrado!", MsgBoxStyle.Information + MsgBoxStyle.OkOnly, "AVISO")
-                    Call limpaEvento()
-                    Exit Sub
+                    If btnAdicionarEvento.Text = "Atualizar Evento" Then
+                        sql = "UPDATE tb_eventos SET nome = '" & txtNome.Text & "', descricao = '" & txtDescricao.Text & "', data = '" & txtData.Text & "', " &
+                              "hora = '" & txtHora.Text & "', endereco = '" & txtEndereco.Text & "', bairro = '" & txtBairro.Text & "', cidade = '" & txtCidade.Text & "', " &
+                              "uf = '" & txtUf.Text & "', cep = '" & txtCep.Text & "', participantes = '" & cmbParticipantes.Text & "' WHERE id_evento = " & txtId.Text & ""
+                        rs = db.Execute(UCase(sql))
+
+                        Call carregaDadosEvento()
+                        Call limpaEvento()
+
+                        MsgBox("Dadps dp evento " & txtNome.Text & " atualizados com sucesso!", MsgBoxStyle.Information + MsgBoxStyle.OkOnly, "AVISO")
+                        Me.Close()
+                    Else
+                        Exit Sub
+                    End If
                 Else
                     sql = "INSERT INTO tb_eventos (nome, descricao, data, hora, endereco, bairro, cidade, uf, cep, participantes)" &
-                          "VALUES ('" & txtNome.Text & "', '" & txtDescricao.Text & "', '" & txtData.Text & "', '" & txtHora.Text & "', '" & txtEndereco.Text & "', '" & txtBairro.Text & "', '" & txtCidade.Text & "', '" & txtUf.Text & "', '" & txtCep.Text & "', '" & cmbParticipantes.SelectedItem & "')"
+                          "VALUES ('" & txtNome.Text & "', '" & txtDescricao.Text & "', '" & txtData.Text & "', '" & txtHora.Text & "', " &
+                          "'" & txtEndereco.Text & "', '" & txtBairro.Text & "', '" & txtCidade.Text & "', '" & txtUf.Text & "', " &
+                          "'" & txtCep.Text & "', '" & cmbParticipantes.SelectedItem & "')"
                     rs = db.Execute(UCase(sql))
 
                     Call carregaDadosEvento()
