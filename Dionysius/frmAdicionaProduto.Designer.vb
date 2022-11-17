@@ -390,6 +390,7 @@ Partial Class frmAdicionaProduto
         Me.imgProduto.Location = New System.Drawing.Point(491, 50)
         Me.imgProduto.Name = "imgProduto"
         Me.imgProduto.Size = New System.Drawing.Size(100, 110)
+        Me.imgProduto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.imgProduto.TabIndex = 117
         Me.imgProduto.TabStop = False
         '

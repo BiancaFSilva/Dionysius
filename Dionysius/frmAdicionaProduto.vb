@@ -83,7 +83,7 @@
         Try
             With OpenFileDialog1
                 .Title = "Selecione uma foto"
-                .InitialDirectory = Application.StartupPath & "\img"
+                .InitialDirectory = Application.StartupPath & "\img\produtos\"
                 .ShowDialog()
 
                 dir = .FileName
@@ -109,7 +109,7 @@
                               "safra = '" & txtSafra.Text & "', uva = '" & cmbUva.Text & "', pais = '" & txtPais.Text & "', regiao = '" & txtRegião.Text & "', preco = '" & txtPreco.Text & "', produtor = '" & txtProdutores.Text & "', " &
                               "teor_alcoolico = '" & txtTeorAlcoolico.Text & "', harmonizacao = '" & txtHarmonizacao.Text & "', visual = '" & txtVisual.Text & "', qtde_estoque = '" & txtQtdeEmEstoque.Text & "', " &
                               "img = '" & dir & "' WHERE id_vinho = " & txtId.Text & ""
-                        rs = db.Execute(UCase(sql))
+                        rs = db.Execute(sql)
 
                         Call carregaDadosVinho()
                         Call limpaProduto()
@@ -124,7 +124,7 @@
                           "VALUES ('" & txtNome.Text & "', '" & txtDescricao.Text & "', '" & cmbTipo.SelectedItem & "', '" & cmbClasse.SelectedItem & "', '" & txtSafra.Text & "', '" & cmbUva.SelectedItem & "', " &
                           "'" & txtPais.Text & "', '" & txtRegião.Text & "', '" & txtPreco.Text & "', '" & txtProdutores.Text & "', '" & txtTeorAlcoolico.Text & "', '" & txtHarmonizacao.Text & "', " &
                           "'" & txtVisual.Text & "', '" & txtQtdeEmEstoque.Text & "', '" & dir & "')"
-                    rs = db.Execute(UCase(sql))
+                    rs = db.Execute(sql)
 
                     Call carregaDadosVinho()
 

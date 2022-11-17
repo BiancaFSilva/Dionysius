@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Catalogo
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class Catalogo
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Catalogo))
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
@@ -37,18 +37,11 @@ Partial Class Catalogo
         Me.txtBusca = New System.Windows.Forms.TextBox()
         Me.btnBusca = New System.Windows.Forms.Button()
         Me.btnCatalogo = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button4 = New System.Windows.Forms.Button()
         Me.lstBuscaProduto = New System.Windows.Forms.ListBox()
         Me.imgProduto = New System.Windows.Forms.PictureBox()
         Me.lblTipoClasseProduto = New System.Windows.Forms.Label()
         Me.lblDescricaoProduto = New System.Windows.Forms.Label()
-        Me.lblPaisRegião = New System.Windows.Forms.Label()
-        Me.lblEspecieUva = New System.Windows.Forms.Label()
-        Me.lblHarmonizacao = New System.Windows.Forms.Label()
-        Me.lblTeorAlcoolico = New System.Windows.Forms.Label()
+        Me.lblDadosGerais = New System.Windows.Forms.Label()
         Me.MenuStrip1.SuspendLayout()
         CType(Me.imgProduto, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -117,7 +110,7 @@ Partial Class Catalogo
         Me.FavoritosToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(230, Byte), Integer), CType(CType(217, Byte), Integer))
         Me.FavoritosToolStripMenuItem.Image = CType(resources.GetObject("FavoritosToolStripMenuItem.Image"), System.Drawing.Image)
         Me.FavoritosToolStripMenuItem.Name = "FavoritosToolStripMenuItem"
-        Me.FavoritosToolStripMenuItem.Size = New System.Drawing.Size(154, 22)
+        Me.FavoritosToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.FavoritosToolStripMenuItem.Text = "Favoritos"
         '
         'SairDoSistemaToolStripMenuItem
@@ -127,7 +120,7 @@ Partial Class Catalogo
         Me.SairDoSistemaToolStripMenuItem.Image = CType(resources.GetObject("SairDoSistemaToolStripMenuItem.Image"), System.Drawing.Image)
         Me.SairDoSistemaToolStripMenuItem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.SairDoSistemaToolStripMenuItem.Name = "SairDoSistemaToolStripMenuItem"
-        Me.SairDoSistemaToolStripMenuItem.Size = New System.Drawing.Size(154, 22)
+        Me.SairDoSistemaToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.SairDoSistemaToolStripMenuItem.Text = "Sair do Sistema"
         '
         'lblNomeSafraProduto
@@ -193,81 +186,13 @@ Partial Class Catalogo
         Me.btnCatalogo.ForeColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(230, Byte), Integer), CType(CType(217, Byte), Integer))
         Me.btnCatalogo.Image = CType(resources.GetObject("btnCatalogo.Image"), System.Drawing.Image)
         Me.btnCatalogo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnCatalogo.Location = New System.Drawing.Point(950, 189)
+        Me.btnCatalogo.Location = New System.Drawing.Point(886, 189)
         Me.btnCatalogo.Name = "btnCatalogo"
-        Me.btnCatalogo.Size = New System.Drawing.Size(109, 36)
+        Me.btnCatalogo.Size = New System.Drawing.Size(173, 36)
         Me.btnCatalogo.TabIndex = 18
-        Me.btnCatalogo.Text = "   Catálogo " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "  Completo"
+        Me.btnCatalogo.Text = "    Catálogo Completo"
         Me.btnCatalogo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.btnCatalogo.UseVisualStyleBackColor = False
-        '
-        'Button1
-        '
-        Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(89, Byte), Integer), CType(CType(8, Byte), Integer), CType(CType(2, Byte), Integer))
-        Me.Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(230, Byte), Integer), CType(CType(217, Byte), Integer))
-        Me.Button1.Image = CType(resources.GetObject("Button1.Image"), System.Drawing.Image)
-        Me.Button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button1.Location = New System.Drawing.Point(805, 189)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(121, 36)
-        Me.Button1.TabIndex = 19
-        Me.Button1.Text = "  Lista de" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "  Espumantes" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
-        Me.Button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.Button1.UseVisualStyleBackColor = False
-        '
-        'Button2
-        '
-        Me.Button2.BackColor = System.Drawing.Color.FromArgb(CType(CType(89, Byte), Integer), CType(CType(8, Byte), Integer), CType(CType(2, Byte), Integer))
-        Me.Button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(230, Byte), Integer), CType(CType(217, Byte), Integer))
-        Me.Button2.Image = CType(resources.GetObject("Button2.Image"), System.Drawing.Image)
-        Me.Button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button2.Location = New System.Drawing.Point(661, 189)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(121, 36)
-        Me.Button2.TabIndex = 20
-        Me.Button2.Text = "  Lista de" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "  Vinhos Rosé" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
-        Me.Button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.Button2.UseVisualStyleBackColor = False
-        '
-        'Button3
-        '
-        Me.Button3.BackColor = System.Drawing.Color.FromArgb(CType(CType(89, Byte), Integer), CType(CType(8, Byte), Integer), CType(CType(2, Byte), Integer))
-        Me.Button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(230, Byte), Integer), CType(CType(217, Byte), Integer))
-        Me.Button3.Image = CType(resources.GetObject("Button3.Image"), System.Drawing.Image)
-        Me.Button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button3.Location = New System.Drawing.Point(511, 189)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(129, 36)
-        Me.Button3.TabIndex = 21
-        Me.Button3.Text = "  Lista de" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "  Vinhos Branco" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
-        Me.Button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.Button3.UseVisualStyleBackColor = False
-        '
-        'Button4
-        '
-        Me.Button4.BackColor = System.Drawing.Color.FromArgb(CType(CType(89, Byte), Integer), CType(CType(8, Byte), Integer), CType(CType(2, Byte), Integer))
-        Me.Button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button4.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(230, Byte), Integer), CType(CType(217, Byte), Integer))
-        Me.Button4.Image = CType(resources.GetObject("Button4.Image"), System.Drawing.Image)
-        Me.Button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button4.Location = New System.Drawing.Point(366, 189)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(121, 36)
-        Me.Button4.TabIndex = 22
-        Me.Button4.Text = "  Lista de" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "  Vinhos Tinto" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
-        Me.Button4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.Button4.UseVisualStyleBackColor = False
         '
         'lstBuscaProduto
         '
@@ -275,17 +200,18 @@ Partial Class Catalogo
         Me.lstBuscaProduto.FormattingEnabled = True
         Me.lstBuscaProduto.Location = New System.Drawing.Point(314, 121)
         Me.lstBuscaProduto.Name = "lstBuscaProduto"
+        Me.lstBuscaProduto.SelectionMode = System.Windows.Forms.SelectionMode.MultiSimple
         Me.lstBuscaProduto.Size = New System.Drawing.Size(516, 91)
         Me.lstBuscaProduto.TabIndex = 23
         Me.lstBuscaProduto.Visible = False
         '
         'imgProduto
         '
-        Me.imgProduto.BackgroundImage = Global.Dionysius.My.Resources.Resources.wine_colorful
         Me.imgProduto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.imgProduto.Location = New System.Drawing.Point(108, 348)
         Me.imgProduto.Name = "imgProduto"
         Me.imgProduto.Size = New System.Drawing.Size(197, 263)
+        Me.imgProduto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.imgProduto.TabIndex = 24
         Me.imgProduto.TabStop = False
         '
@@ -316,57 +242,18 @@ Partial Class Catalogo
         Me.lblDescricaoProduto.TabIndex = 26
         Me.lblDescricaoProduto.Text = "."
         '
-        'lblPaisRegião
+        'lblDadosGerais
         '
-        Me.lblPaisRegião.AutoSize = True
-        Me.lblPaisRegião.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPaisRegião.ForeColor = System.Drawing.Color.White
-        Me.lblPaisRegião.Location = New System.Drawing.Point(343, 520)
-        Me.lblPaisRegião.Margin = New System.Windows.Forms.Padding(15, 0, 15, 0)
-        Me.lblPaisRegião.MaximumSize = New System.Drawing.Size(700, 0)
-        Me.lblPaisRegião.Name = "lblPaisRegião"
-        Me.lblPaisRegião.Size = New System.Drawing.Size(10, 16)
-        Me.lblPaisRegião.TabIndex = 27
-        Me.lblPaisRegião.Text = "."
-        '
-        'lblEspecieUva
-        '
-        Me.lblEspecieUva.AutoSize = True
-        Me.lblEspecieUva.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblEspecieUva.ForeColor = System.Drawing.Color.White
-        Me.lblEspecieUva.Location = New System.Drawing.Point(343, 545)
-        Me.lblEspecieUva.Margin = New System.Windows.Forms.Padding(15, 0, 15, 0)
-        Me.lblEspecieUva.MaximumSize = New System.Drawing.Size(700, 0)
-        Me.lblEspecieUva.Name = "lblEspecieUva"
-        Me.lblEspecieUva.Size = New System.Drawing.Size(10, 16)
-        Me.lblEspecieUva.TabIndex = 28
-        Me.lblEspecieUva.Text = "."
-        '
-        'lblHarmonizacao
-        '
-        Me.lblHarmonizacao.AutoSize = True
-        Me.lblHarmonizacao.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblHarmonizacao.ForeColor = System.Drawing.Color.White
-        Me.lblHarmonizacao.Location = New System.Drawing.Point(344, 595)
-        Me.lblHarmonizacao.Margin = New System.Windows.Forms.Padding(15, 0, 15, 0)
-        Me.lblHarmonizacao.MaximumSize = New System.Drawing.Size(700, 0)
-        Me.lblHarmonizacao.Name = "lblHarmonizacao"
-        Me.lblHarmonizacao.Size = New System.Drawing.Size(10, 16)
-        Me.lblHarmonizacao.TabIndex = 30
-        Me.lblHarmonizacao.Text = "."
-        '
-        'lblTeorAlcoolico
-        '
-        Me.lblTeorAlcoolico.AutoSize = True
-        Me.lblTeorAlcoolico.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblTeorAlcoolico.ForeColor = System.Drawing.Color.White
-        Me.lblTeorAlcoolico.Location = New System.Drawing.Point(344, 570)
-        Me.lblTeorAlcoolico.Margin = New System.Windows.Forms.Padding(15, 0, 15, 0)
-        Me.lblTeorAlcoolico.MaximumSize = New System.Drawing.Size(700, 0)
-        Me.lblTeorAlcoolico.Name = "lblTeorAlcoolico"
-        Me.lblTeorAlcoolico.Size = New System.Drawing.Size(10, 16)
-        Me.lblTeorAlcoolico.TabIndex = 29
-        Me.lblTeorAlcoolico.Text = "."
+        Me.lblDadosGerais.AutoSize = True
+        Me.lblDadosGerais.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblDadosGerais.ForeColor = System.Drawing.Color.White
+        Me.lblDadosGerais.Location = New System.Drawing.Point(344, 480)
+        Me.lblDadosGerais.Margin = New System.Windows.Forms.Padding(15, 0, 15, 0)
+        Me.lblDadosGerais.MaximumSize = New System.Drawing.Size(700, 0)
+        Me.lblDadosGerais.Name = "lblDadosGerais"
+        Me.lblDadosGerais.Size = New System.Drawing.Size(10, 16)
+        Me.lblDadosGerais.TabIndex = 27
+        Me.lblDadosGerais.Text = "."
         '
         'Catalogo
         '
@@ -374,18 +261,11 @@ Partial Class Catalogo
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(174, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(65, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1174, 701)
-        Me.Controls.Add(Me.lblHarmonizacao)
-        Me.Controls.Add(Me.lblTeorAlcoolico)
-        Me.Controls.Add(Me.lblEspecieUva)
         Me.Controls.Add(Me.imgProduto)
         Me.Controls.Add(Me.lblTipoClasseProduto)
         Me.Controls.Add(Me.lblDescricaoProduto)
-        Me.Controls.Add(Me.lblPaisRegião)
+        Me.Controls.Add(Me.lblDadosGerais)
         Me.Controls.Add(Me.lstBuscaProduto)
-        Me.Controls.Add(Me.Button4)
-        Me.Controls.Add(Me.Button3)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.btnCatalogo)
         Me.Controls.Add(Me.lblNomeSafraProduto)
         Me.Controls.Add(Me.Label2)
@@ -421,16 +301,9 @@ Partial Class Catalogo
     Friend WithEvents SairDoSistemaToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents FavoritosToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents btnCatalogo As Button
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Button2 As Button
-    Friend WithEvents Button3 As Button
-    Friend WithEvents Button4 As Button
     Friend WithEvents lstBuscaProduto As ListBox
     Friend WithEvents imgProduto As PictureBox
     Friend WithEvents lblTipoClasseProduto As Label
     Friend WithEvents lblDescricaoProduto As Label
-    Friend WithEvents lblPaisRegião As Label
-    Friend WithEvents lblEspecieUva As Label
-    Friend WithEvents lblHarmonizacao As Label
-    Friend WithEvents lblTeorAlcoolico As Label
+    Friend WithEvents lblDadosGerais As Label
 End Class

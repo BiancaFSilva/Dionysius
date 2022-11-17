@@ -37,7 +37,6 @@
     Private Sub FavoritosToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles FavoritosToolStripMenuItem.Click
         Try
             frmFavoritos.ShowDialog()
-            Me.Close()
         Catch ex As Exception
             MsgBox("Ocorreu um erro durante o carregamento da página", MsgBoxStyle.Critical + MsgBoxStyle.OkOnly, "ATENÇÃO")
             Exit Sub
@@ -47,6 +46,14 @@
     Private Sub SairDoSistemaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SairDoSistemaToolStripMenuItem.Click
         Try
             Application.Exit()
+        Catch ex As Exception
+            Exit Sub
+        End Try
+    End Sub
+
+    Private Sub btnCatalogo_Click(sender As Object, e As EventArgs) Handles btnCatalogo.Click
+        Try
+            Process.Start(Application.StartupPath & "\db\Dionysius.mdb")
         Catch ex As Exception
             Exit Sub
         End Try
@@ -66,7 +73,7 @@
                 .Items.Clear()
 
                 Do While rs.EOF = False
-                    .Items.Add("" & rs.Fields(1).Value & ", " & rs.Fields(3).Value & "")
+                    .Items.Add(rs.Fields(1).Value & ", " & rs.Fields(3).Value)
                     aux = rs.Fields(1).Value
 
                     rs.MoveNext()
@@ -74,7 +81,7 @@
                 Loop
             End With
 
-            txtBusca.Text = lstBuscaProduto.SelectedItem
+            txtBusca.Text = aux
         Catch ex As Exception
             MsgBox("Ocorreu um erro durante a busca do produto", MsgBoxStyle.Critical + MsgBoxStyle.OkOnly, "ATENÇÃO")
             Call limpaBusca()
@@ -84,19 +91,19 @@
 
     Private Sub btnBusca_Click(sender As Object, e As EventArgs) Handles btnBusca.Click
         Try
-            sql = "SELECT * FROM tb_vinhos WHERE nome = '" & aux & "'"
+            sql = "SELECT * FROM tb_vinhos WHERE nome = '" & txtBusca.Text & "'"
             rs = db.Execute(sql)
 
             lstBuscaProduto.Visible = False
 
-            ' imgProduto.Load(rs.Fields(15).Value)
             lblNomeSafraProduto.Text = "" & rs.Fields(1).Value & ", " & rs.Fields(5).Value & ""
             lblTipoClasseProduto.Text = "" & rs.Fields(3).Value & " - " & rs.Fields(4).Value & ""
             lblDescricaoProduto.Text = "" & rs.Fields(2).Value & ""
-            lblPaisRegião.Text = "" & rs.Fields(7).Value & ", " & rs.Fields(8).Value & ""
-            lblEspecieUva.Text = "Uvas e componentes: " & rs.Fields(6).Value & ""
-            lblTeorAlcoolico.Text = "Teor alcóolico: " & rs.Fields(11).Value & "%"
-            lblHarmonizacao.Text = "Harmonização: " & rs.Fields(12).Value & ""
+            lblDadosGerais.Text = "" & rs.Fields(7).Value & ", " & rs.Fields(8).Value & "" + vbNewLine &
+                                  "Uvas e componentes: " & rs.Fields(6).Value & "" + vbNewLine &
+                                  "Teor alcóolico: " & rs.Fields(11).Value & "%" + vbNewLine &
+                                  "Harmonização: " & rs.Fields(12).Value & ""
+            imgProduto.Load(rs.Fields(15).Value)
         Catch ex As Exception
             MsgBox("Ocorreu um erro durante a busca do produto", MsgBoxStyle.Critical + MsgBoxStyle.OkOnly, "ATENÇÃO")
             Call limpaBusca()

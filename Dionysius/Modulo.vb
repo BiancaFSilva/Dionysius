@@ -279,10 +279,7 @@
                 .lblNomeSafraProduto.Text = " "
                 .lblTipoClasseProduto.Text = " "
                 .lblDescricaoProduto.Text = " "
-                .lblPaisRegião.Text = " "
-                .lblEspecieUva.Text = " "
-                .lblTeorAlcoolico.Text = " "
-                .lblHarmonizacao.Text = " "
+                .lblDadosGerais.Text = " "
             End With
         Catch ex As Exception
             Exit Sub

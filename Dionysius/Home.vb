@@ -42,7 +42,6 @@
     Private Sub FavoritosToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles FavoritosToolStripMenuItem.Click
         Try
             frmFavoritos.ShowDialog()
-            Me.Close()
         Catch ex As Exception
             MsgBox("Ocorreu um erro durante o carregamento da página", MsgBoxStyle.Critical + MsgBoxStyle.OkOnly, "ATENÇÃO")
             Exit Sub
@@ -59,8 +58,7 @@
 
     Private Sub btnVerCatalogo_Click_1(sender As Object, e As EventArgs) Handles btnVerCatalogo.Click
         Try
-            Catalogo.ShowDialog()
-            Me.Close()
+            Process.Start(Application.StartupPath & "\db\Dionysius.mdb")
         Catch ex As Exception
             MsgBox("Ocorreu um erro durante o carregamento da página", MsgBoxStyle.Critical + MsgBoxStyle.OkOnly, "ATENÇÃO")
             Exit Sub
