@@ -1,6 +1,7 @@
 ﻿Public Class frmCadastraFornecedor
     Private Sub frmCadastraFornecedor_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Call conectaDataBase()
+        Call limpaFornecedores()
 
         If btnCadastrar.Text = "Atualizar Fornecedor" Then
             lblId.Visible = True
@@ -70,7 +71,6 @@
                     rs = db.Execute(UCase(sql))
 
                     Call carregaDadosFornecedores()
-                    Call limpaFornecedores()
 
                     resp = MsgBox("O fornecedor " & txtNome.Text & " foi adicionado com sucesso!" + vbNewLine &
                                   "Deseja cadastrar o fornecedor?", MsgBoxStyle.Information + MsgBoxStyle.YesNo, "AVISO")

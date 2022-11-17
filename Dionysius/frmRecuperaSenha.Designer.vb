@@ -199,7 +199,7 @@ Partial Class frmRecuperaSenha
         Me.MaximizeBox = False
         Me.Name = "frmRecuperaSenha"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "frmRecuperaSenha"
+        Me.Text = "Dionysius - Recuperar Senha"
         CType(Me.imgVerSenha, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()

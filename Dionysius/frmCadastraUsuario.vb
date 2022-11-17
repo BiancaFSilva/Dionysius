@@ -1,6 +1,7 @@
 ﻿Public Class frmCadastraUsuario
     Private Sub frmCadastraUsuario_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Call conectaDataBase()
+        Call limpaCadastro()
 
         If btnCadastrar.Text = "Atualizar" Then
             lblId.Visible = True

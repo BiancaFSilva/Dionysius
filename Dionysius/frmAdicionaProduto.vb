@@ -1,6 +1,7 @@
 ﻿Public Class frmAdicionaProduto
     Private Sub frmAdicionaProduto_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Call conectaDataBase()
+        Call limpaProduto()
 
         If btnAdicionaProduto.Text = "Atualizar Produto" Then
             lblId.Visible = True

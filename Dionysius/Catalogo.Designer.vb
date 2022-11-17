@@ -31,17 +31,7 @@ Partial Class Catalogo
         Me.LoginToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.FavoritosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SairDoSistemaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.FlowLayoutPanel1 = New System.Windows.Forms.FlowLayoutPanel()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.Label8 = New System.Windows.Forms.Label()
-        Me.Label9 = New System.Windows.Forms.Label()
-        Me.FlowLayoutPanel2 = New System.Windows.Forms.FlowLayoutPanel()
-        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
-        Me.Label10 = New System.Windows.Forms.Label()
-        Me.Label11 = New System.Windows.Forms.Label()
-        Me.Label12 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
+        Me.lblNomeSafraProduto = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.txtBusca = New System.Windows.Forms.TextBox()
@@ -51,11 +41,16 @@ Partial Class Catalogo
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
+        Me.lstBuscaProduto = New System.Windows.Forms.ListBox()
+        Me.imgProduto = New System.Windows.Forms.PictureBox()
+        Me.lblTipoClasseProduto = New System.Windows.Forms.Label()
+        Me.lblDescricaoProduto = New System.Windows.Forms.Label()
+        Me.lblPaisRegião = New System.Windows.Forms.Label()
+        Me.lblEspecieUva = New System.Windows.Forms.Label()
+        Me.lblHarmonizacao = New System.Windows.Forms.Label()
+        Me.lblTeorAlcoolico = New System.Windows.Forms.Label()
         Me.MenuStrip1.SuspendLayout()
-        Me.FlowLayoutPanel1.SuspendLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.FlowLayoutPanel2.SuspendLayout()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.imgProduto, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'MenuStrip1
@@ -135,141 +130,24 @@ Partial Class Catalogo
         Me.SairDoSistemaToolStripMenuItem.Size = New System.Drawing.Size(154, 22)
         Me.SairDoSistemaToolStripMenuItem.Text = "Sair do Sistema"
         '
-        'FlowLayoutPanel1
+        'lblNomeSafraProduto
         '
-        Me.FlowLayoutPanel1.Controls.Add(Me.PictureBox1)
-        Me.FlowLayoutPanel1.Controls.Add(Me.Label7)
-        Me.FlowLayoutPanel1.Controls.Add(Me.Label8)
-        Me.FlowLayoutPanel1.Controls.Add(Me.Label9)
-        Me.FlowLayoutPanel1.Controls.Add(Me.FlowLayoutPanel2)
-        Me.FlowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.TopDown
-        Me.FlowLayoutPanel1.Location = New System.Drawing.Point(108, 273)
-        Me.FlowLayoutPanel1.Name = "FlowLayoutPanel1"
-        Me.FlowLayoutPanel1.Size = New System.Drawing.Size(200, 335)
-        Me.FlowLayoutPanel1.TabIndex = 17
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.BackgroundImage = Global.Dionysius.My.Resources.Resources.wine_colorful
-        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.PictureBox1.Location = New System.Drawing.Point(3, 3)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(197, 233)
-        Me.PictureBox1.TabIndex = 0
-        Me.PictureBox1.TabStop = False
-        '
-        'Label7
-        '
-        Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("Bahnschrift", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.ForeColor = System.Drawing.Color.White
-        Me.Label7.Location = New System.Drawing.Point(80, 249)
-        Me.Label7.Margin = New System.Windows.Forms.Padding(80, 10, 38, 6)
-        Me.Label7.Name = "Label7"
-        Me.Label7.RightToLeft = System.Windows.Forms.RightToLeft.Yes
-        Me.Label7.Size = New System.Drawing.Size(38, 18)
-        Me.Label7.TabIndex = 1
-        Me.Label7.Text = "TIPO"
-        Me.Label7.TextAlign = System.Drawing.ContentAlignment.TopCenter
-        '
-        'Label8
-        '
-        Me.Label8.AutoSize = True
-        Me.Label8.ForeColor = System.Drawing.Color.White
-        Me.Label8.Location = New System.Drawing.Point(15, 273)
-        Me.Label8.Margin = New System.Windows.Forms.Padding(15, 0, 15, 6)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(35, 13)
-        Me.Label8.TabIndex = 2
-        Me.Label8.Text = "Nome"
-        '
-        'Label9
-        '
-        Me.Label9.AutoSize = True
-        Me.Label9.ForeColor = System.Drawing.Color.White
-        Me.Label9.Location = New System.Drawing.Point(15, 292)
-        Me.Label9.Margin = New System.Windows.Forms.Padding(15, 0, 15, 0)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(32, 13)
-        Me.Label9.TabIndex = 3
-        Me.Label9.Text = "Safra"
-        '
-        'FlowLayoutPanel2
-        '
-        Me.FlowLayoutPanel2.Controls.Add(Me.PictureBox3)
-        Me.FlowLayoutPanel2.Controls.Add(Me.Label10)
-        Me.FlowLayoutPanel2.Controls.Add(Me.Label11)
-        Me.FlowLayoutPanel2.Controls.Add(Me.Label12)
-        Me.FlowLayoutPanel2.FlowDirection = System.Windows.Forms.FlowDirection.TopDown
-        Me.FlowLayoutPanel2.Location = New System.Drawing.Point(206, 3)
-        Me.FlowLayoutPanel2.Name = "FlowLayoutPanel2"
-        Me.FlowLayoutPanel2.Size = New System.Drawing.Size(200, 335)
-        Me.FlowLayoutPanel2.TabIndex = 12
-        '
-        'PictureBox3
-        '
-        Me.PictureBox3.BackgroundImage = Global.Dionysius.My.Resources.Resources.wine_colorful
-        Me.PictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.PictureBox3.Location = New System.Drawing.Point(3, 3)
-        Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(197, 233)
-        Me.PictureBox3.TabIndex = 0
-        Me.PictureBox3.TabStop = False
-        '
-        'Label10
-        '
-        Me.Label10.AutoSize = True
-        Me.Label10.Font = New System.Drawing.Font("Bahnschrift", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.ForeColor = System.Drawing.Color.White
-        Me.Label10.Location = New System.Drawing.Point(80, 249)
-        Me.Label10.Margin = New System.Windows.Forms.Padding(80, 10, 38, 6)
-        Me.Label10.Name = "Label10"
-        Me.Label10.RightToLeft = System.Windows.Forms.RightToLeft.Yes
-        Me.Label10.Size = New System.Drawing.Size(38, 18)
-        Me.Label10.TabIndex = 1
-        Me.Label10.Text = "TIPO"
-        Me.Label10.TextAlign = System.Drawing.ContentAlignment.TopCenter
-        '
-        'Label11
-        '
-        Me.Label11.AutoSize = True
-        Me.Label11.ForeColor = System.Drawing.Color.White
-        Me.Label11.Location = New System.Drawing.Point(15, 273)
-        Me.Label11.Margin = New System.Windows.Forms.Padding(15, 0, 15, 6)
-        Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(35, 13)
-        Me.Label11.TabIndex = 2
-        Me.Label11.Text = "Nome"
-        '
-        'Label12
-        '
-        Me.Label12.AutoSize = True
-        Me.Label12.ForeColor = System.Drawing.Color.White
-        Me.Label12.Location = New System.Drawing.Point(15, 292)
-        Me.Label12.Margin = New System.Windows.Forms.Padding(15, 0, 15, 0)
-        Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(32, 13)
-        Me.Label12.TabIndex = 3
-        Me.Label12.Text = "Safra"
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Bahnschrift", 26.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.ForeColor = System.Drawing.Color.White
-        Me.Label3.Location = New System.Drawing.Point(101, 183)
-        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(183, 42)
-        Me.Label3.TabIndex = 16
-        Me.Label3.Text = "Destaques"
+        Me.lblNomeSafraProduto.AutoSize = True
+        Me.lblNomeSafraProduto.Font = New System.Drawing.Font("Bahnschrift", 26.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblNomeSafraProduto.ForeColor = System.Drawing.Color.White
+        Me.lblNomeSafraProduto.Location = New System.Drawing.Point(101, 260)
+        Me.lblNomeSafraProduto.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblNomeSafraProduto.Name = "lblNomeSafraProduto"
+        Me.lblNomeSafraProduto.Size = New System.Drawing.Size(26, 42)
+        Me.lblNomeSafraProduto.TabIndex = 16
+        Me.lblNomeSafraProduto.Text = "."
         '
         'Label2
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Bahnschrift", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(230, Byte), Integer), CType(CType(217, Byte), Integer))
-        Me.Label2.Location = New System.Drawing.Point(400, 130)
+        Me.Label2.Location = New System.Drawing.Point(406, 129)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(30, 13)
         Me.Label2.TabIndex = 15
@@ -280,11 +158,11 @@ Partial Class Catalogo
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Bahnschrift", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(230, Byte), Integer), CType(CType(217, Byte), Integer))
-        Me.Label1.Location = New System.Drawing.Point(436, 130)
+        Me.Label1.Location = New System.Drawing.Point(442, 129)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(313, 13)
+        Me.Label1.Size = New System.Drawing.Size(309, 13)
         Me.Label1.TabIndex = 14
-        Me.Label1.Text = "você pode buscar por nome, tipo, cor, safra (ano) ou avaliação"
+        Me.Label1.Text = "você pode buscar por nome, tipo, safra (ano) ou classificação"
         '
         'txtBusca
         '
@@ -391,19 +269,125 @@ Partial Class Catalogo
         Me.Button4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.Button4.UseVisualStyleBackColor = False
         '
+        'lstBuscaProduto
+        '
+        Me.lstBuscaProduto.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.lstBuscaProduto.FormattingEnabled = True
+        Me.lstBuscaProduto.Location = New System.Drawing.Point(314, 121)
+        Me.lstBuscaProduto.Name = "lstBuscaProduto"
+        Me.lstBuscaProduto.Size = New System.Drawing.Size(516, 91)
+        Me.lstBuscaProduto.TabIndex = 23
+        Me.lstBuscaProduto.Visible = False
+        '
+        'imgProduto
+        '
+        Me.imgProduto.BackgroundImage = Global.Dionysius.My.Resources.Resources.wine_colorful
+        Me.imgProduto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.imgProduto.Location = New System.Drawing.Point(108, 348)
+        Me.imgProduto.Name = "imgProduto"
+        Me.imgProduto.Size = New System.Drawing.Size(197, 263)
+        Me.imgProduto.TabIndex = 24
+        Me.imgProduto.TabStop = False
+        '
+        'lblTipoClasseProduto
+        '
+        Me.lblTipoClasseProduto.AutoSize = True
+        Me.lblTipoClasseProduto.Font = New System.Drawing.Font("Bahnschrift", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblTipoClasseProduto.ForeColor = System.Drawing.Color.White
+        Me.lblTipoClasseProduto.Location = New System.Drawing.Point(108, 303)
+        Me.lblTipoClasseProduto.Margin = New System.Windows.Forms.Padding(80, 10, 38, 6)
+        Me.lblTipoClasseProduto.Name = "lblTipoClasseProduto"
+        Me.lblTipoClasseProduto.RightToLeft = System.Windows.Forms.RightToLeft.Yes
+        Me.lblTipoClasseProduto.Size = New System.Drawing.Size(11, 18)
+        Me.lblTipoClasseProduto.TabIndex = 25
+        Me.lblTipoClasseProduto.Text = "."
+        Me.lblTipoClasseProduto.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
+        'lblDescricaoProduto
+        '
+        Me.lblDescricaoProduto.AutoSize = True
+        Me.lblDescricaoProduto.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblDescricaoProduto.ForeColor = System.Drawing.Color.White
+        Me.lblDescricaoProduto.Location = New System.Drawing.Point(344, 348)
+        Me.lblDescricaoProduto.Margin = New System.Windows.Forms.Padding(15, 0, 15, 6)
+        Me.lblDescricaoProduto.MaximumSize = New System.Drawing.Size(700, 200)
+        Me.lblDescricaoProduto.Name = "lblDescricaoProduto"
+        Me.lblDescricaoProduto.Size = New System.Drawing.Size(10, 16)
+        Me.lblDescricaoProduto.TabIndex = 26
+        Me.lblDescricaoProduto.Text = "."
+        '
+        'lblPaisRegião
+        '
+        Me.lblPaisRegião.AutoSize = True
+        Me.lblPaisRegião.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblPaisRegião.ForeColor = System.Drawing.Color.White
+        Me.lblPaisRegião.Location = New System.Drawing.Point(343, 520)
+        Me.lblPaisRegião.Margin = New System.Windows.Forms.Padding(15, 0, 15, 0)
+        Me.lblPaisRegião.MaximumSize = New System.Drawing.Size(700, 0)
+        Me.lblPaisRegião.Name = "lblPaisRegião"
+        Me.lblPaisRegião.Size = New System.Drawing.Size(10, 16)
+        Me.lblPaisRegião.TabIndex = 27
+        Me.lblPaisRegião.Text = "."
+        '
+        'lblEspecieUva
+        '
+        Me.lblEspecieUva.AutoSize = True
+        Me.lblEspecieUva.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblEspecieUva.ForeColor = System.Drawing.Color.White
+        Me.lblEspecieUva.Location = New System.Drawing.Point(343, 545)
+        Me.lblEspecieUva.Margin = New System.Windows.Forms.Padding(15, 0, 15, 0)
+        Me.lblEspecieUva.MaximumSize = New System.Drawing.Size(700, 0)
+        Me.lblEspecieUva.Name = "lblEspecieUva"
+        Me.lblEspecieUva.Size = New System.Drawing.Size(10, 16)
+        Me.lblEspecieUva.TabIndex = 28
+        Me.lblEspecieUva.Text = "."
+        '
+        'lblHarmonizacao
+        '
+        Me.lblHarmonizacao.AutoSize = True
+        Me.lblHarmonizacao.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblHarmonizacao.ForeColor = System.Drawing.Color.White
+        Me.lblHarmonizacao.Location = New System.Drawing.Point(344, 595)
+        Me.lblHarmonizacao.Margin = New System.Windows.Forms.Padding(15, 0, 15, 0)
+        Me.lblHarmonizacao.MaximumSize = New System.Drawing.Size(700, 0)
+        Me.lblHarmonizacao.Name = "lblHarmonizacao"
+        Me.lblHarmonizacao.Size = New System.Drawing.Size(10, 16)
+        Me.lblHarmonizacao.TabIndex = 30
+        Me.lblHarmonizacao.Text = "."
+        '
+        'lblTeorAlcoolico
+        '
+        Me.lblTeorAlcoolico.AutoSize = True
+        Me.lblTeorAlcoolico.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblTeorAlcoolico.ForeColor = System.Drawing.Color.White
+        Me.lblTeorAlcoolico.Location = New System.Drawing.Point(344, 570)
+        Me.lblTeorAlcoolico.Margin = New System.Windows.Forms.Padding(15, 0, 15, 0)
+        Me.lblTeorAlcoolico.MaximumSize = New System.Drawing.Size(700, 0)
+        Me.lblTeorAlcoolico.Name = "lblTeorAlcoolico"
+        Me.lblTeorAlcoolico.Size = New System.Drawing.Size(10, 16)
+        Me.lblTeorAlcoolico.TabIndex = 29
+        Me.lblTeorAlcoolico.Text = "."
+        '
         'Catalogo
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(174, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(65, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1174, 701)
+        Me.Controls.Add(Me.lblHarmonizacao)
+        Me.Controls.Add(Me.lblTeorAlcoolico)
+        Me.Controls.Add(Me.lblEspecieUva)
+        Me.Controls.Add(Me.imgProduto)
+        Me.Controls.Add(Me.lblTipoClasseProduto)
+        Me.Controls.Add(Me.lblDescricaoProduto)
+        Me.Controls.Add(Me.lblPaisRegião)
+        Me.Controls.Add(Me.lstBuscaProduto)
         Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.btnCatalogo)
-        Me.Controls.Add(Me.FlowLayoutPanel1)
-        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.lblNomeSafraProduto)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.btnBusca)
@@ -417,12 +401,7 @@ Partial Class Catalogo
         Me.Text = "Dionysius - Catálogo de Vinho & Espumantes"
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
-        Me.FlowLayoutPanel1.ResumeLayout(False)
-        Me.FlowLayoutPanel1.PerformLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.FlowLayoutPanel2.ResumeLayout(False)
-        Me.FlowLayoutPanel2.PerformLayout()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.imgProduto, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -434,17 +413,7 @@ Partial Class Catalogo
     Friend WithEvents FornecedoresToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents EventosToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents LoginToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents FlowLayoutPanel1 As FlowLayoutPanel
-    Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents Label7 As Label
-    Friend WithEvents Label8 As Label
-    Friend WithEvents Label9 As Label
-    Friend WithEvents FlowLayoutPanel2 As FlowLayoutPanel
-    Friend WithEvents PictureBox3 As PictureBox
-    Friend WithEvents Label10 As Label
-    Friend WithEvents Label11 As Label
-    Friend WithEvents Label12 As Label
-    Friend WithEvents Label3 As Label
+    Friend WithEvents lblNomeSafraProduto As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Label1 As Label
     Friend WithEvents btnBusca As Button
@@ -456,4 +425,12 @@ Partial Class Catalogo
     Friend WithEvents Button2 As Button
     Friend WithEvents Button3 As Button
     Friend WithEvents Button4 As Button
+    Friend WithEvents lstBuscaProduto As ListBox
+    Friend WithEvents imgProduto As PictureBox
+    Friend WithEvents lblTipoClasseProduto As Label
+    Friend WithEvents lblDescricaoProduto As Label
+    Friend WithEvents lblPaisRegião As Label
+    Friend WithEvents lblEspecieUva As Label
+    Friend WithEvents lblHarmonizacao As Label
+    Friend WithEvents lblTeorAlcoolico As Label
 End Class

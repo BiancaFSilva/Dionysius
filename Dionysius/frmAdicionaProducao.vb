@@ -1,6 +1,7 @@
 ﻿Public Class frmAdicionaProducao
     Private Sub frmAdicionaProducao_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Call conectaDataBase()
+        Call limpaProducao()
 
         If btnCadastraProducao.Text = "Atualizar Processo" Then
             lblId.Visible = True

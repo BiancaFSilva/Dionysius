@@ -1,8 +1,4 @@
 ﻿Public Class Fornecedores
-    Private Sub Fornecedores_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Call conectaDataBase()
-    End Sub
-
     Private Sub DionysiusToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles DionysiusToolStripMenuItem.Click
         Try
             Home.ShowDialog()

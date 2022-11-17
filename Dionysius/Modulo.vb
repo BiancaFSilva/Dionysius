@@ -271,4 +271,21 @@
             Exit Sub
         End Try
     End Sub
+
+    Sub limpaBusca()
+        Try
+            With Catalogo
+                .lstBuscaProduto.Items.Clear()
+                .lblNomeSafraProduto.Text = " "
+                .lblTipoClasseProduto.Text = " "
+                .lblDescricaoProduto.Text = " "
+                .lblPaisRegião.Text = " "
+                .lblEspecieUva.Text = " "
+                .lblTeorAlcoolico.Text = " "
+                .lblHarmonizacao.Text = " "
+            End With
+        Catch ex As Exception
+            Exit Sub
+        End Try
+    End Sub
 End Module

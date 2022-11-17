@@ -233,7 +233,7 @@ Partial Class frmAdicionaProducao
         Me.MaximizeBox = False
         Me.Name = "frmAdicionaProducao"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "frmAdicionaProducao"
+        Me.Text = "Dionysius - Adicionar Produção"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
