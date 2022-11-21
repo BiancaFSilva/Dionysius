@@ -892,7 +892,7 @@
     <value>28, 120</value>
   </data>
   <data name="Chart1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>637, 300</value>
+    <value>640, 300</value>
   </data>
   <data name="Chart1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -1863,6 +1863,96 @@
   <data name="$this.Text" xml:space="preserve">
     <value>Dionysius - Dashboard</value>
   </data>
+  <data name="&gt;&gt;IdProduto.Name" xml:space="preserve">
+    <value>IdProduto</value>
+  </data>
+  <data name="&gt;&gt;IdProduto.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;NomeProduto.Name" xml:space="preserve">
+    <value>NomeProduto</value>
+  </data>
+  <data name="&gt;&gt;NomeProduto.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DescricaoProduto.Name" xml:space="preserve">
+    <value>DescricaoProduto</value>
+  </data>
+  <data name="&gt;&gt;DescricaoProduto.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TipoProduto.Name" xml:space="preserve">
+    <value>TipoProduto</value>
+  </data>
+  <data name="&gt;&gt;TipoProduto.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;AcucarProduto.Name" xml:space="preserve">
+    <value>AcucarProduto</value>
+  </data>
+  <data name="&gt;&gt;AcucarProduto.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;SafraProduto.Name" xml:space="preserve">
+    <value>SafraProduto</value>
+  </data>
+  <data name="&gt;&gt;SafraProduto.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;UvaProduto.Name" xml:space="preserve">
+    <value>UvaProduto</value>
+  </data>
+  <data name="&gt;&gt;UvaProduto.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PaisRegiaoProduto.Name" xml:space="preserve">
+    <value>PaisRegiaoProduto</value>
+  </data>
+  <data name="&gt;&gt;PaisRegiaoProduto.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TeorAlcoolicoProduto.Name" xml:space="preserve">
+    <value>TeorAlcoolicoProduto</value>
+  </data>
+  <data name="&gt;&gt;TeorAlcoolicoProduto.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;HarmonizacaoProduto.Name" xml:space="preserve">
+    <value>HarmonizacaoProduto</value>
+  </data>
+  <data name="&gt;&gt;HarmonizacaoProduto.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;QtdeEmEstoqueProduto.Name" xml:space="preserve">
+    <value>QtdeEmEstoqueProduto</value>
+  </data>
+  <data name="&gt;&gt;QtdeEmEstoqueProduto.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PrecoProduto.Name" xml:space="preserve">
+    <value>PrecoProduto</value>
+  </data>
+  <data name="&gt;&gt;PrecoProduto.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;VisualProduto.Name" xml:space="preserve">
+    <value>VisualProduto</value>
+  </data>
+  <data name="&gt;&gt;VisualProduto.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewLinkColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Editar.Name" xml:space="preserve">
+    <value>Editar</value>
+  </data>
+  <data name="&gt;&gt;Editar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewImageColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Excluir.Name" xml:space="preserve">
+    <value>Excluir</value>
+  </data>
+  <data name="&gt;&gt;Excluir.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewImageColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;DionysiusToolStripMenuItem.Name" xml:space="preserve">
     <value>DionysiusToolStripMenuItem</value>
   </data>
@@ -2161,96 +2251,6 @@
     <value>DataGridViewImageColumn10</value>
   </data>
   <data name="&gt;&gt;DataGridViewImageColumn10.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewImageColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;IdProduto.Name" xml:space="preserve">
-    <value>IdProduto</value>
-  </data>
-  <data name="&gt;&gt;IdProduto.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;NomeProduto.Name" xml:space="preserve">
-    <value>NomeProduto</value>
-  </data>
-  <data name="&gt;&gt;NomeProduto.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;DescricaoProduto.Name" xml:space="preserve">
-    <value>DescricaoProduto</value>
-  </data>
-  <data name="&gt;&gt;DescricaoProduto.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;TipoProduto.Name" xml:space="preserve">
-    <value>TipoProduto</value>
-  </data>
-  <data name="&gt;&gt;TipoProduto.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;AcucarProduto.Name" xml:space="preserve">
-    <value>AcucarProduto</value>
-  </data>
-  <data name="&gt;&gt;AcucarProduto.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;SafraProduto.Name" xml:space="preserve">
-    <value>SafraProduto</value>
-  </data>
-  <data name="&gt;&gt;SafraProduto.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;UvaProduto.Name" xml:space="preserve">
-    <value>UvaProduto</value>
-  </data>
-  <data name="&gt;&gt;UvaProduto.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;PaisRegiaoProduto.Name" xml:space="preserve">
-    <value>PaisRegiaoProduto</value>
-  </data>
-  <data name="&gt;&gt;PaisRegiaoProduto.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;TeorAlcoolicoProduto.Name" xml:space="preserve">
-    <value>TeorAlcoolicoProduto</value>
-  </data>
-  <data name="&gt;&gt;TeorAlcoolicoProduto.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;HarmonizacaoProduto.Name" xml:space="preserve">
-    <value>HarmonizacaoProduto</value>
-  </data>
-  <data name="&gt;&gt;HarmonizacaoProduto.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;QtdeEmEstoqueProduto.Name" xml:space="preserve">
-    <value>QtdeEmEstoqueProduto</value>
-  </data>
-  <data name="&gt;&gt;QtdeEmEstoqueProduto.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;PrecoProduto.Name" xml:space="preserve">
-    <value>PrecoProduto</value>
-  </data>
-  <data name="&gt;&gt;PrecoProduto.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;VisualProduto.Name" xml:space="preserve">
-    <value>VisualProduto</value>
-  </data>
-  <data name="&gt;&gt;VisualProduto.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewLinkColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Editar.Name" xml:space="preserve">
-    <value>Editar</value>
-  </data>
-  <data name="&gt;&gt;Editar.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewImageColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Excluir.Name" xml:space="preserve">
-    <value>Excluir</value>
-  </data>
-  <data name="&gt;&gt;Excluir.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewImageColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">

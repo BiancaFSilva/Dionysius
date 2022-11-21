@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Fornecedores
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class Fornecedores
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Fornecedores))
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
@@ -29,7 +29,6 @@ Partial Class Fornecedores
         Me.FornecedoresToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.EventosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.LoginToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.FavoritosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SairDoSistemaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.lblContatoFornecedor = New System.Windows.Forms.LinkLabel()
         Me.Label20 = New System.Windows.Forms.Label()
@@ -101,20 +100,11 @@ Partial Class Fornecedores
         'LoginToolStripMenuItem
         '
         Me.LoginToolStripMenuItem.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right
-        Me.LoginToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FavoritosToolStripMenuItem, Me.SairDoSistemaToolStripMenuItem})
+        Me.LoginToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SairDoSistemaToolStripMenuItem})
         Me.LoginToolStripMenuItem.Image = CType(resources.GetObject("LoginToolStripMenuItem.Image"), System.Drawing.Image)
         Me.LoginToolStripMenuItem.Name = "LoginToolStripMenuItem"
         Me.LoginToolStripMenuItem.Size = New System.Drawing.Size(28, 23)
         Me.LoginToolStripMenuItem.TextAlign = System.Drawing.ContentAlignment.TopRight
-        '
-        'FavoritosToolStripMenuItem
-        '
-        Me.FavoritosToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(89, Byte), Integer), CType(CType(8, Byte), Integer), CType(CType(2, Byte), Integer))
-        Me.FavoritosToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(230, Byte), Integer), CType(CType(217, Byte), Integer))
-        Me.FavoritosToolStripMenuItem.Image = CType(resources.GetObject("FavoritosToolStripMenuItem.Image"), System.Drawing.Image)
-        Me.FavoritosToolStripMenuItem.Name = "FavoritosToolStripMenuItem"
-        Me.FavoritosToolStripMenuItem.Size = New System.Drawing.Size(154, 22)
-        Me.FavoritosToolStripMenuItem.Text = "Favoritos"
         '
         'SairDoSistemaToolStripMenuItem
         '
@@ -122,7 +112,7 @@ Partial Class Fornecedores
         Me.SairDoSistemaToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(230, Byte), Integer), CType(CType(217, Byte), Integer))
         Me.SairDoSistemaToolStripMenuItem.Image = CType(resources.GetObject("SairDoSistemaToolStripMenuItem.Image"), System.Drawing.Image)
         Me.SairDoSistemaToolStripMenuItem.Name = "SairDoSistemaToolStripMenuItem"
-        Me.SairDoSistemaToolStripMenuItem.Size = New System.Drawing.Size(154, 22)
+        Me.SairDoSistemaToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.SairDoSistemaToolStripMenuItem.Text = "Sair do Sistema"
         '
         'lblContatoFornecedor
@@ -298,5 +288,4 @@ Partial Class Fornecedores
     Friend WithEvents PictureBox5 As PictureBox
     Friend WithEvents PictureBox4 As PictureBox
     Friend WithEvents SairDoSistemaToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents FavoritosToolStripMenuItem As ToolStripMenuItem
 End Class

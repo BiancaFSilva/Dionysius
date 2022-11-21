@@ -24,6 +24,9 @@ Partial Class Dashboard
     Private Sub InitializeComponent()
         Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Dashboard))
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle8 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
@@ -32,6 +35,8 @@ Partial Class Dashboard
         Dim Legend1 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
         Dim Series1 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
         Dim Series2 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim Series3 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim Series4 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
         Dim DataGridViewCellStyle9 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle12 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle10 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
@@ -41,10 +46,22 @@ Partial Class Dashboard
         Dim DataGridViewCellStyle15 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle17 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle16 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Dashboard))
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.dgvDadosVinho = New System.Windows.Forms.DataGridView()
+        Me.IdProduto = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.NomeProduto = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DescricaoProduto = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.TipoProduto = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.AcucarProduto = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.SafraProduto = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.UvaProduto = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.PaisRegiaoProduto = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.TeorAlcoolicoProduto = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.HarmonizacaoProduto = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.QtdeEmEstoqueProduto = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.PrecoProduto = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.VisualProduto = New System.Windows.Forms.DataGridViewLinkColumn()
+        Me.Editar = New System.Windows.Forms.DataGridViewImageColumn()
+        Me.Excluir = New System.Windows.Forms.DataGridViewImageColumn()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.DionysiusToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.CatálogoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -119,21 +136,6 @@ Partial Class Dashboard
         Me.DataGridViewImageColumn8 = New System.Windows.Forms.DataGridViewImageColumn()
         Me.DataGridViewImageColumn9 = New System.Windows.Forms.DataGridViewImageColumn()
         Me.DataGridViewImageColumn10 = New System.Windows.Forms.DataGridViewImageColumn()
-        Me.IdProduto = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.NomeProduto = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DescricaoProduto = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.TipoProduto = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.AcucarProduto = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.SafraProduto = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.UvaProduto = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.PaisRegiaoProduto = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.TeorAlcoolicoProduto = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.HarmonizacaoProduto = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.QtdeEmEstoqueProduto = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.PrecoProduto = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.VisualProduto = New System.Windows.Forms.DataGridViewLinkColumn()
-        Me.Editar = New System.Windows.Forms.DataGridViewImageColumn()
-        Me.Excluir = New System.Windows.Forms.DataGridViewImageColumn()
         CType(Me.dgvDadosVinho, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.MenuStrip1.SuspendLayout()
         Me.tabControlDashboard.SuspendLayout()
@@ -174,6 +176,91 @@ Partial Class Dashboard
         Me.dgvDadosVinho.DefaultCellStyle = DataGridViewCellStyle4
         resources.ApplyResources(Me.dgvDadosVinho, "dgvDadosVinho")
         Me.dgvDadosVinho.Name = "dgvDadosVinho"
+        '
+        'IdProduto
+        '
+        resources.ApplyResources(Me.IdProduto, "IdProduto")
+        Me.IdProduto.Name = "IdProduto"
+        '
+        'NomeProduto
+        '
+        resources.ApplyResources(Me.NomeProduto, "NomeProduto")
+        Me.NomeProduto.Name = "NomeProduto"
+        '
+        'DescricaoProduto
+        '
+        resources.ApplyResources(Me.DescricaoProduto, "DescricaoProduto")
+        Me.DescricaoProduto.Name = "DescricaoProduto"
+        '
+        'TipoProduto
+        '
+        resources.ApplyResources(Me.TipoProduto, "TipoProduto")
+        Me.TipoProduto.Name = "TipoProduto"
+        '
+        'AcucarProduto
+        '
+        resources.ApplyResources(Me.AcucarProduto, "AcucarProduto")
+        Me.AcucarProduto.Name = "AcucarProduto"
+        '
+        'SafraProduto
+        '
+        resources.ApplyResources(Me.SafraProduto, "SafraProduto")
+        Me.SafraProduto.Name = "SafraProduto"
+        '
+        'UvaProduto
+        '
+        resources.ApplyResources(Me.UvaProduto, "UvaProduto")
+        Me.UvaProduto.Name = "UvaProduto"
+        '
+        'PaisRegiaoProduto
+        '
+        resources.ApplyResources(Me.PaisRegiaoProduto, "PaisRegiaoProduto")
+        Me.PaisRegiaoProduto.Name = "PaisRegiaoProduto"
+        '
+        'TeorAlcoolicoProduto
+        '
+        DataGridViewCellStyle2.Format = "N1"
+        DataGridViewCellStyle2.NullValue = Nothing
+        Me.TeorAlcoolicoProduto.DefaultCellStyle = DataGridViewCellStyle2
+        resources.ApplyResources(Me.TeorAlcoolicoProduto, "TeorAlcoolicoProduto")
+        Me.TeorAlcoolicoProduto.Name = "TeorAlcoolicoProduto"
+        '
+        'HarmonizacaoProduto
+        '
+        resources.ApplyResources(Me.HarmonizacaoProduto, "HarmonizacaoProduto")
+        Me.HarmonizacaoProduto.Name = "HarmonizacaoProduto"
+        '
+        'QtdeEmEstoqueProduto
+        '
+        resources.ApplyResources(Me.QtdeEmEstoqueProduto, "QtdeEmEstoqueProduto")
+        Me.QtdeEmEstoqueProduto.Name = "QtdeEmEstoqueProduto"
+        '
+        'PrecoProduto
+        '
+        DataGridViewCellStyle3.Format = "C2"
+        DataGridViewCellStyle3.NullValue = "0,00"
+        Me.PrecoProduto.DefaultCellStyle = DataGridViewCellStyle3
+        resources.ApplyResources(Me.PrecoProduto, "PrecoProduto")
+        Me.PrecoProduto.Name = "PrecoProduto"
+        '
+        'VisualProduto
+        '
+        resources.ApplyResources(Me.VisualProduto, "VisualProduto")
+        Me.VisualProduto.Name = "VisualProduto"
+        Me.VisualProduto.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
+        '
+        'Editar
+        '
+        resources.ApplyResources(Me.Editar, "Editar")
+        Me.Editar.Image = CType(resources.GetObject("Editar.Image"), System.Drawing.Image)
+        Me.Editar.Name = "Editar"
+        Me.Editar.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
+        '
+        'Excluir
+        '
+        resources.ApplyResources(Me.Excluir, "Excluir")
+        Me.Excluir.Image = CType(resources.GetObject("Excluir.Image"), System.Drawing.Image)
+        Me.Excluir.Name = "Excluir"
         '
         'MenuStrip1
         '
@@ -383,14 +470,24 @@ Partial Class Dashboard
         Me.Chart1.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Chocolate
         Series1.ChartArea = "ChartArea1"
         Series1.Legend = "Bebidas"
-        Series1.LegendText = "Vinho"
-        Series1.Name = "Series1"
+        Series1.LegendText = "Vinho Tinto"
+        Series1.Name = "vTinto"
         Series2.ChartArea = "ChartArea1"
         Series2.Legend = "Bebidas"
-        Series2.LegendText = "Espumante"
-        Series2.Name = "Series2"
+        Series2.LegendText = "Vinho Brnco"
+        Series2.Name = "vBranco"
+        Series3.ChartArea = "ChartArea1"
+        Series3.Legend = "Bebidas"
+        Series3.LegendText = "Vinho Rosé"
+        Series3.Name = "vRose"
+        Series4.ChartArea = "ChartArea1"
+        Series4.Legend = "Bebidas"
+        Series4.LegendText = "Espumante"
+        Series4.Name = "espumante"
         Me.Chart1.Series.Add(Series1)
         Me.Chart1.Series.Add(Series2)
+        Me.Chart1.Series.Add(Series3)
+        Me.Chart1.Series.Add(Series4)
         '
         'tabEventos
         '
@@ -737,91 +834,6 @@ Partial Class Dashboard
         resources.ApplyResources(Me.DataGridViewImageColumn10, "DataGridViewImageColumn10")
         Me.DataGridViewImageColumn10.Image = CType(resources.GetObject("DataGridViewImageColumn10.Image"), System.Drawing.Image)
         Me.DataGridViewImageColumn10.Name = "DataGridViewImageColumn10"
-        '
-        'IdProduto
-        '
-        resources.ApplyResources(Me.IdProduto, "IdProduto")
-        Me.IdProduto.Name = "IdProduto"
-        '
-        'NomeProduto
-        '
-        resources.ApplyResources(Me.NomeProduto, "NomeProduto")
-        Me.NomeProduto.Name = "NomeProduto"
-        '
-        'DescricaoProduto
-        '
-        resources.ApplyResources(Me.DescricaoProduto, "DescricaoProduto")
-        Me.DescricaoProduto.Name = "DescricaoProduto"
-        '
-        'TipoProduto
-        '
-        resources.ApplyResources(Me.TipoProduto, "TipoProduto")
-        Me.TipoProduto.Name = "TipoProduto"
-        '
-        'AcucarProduto
-        '
-        resources.ApplyResources(Me.AcucarProduto, "AcucarProduto")
-        Me.AcucarProduto.Name = "AcucarProduto"
-        '
-        'SafraProduto
-        '
-        resources.ApplyResources(Me.SafraProduto, "SafraProduto")
-        Me.SafraProduto.Name = "SafraProduto"
-        '
-        'UvaProduto
-        '
-        resources.ApplyResources(Me.UvaProduto, "UvaProduto")
-        Me.UvaProduto.Name = "UvaProduto"
-        '
-        'PaisRegiaoProduto
-        '
-        resources.ApplyResources(Me.PaisRegiaoProduto, "PaisRegiaoProduto")
-        Me.PaisRegiaoProduto.Name = "PaisRegiaoProduto"
-        '
-        'TeorAlcoolicoProduto
-        '
-        DataGridViewCellStyle2.Format = "N1"
-        DataGridViewCellStyle2.NullValue = Nothing
-        Me.TeorAlcoolicoProduto.DefaultCellStyle = DataGridViewCellStyle2
-        resources.ApplyResources(Me.TeorAlcoolicoProduto, "TeorAlcoolicoProduto")
-        Me.TeorAlcoolicoProduto.Name = "TeorAlcoolicoProduto"
-        '
-        'HarmonizacaoProduto
-        '
-        resources.ApplyResources(Me.HarmonizacaoProduto, "HarmonizacaoProduto")
-        Me.HarmonizacaoProduto.Name = "HarmonizacaoProduto"
-        '
-        'QtdeEmEstoqueProduto
-        '
-        resources.ApplyResources(Me.QtdeEmEstoqueProduto, "QtdeEmEstoqueProduto")
-        Me.QtdeEmEstoqueProduto.Name = "QtdeEmEstoqueProduto"
-        '
-        'PrecoProduto
-        '
-        DataGridViewCellStyle3.Format = "C2"
-        DataGridViewCellStyle3.NullValue = "0,00"
-        Me.PrecoProduto.DefaultCellStyle = DataGridViewCellStyle3
-        resources.ApplyResources(Me.PrecoProduto, "PrecoProduto")
-        Me.PrecoProduto.Name = "PrecoProduto"
-        '
-        'VisualProduto
-        '
-        resources.ApplyResources(Me.VisualProduto, "VisualProduto")
-        Me.VisualProduto.Name = "VisualProduto"
-        Me.VisualProduto.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
-        '
-        'Editar
-        '
-        resources.ApplyResources(Me.Editar, "Editar")
-        Me.Editar.Image = CType(resources.GetObject("Editar.Image"), System.Drawing.Image)
-        Me.Editar.Name = "Editar"
-        Me.Editar.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
-        '
-        'Excluir
-        '
-        resources.ApplyResources(Me.Excluir, "Excluir")
-        Me.Excluir.Image = CType(resources.GetObject("Excluir.Image"), System.Drawing.Image)
-        Me.Excluir.Name = "Excluir"
         '
         'Dashboard
         '

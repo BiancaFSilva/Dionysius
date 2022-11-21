@@ -27,4 +27,4 @@ C:\Users\wagne\OneDrive\Área de Trabalho\Dionysius\obj\Debug\Dionysius.frmAdici
 C:\Users\wagne\OneDrive\Área de Trabalho\Dionysius\obj\Debug\Dionysius.frmAdicionaEvento.resources
 C:\Users\wagne\OneDrive\Área de Trabalho\Dionysius\obj\Debug\Dionysius.frmAdicionaProducao.resources
 C:\Users\wagne\OneDrive\Área de Trabalho\Dionysius\obj\Debug\Dionysius.frmCadastraFornecedor.resources
-C:\Users\wagne\OneDrive\Área de Trabalho\Dionysius\obj\Debug\Dionysius.frmFavoritos.resources
+C:\Users\wagne\OneDrive\Área de Trabalho\Dionysius\obj\Debug\Dionysius.frmParticipaEvento.resources
