@@ -131,10 +131,10 @@
     <Compile Include="frmCadastraUsuario.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmFavoritos.Designer.vb">
-      <DependentUpon>frmFavoritos.vb</DependentUpon>
+    <Compile Include="frmParticipaEvento.Designer.vb">
+      <DependentUpon>frmParticipaEvento.vb</DependentUpon>
     </Compile>
-    <Compile Include="frmFavoritos.vb">
+    <Compile Include="frmParticipaEvento.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmRecuperaSenha.Designer.vb">
@@ -205,8 +205,8 @@
     <EmbeddedResource Include="frmCadastraUsuario.resx">
       <DependentUpon>frmCadastraUsuario.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmFavoritos.resx">
-      <DependentUpon>frmFavoritos.vb</DependentUpon>
+    <EmbeddedResource Include="frmParticipaEvento.resx">
+      <DependentUpon>frmParticipaEvento.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmRecuperaSenha.resx">
       <DependentUpon>frmRecuperaSenha.vb</DependentUpon>

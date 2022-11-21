@@ -29,7 +29,6 @@ Partial Class Catalogo
         Me.FornecedoresToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.EventosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.LoginToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.FavoritosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SairDoSistemaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.lblNomeSafraProduto = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -98,20 +97,11 @@ Partial Class Catalogo
         'LoginToolStripMenuItem
         '
         Me.LoginToolStripMenuItem.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right
-        Me.LoginToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FavoritosToolStripMenuItem, Me.SairDoSistemaToolStripMenuItem})
+        Me.LoginToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SairDoSistemaToolStripMenuItem})
         Me.LoginToolStripMenuItem.Image = CType(resources.GetObject("LoginToolStripMenuItem.Image"), System.Drawing.Image)
         Me.LoginToolStripMenuItem.Name = "LoginToolStripMenuItem"
         Me.LoginToolStripMenuItem.Size = New System.Drawing.Size(28, 23)
         Me.LoginToolStripMenuItem.TextAlign = System.Drawing.ContentAlignment.TopRight
-        '
-        'FavoritosToolStripMenuItem
-        '
-        Me.FavoritosToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(89, Byte), Integer), CType(CType(8, Byte), Integer), CType(CType(2, Byte), Integer))
-        Me.FavoritosToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(230, Byte), Integer), CType(CType(217, Byte), Integer))
-        Me.FavoritosToolStripMenuItem.Image = CType(resources.GetObject("FavoritosToolStripMenuItem.Image"), System.Drawing.Image)
-        Me.FavoritosToolStripMenuItem.Name = "FavoritosToolStripMenuItem"
-        Me.FavoritosToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
-        Me.FavoritosToolStripMenuItem.Text = "Favoritos"
         '
         'SairDoSistemaToolStripMenuItem
         '
@@ -299,7 +289,6 @@ Partial Class Catalogo
     Friend WithEvents btnBusca As Button
     Friend WithEvents txtBusca As TextBox
     Friend WithEvents SairDoSistemaToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents FavoritosToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents btnCatalogo As Button
     Friend WithEvents lstBuscaProduto As ListBox
     Friend WithEvents imgProduto As PictureBox

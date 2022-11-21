@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Eventos
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class Eventos
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Eventos))
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
@@ -29,7 +29,6 @@ Partial Class Eventos
         Me.FornecedoresToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.EventosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.LoginToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.FavoritosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SairDoSistemaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Label28 = New System.Windows.Forms.Label()
         Me.Label27 = New System.Windows.Forms.Label()
@@ -39,7 +38,7 @@ Partial Class Eventos
         Me.btnEvento = New System.Windows.Forms.Button()
         Me.Label23 = New System.Windows.Forms.Label()
         Me.Label21 = New System.Windows.Forms.Label()
-        Me.Label22 = New System.Windows.Forms.Label()
+        Me.lblTituloEvento = New System.Windows.Forms.Label()
         Me.PictureBox9 = New System.Windows.Forms.PictureBox()
         Me.PictureBox8 = New System.Windows.Forms.PictureBox()
         Me.PictureBox7 = New System.Windows.Forms.PictureBox()
@@ -101,20 +100,11 @@ Partial Class Eventos
         'LoginToolStripMenuItem
         '
         Me.LoginToolStripMenuItem.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right
-        Me.LoginToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FavoritosToolStripMenuItem, Me.SairDoSistemaToolStripMenuItem})
+        Me.LoginToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SairDoSistemaToolStripMenuItem})
         Me.LoginToolStripMenuItem.Image = CType(resources.GetObject("LoginToolStripMenuItem.Image"), System.Drawing.Image)
         Me.LoginToolStripMenuItem.Name = "LoginToolStripMenuItem"
         Me.LoginToolStripMenuItem.Size = New System.Drawing.Size(28, 23)
         Me.LoginToolStripMenuItem.TextAlign = System.Drawing.ContentAlignment.TopRight
-        '
-        'FavoritosToolStripMenuItem
-        '
-        Me.FavoritosToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(89, Byte), Integer), CType(CType(8, Byte), Integer), CType(CType(2, Byte), Integer))
-        Me.FavoritosToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(230, Byte), Integer), CType(CType(217, Byte), Integer))
-        Me.FavoritosToolStripMenuItem.Image = CType(resources.GetObject("FavoritosToolStripMenuItem.Image"), System.Drawing.Image)
-        Me.FavoritosToolStripMenuItem.Name = "FavoritosToolStripMenuItem"
-        Me.FavoritosToolStripMenuItem.Size = New System.Drawing.Size(154, 22)
-        Me.FavoritosToolStripMenuItem.Text = "Favoritos"
         '
         'SairDoSistemaToolStripMenuItem
         '
@@ -204,17 +194,17 @@ Partial Class Eventos
         Me.Label21.TabIndex = 24
         Me.Label21.Text = "EVENTOS"
         '
-        'Label22
+        'lblTituloEvento
         '
-        Me.Label22.AutoSize = True
-        Me.Label22.Font = New System.Drawing.Font("Bahnschrift", 26.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label22.ForeColor = System.Drawing.Color.Black
-        Me.Label22.Location = New System.Drawing.Point(676, 111)
-        Me.Label22.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label22.Name = "Label22"
-        Me.Label22.Size = New System.Drawing.Size(361, 42)
-        Me.Label22.TabIndex = 23
-        Me.Label22.Text = "Degustação Dionysius"
+        Me.lblTituloEvento.AutoSize = True
+        Me.lblTituloEvento.Font = New System.Drawing.Font("Bahnschrift", 26.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblTituloEvento.ForeColor = System.Drawing.Color.Black
+        Me.lblTituloEvento.Location = New System.Drawing.Point(676, 111)
+        Me.lblTituloEvento.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblTituloEvento.Name = "lblTituloEvento"
+        Me.lblTituloEvento.Size = New System.Drawing.Size(361, 42)
+        Me.lblTituloEvento.TabIndex = 23
+        Me.lblTituloEvento.Text = "Degustação Dionysius"
         '
         'PictureBox9
         '
@@ -261,7 +251,7 @@ Partial Class Eventos
         Me.Controls.Add(Me.btnEvento)
         Me.Controls.Add(Me.Label23)
         Me.Controls.Add(Me.Label21)
-        Me.Controls.Add(Me.Label22)
+        Me.Controls.Add(Me.lblTituloEvento)
         Me.Controls.Add(Me.PictureBox9)
         Me.Controls.Add(Me.PictureBox8)
         Me.Controls.Add(Me.PictureBox7)
@@ -295,10 +285,9 @@ Partial Class Eventos
     Friend WithEvents btnEvento As Button
     Friend WithEvents Label23 As Label
     Friend WithEvents Label21 As Label
-    Friend WithEvents Label22 As Label
+    Friend WithEvents lblTituloEvento As Label
     Friend WithEvents PictureBox9 As PictureBox
     Friend WithEvents PictureBox8 As PictureBox
     Friend WithEvents PictureBox7 As PictureBox
     Friend WithEvents SairDoSistemaToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents FavoritosToolStripMenuItem As ToolStripMenuItem
 End Class
