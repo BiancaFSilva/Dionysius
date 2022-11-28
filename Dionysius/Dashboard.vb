@@ -1,11 +1,14 @@
 ﻿Public Class Dashboard
     Private Sub Dashboard_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Call conectaDataBase()
+
         Call carregaDadosVinho()
         Call carregaDadosProducao()
         Call carregaDadosEvento()
         Call carregaDadosFornecedores()
         Call carregaDadosUsuario()
+
+        Call desenhaGrafico()
     End Sub
 
     ' Ações do MenuStrip
@@ -47,7 +50,7 @@
 
     Private Sub SairDoSistemaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SairDoSistemaToolStripMenuItem.Click
         Try
-            Application.Exit()
+            Me.Close()
         Catch ex As Exception
             Exit Sub
         End Try
@@ -56,6 +59,8 @@
     ' Ações do TabControl
     Private Sub btnAdicionaVinho_Click(sender As Object, e As EventArgs) Handles btnAdicionaVinho.Click
         Try
+            Call limpaProduto()
+
             frmAdicionaProduto.btnAdicionaProduto.Text = "Adicionar Produto"
             frmAdicionaProduto.ShowDialog()
         Catch ex As Exception

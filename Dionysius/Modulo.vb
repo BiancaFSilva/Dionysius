@@ -1,4 +1,6 @@
-﻿Module Modulo
+﻿Imports System.Windows.Forms.DataVisualization.Charting
+
+Module Modulo
     ' Variáveis de conexão com o banco de dados
     Public db As New ADODB.Connection
     Public rs As New ADODB.Recordset
@@ -22,13 +24,14 @@
             db = CreateObject("ADODB.Connection")
             db.Open("Provider=Microsoft.JET.OLEDB.4.0;Data Source=" & dirDb)
 
-            MsgBox("Conexão realizada com sucesso", MsgBoxStyle.Information + MsgBoxStyle.OkOnly, "AVISO")
+            ' MsgBox("Conexão realizada com sucesso", MsgBoxStyle.Information + MsgBoxStyle.OkOnly, "AVISO")
         Catch ex As Exception
             MsgBox("Ocorreu um erro durante a conexão" + vbNewLine &
                    "Tente novamente mais tarde", MsgBoxStyle.Critical + MsgBoxStyle.OkOnly, "ATENÇÃO")
         End Try
     End Sub
 
+    ' Carregar os dados do DataGridView de cada parte do Dashboard
     Sub carregaDadosVinho()
         Try
             sql = "SELECT * FROM tb_vinhos ORDER BY nome ASC"
@@ -139,6 +142,7 @@
         End Try
     End Sub
 
+    ' Reseta os dados do sistema
     Sub limpaLogin()
         Try
             With Login
@@ -224,11 +228,11 @@
                 .txtVisual.Clear()
                 .txtQtdeEmEstoque.Clear()
                 .imgProduto.Refresh()
-                .imgProduto.Load(Application.StartupPath & "\img\add_image.png")
+                .imgProduto.Load(Application.StartupPath & "\img\produtos\sinenomine.png")
 
-                .cmbTipo.SelectedIndex = -1
-                .cmbClasse.SelectedIndex = -1
-                .cmbUva.SelectedIndex = -1
+                .cmbTipo.Text = ""
+                .cmbClasse.Text = ""
+                .cmbUva.Text = ""
 
                 .txtNome.Focus()
             End With
@@ -280,6 +284,120 @@
                 .lblTipoClasseProduto.Text = " "
                 .lblDescricaoProduto.Text = " "
                 .lblDadosGerais.Text = " "
+                .imgProduto.Visible = False
+            End With
+        Catch ex As Exception
+            Exit Sub
+        End Try
+    End Sub
+
+    ' Desenha os gráficos do Dashboard
+    Sub desenhaGrafico()
+        Try
+            Dim tinto, branco, rose, espumante As Integer
+            Dim seco, suave, demiSeco, doce, fortificado, licoroso, brut, extraBrut, nature As Integer
+            Dim arg, aus, bra, chi, esp, fra, geo, ita, por, uru As Integer
+
+            If Dashboard.dgvDadosVinho.ColumnHeadersVisible = True Then
+                For Each c As DataGridViewRow In Dashboard.dgvDadosVinho.Rows
+                    If c.Cells(3).Value <> "" Then
+                        If c.Cells(3).Value = "Vinho Tinto" Then
+                            tinto += 1
+                        ElseIf c.Cells(3).Value = "Vinho Branco" Then
+                            branco += 1
+                        ElseIf c.Cells(3).Value = "Vinho Rosé" Then
+                            rose += 1
+                        ElseIf c.Cells(3).Value = "Espumante" Then
+                            espumante += 1
+                        End If
+                    End If
+                Next
+            End If
+
+            If Dashboard.dgvDadosVinho.ColumnHeadersVisible = True Then
+                For Each c As DataGridViewRow In Dashboard.dgvDadosVinho.Rows
+                    If c.Cells(4).Value <> "" Then
+                        If c.Cells(4).Value = "Seco" Then
+                            seco += 1
+                        ElseIf c.Cells(4).Value = "Suave" Then
+                            suave += 1
+                        ElseIf c.Cells(4).Value = "Demi-Seco" Then
+                            demiSeco += 1
+                        ElseIf c.Cells(4).Value = "Doce" Then
+                            doce += 1
+                        ElseIf c.Cells(4).Value = "Fortificado" Then
+                            fortificado += 1
+                        ElseIf c.Cells(4).Value = "Licoroso" Then
+                            licoroso += 1
+                        ElseIf c.Cells(4).Value = "Brut" Then
+                            brut += 1
+                        ElseIf c.Cells(4).Value = "Extra Brut" Then
+                            extraBrut += 1
+                        ElseIf c.Cells(4).Value = "Nature" Then
+                            nature += 1
+                        End If
+                    End If
+                Next
+            End If
+
+            If Dashboard.dgvDadosVinho.ColumnHeadersVisible = True Then
+                For Each c As DataGridViewRow In Dashboard.dgvDadosVinho.Rows
+                    If c.Cells(7).Value <> "" Then
+                        If c.Cells(7).Value = "Argentina, Cafayate" Or c.Cells(7).Value = "Argentina, General Roca, Rio Negro - Patagônia" Or c.Cells(7).Value = "Argentina, Mendoza" Or c.Cells(7).Value = "Argentina, Salta" Or c.Cells(7).Value = "Argentina, San Juan (Vale de Tulum)" Then
+                            arg += 1
+                        ElseIf c.Cells(7).Value = "Austrália, Riverina" Then
+                            aus += 1
+                        ElseIf c.Cells(7).Value = "Brasil, Espírito Santo do Pinhal" Or c.Cells(7).Value = "Brasil, Rio Grande do Sul" Or c.Cells(7).Value = "Brasil, Serra Gaúcha" Or c.Cells(7).Value = "Brasil, Vale dos Vinhedos" Then
+                            bra += 1
+                        ElseIf c.Cells(7).Value = "Chile, Maipo" Or c.Cells(7).Value = "Chile, Maule" Or c.Cells(7).Value = "Chile, Vale Central" Or c.Cells(7).Value = "Chile, Vale de Casablanca" Or c.Cells(7).Value = "Chile, Vale do Colchagua" Or c.Cells(7).Value = "Chile, Vale do Maipo" Or c.Cells(7).Value = "Chile, Vale do Cachapoal" Then
+                            chi += 1
+                        ElseIf c.Cells(7).Value = "Espanha, Valência" Or c.Cells(7).Value = "Espanha, Jumilla" Or c.Cells(7).Value = "Espanha, La Mancha" Or c.Cells(7).Value = "Espanha, Catalunha" Then
+                            esp += 1
+                        ElseIf c.Cells(7).Value = "França, Aquitânia" Or c.Cells(7).Value = "França, Bordeaux" Or c.Cells(7).Value = "França, Borgonha" Or c.Cells(7).Value = "França, Languedoc" Or c.Cells(7).Value = "França, Languedoc-Roussillon" Or c.Cells(7).Value = "França, Val de Loire" Then
+                            fra += 1
+                        ElseIf c.Cells(7).Value = "Geórgia, Kakheti" Then
+                            geo += 1
+                        ElseIf c.Cells(7).Value = "Itália, Piemonte" Or c.Cells(7).Value = "Itália, Puglia" Or c.Cells(7).Value = "Itália, Sicília" Or c.Cells(7).Value = "Itália, Toscana" Or c.Cells(7).Value = "Itália, Veneto" Then
+                            ita += 1
+                        ElseIf c.Cells(7).Value = "Portugal, Vinho Verde" Or c.Cells(7).Value = "Portugal, Dão" Or c.Cells(7).Value = "Portugal, Douro" Then
+                            por += 1
+                        ElseIf c.Cells(7).Value = "Uruguai, Maldonado" Then
+                            uru += 1
+                        End If
+                    End If
+                Next
+            End If
+
+            With Dashboard.ChartRelacaoProdutos
+                .Series("Produto").Points.AddXY("Vinho Tinto", tinto)
+                .Series("Produto").Points.AddXY("Vinho Branco", branco)
+                .Series("Produto").Points.AddXY("Vinho Rosé", rose)
+                .Series("Produto").Points.AddXY("Espumante", espumante)
+            End With
+
+            With Dashboard.ChartRelacaoClasse
+                .Series("Classificacao").Points.AddXY("Seco", seco)
+                .Series("Classificacao").Points.AddXY("Suave", suave)
+                .Series("Classificacao").Points.AddXY("Demi-Seco", demiSeco)
+                .Series("Classificacao").Points.AddXY("Doce", doce)
+                .Series("Classificacao").Points.AddXY("Fortificado", fortificado)
+                .Series("Classificacao").Points.AddXY("Licoroso", licoroso)
+                .Series("Classificacao").Points.AddXY("Brut", brut)
+                .Series("Classificacao").Points.AddXY("Extra Brut", extraBrut)
+                .Series("Classificacao").Points.AddXY("Nature", nature)
+            End With
+
+            With Dashboard.ChartPaises
+                .Series("Paises").Points.AddXY("Argentina", arg)
+                .Series("Paises").Points.AddXY("Austrália", aus)
+                .Series("Paises").Points.AddXY("Brasil", bra)
+                .Series("Paises").Points.AddXY("Chile", chi)
+                .Series("Paises").Points.AddXY("Espanha", esp)
+                .Series("Paises").Points.AddXY("França", fra)
+                .Series("Paises").Points.AddXY("Geórgia", geo)
+                .Series("Paises").Points.AddXY("Itália", ita)
+                .Series("Paises").Points.AddXY("Portugal", por)
+                .Series("Paises").Points.AddXY("Uruguai", uru)
             End With
         Catch ex As Exception
             Exit Sub

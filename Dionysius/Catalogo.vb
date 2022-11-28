@@ -36,7 +36,7 @@
 
     Private Sub SairDoSistemaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SairDoSistemaToolStripMenuItem.Click
         Try
-            Application.Exit()
+            Me.Close()
         Catch ex As Exception
             Exit Sub
         End Try
@@ -51,28 +51,29 @@
     End Sub
 
     Private Sub txtBusca_TextChanged(sender As Object, e As EventArgs) Handles txtBusca.TextChanged
-        lstBuscaProduto.Visible = True
+        dgvBuscaProduto.Visible = True
 
         Try
             Call limpaBusca()
 
-            sql = "SELECT * FROM tb_vinhos WHERE nome OR tipo OR classificacao OR safra LIKE '%" & txtBusca.Text & "%' ORDER BY preco ASC"
+            If txtBusca.Text = "" Then
+                dgvBuscaProduto.Visible = False
+            End If
+
+            sql = "SELECT * FROM tb_vinhos WHERE nome LIKE '" & txtBusca.Text & "%'"
             rs = db.Execute(sql)
 
-            cont = 1
-            With lstBuscaProduto
-                .Items.Clear()
+            With dgvBuscaProduto
+                .Rows.Clear()
 
+                cont = 1
                 Do While rs.EOF = False
-                    .Items.Add(rs.Fields(1).Value & ", " & rs.Fields(3).Value)
-                    aux = rs.Fields(1).Value
-
+                    .Rows.Add(rs.Fields(1).Value, rs.Fields(3).Value, rs.Fields(4).Value, rs.Fields(5).Value)
                     rs.MoveNext()
+
                     cont += 1
                 Loop
             End With
-
-            txtBusca.Text = aux
         Catch ex As Exception
             MsgBox("Ocorreu um erro durante a busca do produto", MsgBoxStyle.Critical + MsgBoxStyle.OkOnly, "ATENÇÃO")
             Call limpaBusca()
@@ -80,12 +81,17 @@
         End Try
     End Sub
 
+    Private Sub dgvBuscaProduto_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvBuscaProduto.CellContentClick
+        txtBusca.Text = dgvBuscaProduto.Rows(dgvBuscaProduto.CurrentCell.RowIndex).Cells("NomeProduto").Value
+        dgvBuscaProduto.Visible = False
+    End Sub
+
     Private Sub btnBusca_Click(sender As Object, e As EventArgs) Handles btnBusca.Click
         Try
             sql = "SELECT * FROM tb_vinhos WHERE nome = '" & txtBusca.Text & "'"
             rs = db.Execute(sql)
 
-            lstBuscaProduto.Visible = False
+            imgProduto.Visible = True
 
             lblNomeSafraProduto.Text = "" & rs.Fields(1).Value & ", " & rs.Fields(5).Value & ""
             lblTipoClasseProduto.Text = "" & rs.Fields(3).Value & " - " & rs.Fields(4).Value & ""

@@ -34,7 +34,7 @@
                 End With
 
                 Dashboard.ShowDialog()
-                Me.Close()
+                Call limpaLogin()
             ElseIf (txtUsuario.Text = "enólogo" Or txtUsuario.Text = "viticultor") And txtSenha.Text = "admin" Then
                 MsgBox("Login realizado com sucesso!", MsgBoxStyle.Information + MsgBoxStyle.OkOnly, "AVISO")
 
@@ -43,7 +43,7 @@
                 End With
 
                 Dashboard.ShowDialog()
-                Me.Close()
+                Call limpaLogin()
             End If
 
             sql = "SELECT * FROM tb_clientes WHERE email = '" & txtUsuario.Text & "' AND senha = '" & txtSenha.Text & "'"
@@ -51,9 +51,7 @@
 
             ' Login dos usuários comuns
             If rs.EOF = False Then
-                aux = rs.Fields(8).Value
-
-                If aux = "BLOQUEADO" Then
+                If rs.Fields(10).Value = "BLOQUEADO" Then
                     MsgBox("Este usuário está bloqueado!", MsgBoxStyle.Critical + MsgBoxStyle.OkOnly, "ATENÇÃO")
                     Call limpaLogin()
                     Exit Sub
@@ -62,7 +60,7 @@
                 MsgBox("Login realizado com sucesso!", MsgBoxStyle.Information + MsgBoxStyle.OkOnly, "AVISO")
 
                 Home.ShowDialog()
-                Me.Close()
+                Call limpaLogin()
             Else
                 MsgBox("Usuário e/ou senha inválidos!" + vbNewLine &
                        "Tente novamente ou cadastre-se.", MsgBoxStyle.Information + MsgBoxStyle.OkOnly, "AVISO")

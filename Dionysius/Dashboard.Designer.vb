@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Dashboard
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class Dashboard
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
@@ -31,12 +31,10 @@ Partial Class Dashboard
         Dim DataGridViewCellStyle8 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle7 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim ChartArea1 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
-        Dim Legend1 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
-        Dim Series1 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
-        Dim Series2 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim ChartArea3 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
+        Dim Legend3 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
         Dim Series3 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
-        Dim Series4 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim Title3 As System.Windows.Forms.DataVisualization.Charting.Title = New System.Windows.Forms.DataVisualization.Charting.Title()
         Dim DataGridViewCellStyle9 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle12 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle10 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
@@ -46,6 +44,14 @@ Partial Class Dashboard
         Dim DataGridViewCellStyle15 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle17 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle16 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim ChartArea2 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
+        Dim Legend2 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
+        Dim Series2 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim Title2 As System.Windows.Forms.DataVisualization.Charting.Title = New System.Windows.Forms.DataVisualization.Charting.Title()
+        Dim ChartArea1 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
+        Dim Legend1 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
+        Dim Series1 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim Title1 As System.Windows.Forms.DataVisualization.Charting.Title = New System.Windows.Forms.DataVisualization.Charting.Title()
         Me.dgvDadosVinho = New System.Windows.Forms.DataGridView()
         Me.IdProduto = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.NomeProduto = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -87,7 +93,7 @@ Partial Class Dashboard
         Me.DataGridViewImageColumn2 = New System.Windows.Forms.DataGridViewImageColumn()
         Me.tabVendas = New System.Windows.Forms.TabPage()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.Chart1 = New System.Windows.Forms.DataVisualization.Charting.Chart()
+        Me.ChartRelacaoProdutos = New System.Windows.Forms.DataVisualization.Charting.Chart()
         Me.tabEventos = New System.Windows.Forms.TabPage()
         Me.btnAdicionaEvento = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -136,6 +142,8 @@ Partial Class Dashboard
         Me.DataGridViewImageColumn8 = New System.Windows.Forms.DataGridViewImageColumn()
         Me.DataGridViewImageColumn9 = New System.Windows.Forms.DataGridViewImageColumn()
         Me.DataGridViewImageColumn10 = New System.Windows.Forms.DataGridViewImageColumn()
+        Me.ChartRelacaoClasse = New System.Windows.Forms.DataVisualization.Charting.Chart()
+        Me.ChartPaises = New System.Windows.Forms.DataVisualization.Charting.Chart()
         CType(Me.dgvDadosVinho, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.MenuStrip1.SuspendLayout()
         Me.tabControlDashboard.SuspendLayout()
@@ -143,13 +151,15 @@ Partial Class Dashboard
         Me.tabProducao.SuspendLayout()
         CType(Me.dgvDadosProducao, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.tabVendas.SuspendLayout()
-        CType(Me.Chart1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ChartRelacaoProdutos, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.tabEventos.SuspendLayout()
         CType(Me.dgvDadosEvento, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.tabFornecedores.SuspendLayout()
         CType(Me.dgvDadosFornecedores, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.tabUsuarios.SuspendLayout()
         CType(Me.dgvDadosUsuarios, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ChartRelacaoClasse, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ChartPaises, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'dgvDadosVinho
@@ -446,8 +456,10 @@ Partial Class Dashboard
         '
         'tabVendas
         '
+        Me.tabVendas.Controls.Add(Me.ChartPaises)
+        Me.tabVendas.Controls.Add(Me.ChartRelacaoClasse)
         Me.tabVendas.Controls.Add(Me.Label5)
-        Me.tabVendas.Controls.Add(Me.Chart1)
+        Me.tabVendas.Controls.Add(Me.ChartRelacaoProdutos)
         resources.ApplyResources(Me.tabVendas, "tabVendas")
         Me.tabVendas.Name = "tabVendas"
         Me.tabVendas.UseVisualStyleBackColor = True
@@ -458,36 +470,29 @@ Partial Class Dashboard
         Me.Label5.ForeColor = System.Drawing.Color.Black
         Me.Label5.Name = "Label5"
         '
-        'Chart1
+        'ChartRelacaoProdutos
         '
-        ChartArea1.Name = "ChartArea1"
-        Me.Chart1.ChartAreas.Add(ChartArea1)
-        Legend1.Name = "Bebidas"
-        Legend1.Title = "Produto"
-        Me.Chart1.Legends.Add(Legend1)
-        resources.ApplyResources(Me.Chart1, "Chart1")
-        Me.Chart1.Name = "Chart1"
-        Me.Chart1.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Chocolate
-        Series1.ChartArea = "ChartArea1"
-        Series1.Legend = "Bebidas"
-        Series1.LegendText = "Vinho Tinto"
-        Series1.Name = "vTinto"
-        Series2.ChartArea = "ChartArea1"
-        Series2.Legend = "Bebidas"
-        Series2.LegendText = "Vinho Brnco"
-        Series2.Name = "vBranco"
+        ChartArea3.Name = "ChartArea1"
+        Me.ChartRelacaoProdutos.ChartAreas.Add(ChartArea3)
+        Legend3.Alignment = System.Drawing.StringAlignment.Center
+        Legend3.DockedToChartArea = "ChartArea1"
+        Legend3.LegendStyle = System.Windows.Forms.DataVisualization.Charting.LegendStyle.Column
+        Legend3.Name = "Tipo"
+        Legend3.Title = "Tipo do Produto"
+        Legend3.TitleAlignment = System.Drawing.StringAlignment.Near
+        Me.ChartRelacaoProdutos.Legends.Add(Legend3)
+        resources.ApplyResources(Me.ChartRelacaoProdutos, "ChartRelacaoProdutos")
+        Me.ChartRelacaoProdutos.Name = "ChartRelacaoProdutos"
+        Me.ChartRelacaoProdutos.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Chocolate
         Series3.ChartArea = "ChartArea1"
-        Series3.Legend = "Bebidas"
-        Series3.LegendText = "Vinho Rosé"
-        Series3.Name = "vRose"
-        Series4.ChartArea = "ChartArea1"
-        Series4.Legend = "Bebidas"
-        Series4.LegendText = "Espumante"
-        Series4.Name = "espumante"
-        Me.Chart1.Series.Add(Series1)
-        Me.Chart1.Series.Add(Series2)
-        Me.Chart1.Series.Add(Series3)
-        Me.Chart1.Series.Add(Series4)
+        Series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie
+        Series3.IsValueShownAsLabel = True
+        Series3.Legend = "Tipo"
+        Series3.Name = "Produto"
+        Me.ChartRelacaoProdutos.Series.Add(Series3)
+        Title3.Name = "Title1"
+        Title3.Text = "Relação por Tipo"
+        Me.ChartRelacaoProdutos.Titles.Add(Title3)
         '
         'tabEventos
         '
@@ -835,6 +840,54 @@ Partial Class Dashboard
         Me.DataGridViewImageColumn10.Image = CType(resources.GetObject("DataGridViewImageColumn10.Image"), System.Drawing.Image)
         Me.DataGridViewImageColumn10.Name = "DataGridViewImageColumn10"
         '
+        'ChartRelacaoClasse
+        '
+        ChartArea2.Name = "ChartArea1"
+        Me.ChartRelacaoClasse.ChartAreas.Add(ChartArea2)
+        Legend2.Alignment = System.Drawing.StringAlignment.Center
+        Legend2.DockedToChartArea = "ChartArea1"
+        Legend2.LegendStyle = System.Windows.Forms.DataVisualization.Charting.LegendStyle.Column
+        Legend2.Name = "Classe"
+        Legend2.Title = "Classificação"
+        Legend2.TitleAlignment = System.Drawing.StringAlignment.Near
+        Me.ChartRelacaoClasse.Legends.Add(Legend2)
+        resources.ApplyResources(Me.ChartRelacaoClasse, "ChartRelacaoClasse")
+        Me.ChartRelacaoClasse.Name = "ChartRelacaoClasse"
+        Me.ChartRelacaoClasse.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Chocolate
+        Series2.ChartArea = "ChartArea1"
+        Series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Bar
+        Series2.IsValueShownAsLabel = True
+        Series2.Legend = "Classe"
+        Series2.Name = "Classificacao"
+        Me.ChartRelacaoClasse.Series.Add(Series2)
+        Title2.Name = "Title1"
+        Title2.Text = "Relação por Classificação"
+        Me.ChartRelacaoClasse.Titles.Add(Title2)
+        '
+        'ChartPaises
+        '
+        ChartArea1.Name = "ChartArea1"
+        Me.ChartPaises.ChartAreas.Add(ChartArea1)
+        Legend1.Alignment = System.Drawing.StringAlignment.Center
+        Legend1.DockedToChartArea = "ChartArea1"
+        Legend1.LegendStyle = System.Windows.Forms.DataVisualization.Charting.LegendStyle.Column
+        Legend1.Name = "Classe"
+        Legend1.Title = "Classificação"
+        Legend1.TitleAlignment = System.Drawing.StringAlignment.Near
+        Me.ChartPaises.Legends.Add(Legend1)
+        resources.ApplyResources(Me.ChartPaises, "ChartPaises")
+        Me.ChartPaises.Name = "ChartPaises"
+        Me.ChartPaises.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Chocolate
+        Series1.ChartArea = "ChartArea1"
+        Series1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(1, Byte), True)
+        Series1.IsValueShownAsLabel = True
+        Series1.Legend = "Classe"
+        Series1.Name = "Paises"
+        Me.ChartPaises.Series.Add(Series1)
+        Title1.Name = "Title1"
+        Title1.Text = "Quantidade de Produtos por País"
+        Me.ChartPaises.Titles.Add(Title1)
+        '
         'Dashboard
         '
         resources.ApplyResources(Me, "$this")
@@ -856,7 +909,7 @@ Partial Class Dashboard
         CType(Me.dgvDadosProducao, System.ComponentModel.ISupportInitialize).EndInit()
         Me.tabVendas.ResumeLayout(False)
         Me.tabVendas.PerformLayout()
-        CType(Me.Chart1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ChartRelacaoProdutos, System.ComponentModel.ISupportInitialize).EndInit()
         Me.tabEventos.ResumeLayout(False)
         Me.tabEventos.PerformLayout()
         CType(Me.dgvDadosEvento, System.ComponentModel.ISupportInitialize).EndInit()
@@ -866,6 +919,8 @@ Partial Class Dashboard
         Me.tabUsuarios.ResumeLayout(False)
         Me.tabUsuarios.PerformLayout()
         CType(Me.dgvDadosUsuarios, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ChartRelacaoClasse, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ChartPaises, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -894,7 +949,7 @@ Partial Class Dashboard
     Friend WithEvents Label4 As Label
     Friend WithEvents dgvDadosUsuarios As DataGridView
     Friend WithEvents Label5 As Label
-    Friend WithEvents Chart1 As DataVisualization.Charting.Chart
+    Friend WithEvents ChartRelacaoProdutos As DataVisualization.Charting.Chart
     Friend WithEvents btnAdicionaVinho As Button
     Friend WithEvents btnAdicionaProducao As Button
     Friend WithEvents btnAdicionaEvento As Button
@@ -960,4 +1015,6 @@ Partial Class Dashboard
     Friend WithEvents VisualProduto As DataGridViewLinkColumn
     Friend WithEvents Editar As DataGridViewImageColumn
     Friend WithEvents Excluir As DataGridViewImageColumn
+    Friend WithEvents ChartRelacaoClasse As DataVisualization.Charting.Chart
+    Friend WithEvents ChartPaises As DataVisualization.Charting.Chart
 End Class

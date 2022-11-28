@@ -110,7 +110,7 @@
                         sql = "UPDATE tb_eventos SET nome = '" & txtNome.Text & "', descricao = '" & txtDescricao.Text & "', data = '" & txtData.Text & "', " &
                               "hora = '" & txtHora.Text & "', endereco = '" & txtEndereco.Text & "', bairro = '" & txtBairro.Text & "', cidade = '" & txtCidade.Text & "', " &
                               "uf = '" & txtUf.Text & "', cep = '" & txtCep.Text & "', participantes = '" & cmbParticipantes.Text & "' WHERE id_evento = " & txtId.Text & ""
-                        rs = db.Execute(UCase(sql))
+                        rs = db.Execute(sql)
 
                         Call carregaDadosEvento()
                         Call limpaEvento()
@@ -125,7 +125,7 @@
                           "VALUES ('" & txtNome.Text & "', '" & txtDescricao.Text & "', '" & txtData.Text & "', '" & txtHora.Text & "', " &
                           "'" & txtEndereco.Text & "', '" & txtBairro.Text & "', '" & txtCidade.Text & "', '" & txtUf.Text & "', " &
                           "'" & txtCep.Text & "', '" & cmbParticipantes.SelectedItem & "')"
-                    rs = db.Execute(UCase(sql))
+                    rs = db.Execute(sql)
 
                     Call carregaDadosEvento()
 

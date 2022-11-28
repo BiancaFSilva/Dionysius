@@ -27,6 +27,8 @@
                 txtHarmonizacao.Text = rs.Fields(12).Value
                 txtVisual.Text = rs.Fields(13).Value
                 txtQtdeEmEstoque.Text = rs.Fields(14).Value
+
+                imgProduto.Load(rs.Fields(15).Value)
             Catch ex As Exception
                 Exit Try
             End Try
@@ -83,7 +85,7 @@
         Try
             With OpenFileDialog1
                 .Title = "Selecione uma foto"
-                .InitialDirectory = Application.StartupPath & "\img\produtos\"
+                .InitialDirectory = Application.StartupPath & "\img\produtos\sinenomine.png"
                 .ShowDialog()
 
                 dir = .FileName
@@ -114,14 +116,14 @@
                         Call carregaDadosVinho()
                         Call limpaProduto()
 
-                        MsgBox("Dados do produto " & txtNome.Text & " alterados com sucesso!", MsgBoxStyle.Information + MsgBoxStyle.OkOnly, "AVISO")
+                        MsgBox("Dados do produto alterados com sucesso!", MsgBoxStyle.Information + MsgBoxStyle.OkOnly, "AVISO")
                         Me.Close()
                     Else
                         Exit Sub
                     End If
                 Else
                     sql = "INSERT INTO tb_vinhos (nome, descricao, tipo, classificacao, safra, uva, pais, regiao, preco, produtor, teor_alcoolico, harmonizacao, visual, qtde_estoque, img)" &
-                          "VALUES ('" & txtNome.Text & "', '" & txtDescricao.Text & "', '" & cmbTipo.SelectedItem & "', '" & cmbClasse.SelectedItem & "', '" & txtSafra.Text & "', '" & cmbUva.SelectedItem & "', " &
+                          "VALUES ('" & txtNome.Text & "', '" & txtDescricao.Text & "', '" & cmbTipo.Text & "', '" & cmbClasse.Text & "', '" & txtSafra.Text & "', '" & cmbUva.Text & "', " &
                           "'" & txtPais.Text & "', '" & txtRegião.Text & "', '" & txtPreco.Text & "', '" & txtProdutores.Text & "', '" & txtTeorAlcoolico.Text & "', '" & txtHarmonizacao.Text & "', " &
                           "'" & txtVisual.Text & "', '" & txtQtdeEmEstoque.Text & "', '" & dir & "')"
                     rs = db.Execute(sql)

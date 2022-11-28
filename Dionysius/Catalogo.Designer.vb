@@ -36,13 +36,19 @@ Partial Class Catalogo
         Me.txtBusca = New System.Windows.Forms.TextBox()
         Me.btnBusca = New System.Windows.Forms.Button()
         Me.btnCatalogo = New System.Windows.Forms.Button()
-        Me.lstBuscaProduto = New System.Windows.Forms.ListBox()
         Me.imgProduto = New System.Windows.Forms.PictureBox()
         Me.lblTipoClasseProduto = New System.Windows.Forms.Label()
         Me.lblDescricaoProduto = New System.Windows.Forms.Label()
         Me.lblDadosGerais = New System.Windows.Forms.Label()
+        Me.dgvBuscaProduto = New System.Windows.Forms.DataGridView()
+        Me.lstBuscaProduto = New System.Windows.Forms.ListBox()
+        Me.NomeProduto = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.MenuStrip1.SuspendLayout()
         CType(Me.imgProduto, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dgvBuscaProduto, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'MenuStrip1
@@ -110,7 +116,7 @@ Partial Class Catalogo
         Me.SairDoSistemaToolStripMenuItem.Image = CType(resources.GetObject("SairDoSistemaToolStripMenuItem.Image"), System.Drawing.Image)
         Me.SairDoSistemaToolStripMenuItem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.SairDoSistemaToolStripMenuItem.Name = "SairDoSistemaToolStripMenuItem"
-        Me.SairDoSistemaToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.SairDoSistemaToolStripMenuItem.Size = New System.Drawing.Size(154, 22)
         Me.SairDoSistemaToolStripMenuItem.Text = "Sair do Sistema"
         '
         'lblNomeSafraProduto
@@ -184,17 +190,6 @@ Partial Class Catalogo
         Me.btnCatalogo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.btnCatalogo.UseVisualStyleBackColor = False
         '
-        'lstBuscaProduto
-        '
-        Me.lstBuscaProduto.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.lstBuscaProduto.FormattingEnabled = True
-        Me.lstBuscaProduto.Location = New System.Drawing.Point(314, 121)
-        Me.lstBuscaProduto.Name = "lstBuscaProduto"
-        Me.lstBuscaProduto.SelectionMode = System.Windows.Forms.SelectionMode.MultiSimple
-        Me.lstBuscaProduto.Size = New System.Drawing.Size(516, 91)
-        Me.lstBuscaProduto.TabIndex = 23
-        Me.lstBuscaProduto.Visible = False
-        '
         'imgProduto
         '
         Me.imgProduto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
@@ -245,12 +240,55 @@ Partial Class Catalogo
         Me.lblDadosGerais.TabIndex = 27
         Me.lblDadosGerais.Text = "."
         '
+        'dgvBuscaProduto
+        '
+        Me.dgvBuscaProduto.BackgroundColor = System.Drawing.Color.White
+        Me.dgvBuscaProduto.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvBuscaProduto.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.NomeProduto, Me.Column2, Me.Column3, Me.Column4})
+        Me.dgvBuscaProduto.Location = New System.Drawing.Point(314, 121)
+        Me.dgvBuscaProduto.Name = "dgvBuscaProduto"
+        Me.dgvBuscaProduto.Size = New System.Drawing.Size(516, 150)
+        Me.dgvBuscaProduto.TabIndex = 28
+        Me.dgvBuscaProduto.Visible = False
+        '
+        'lstBuscaProduto
+        '
+        Me.lstBuscaProduto.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.lstBuscaProduto.FormattingEnabled = True
+        Me.lstBuscaProduto.Location = New System.Drawing.Point(314, 121)
+        Me.lstBuscaProduto.Name = "lstBuscaProduto"
+        Me.lstBuscaProduto.SelectionMode = System.Windows.Forms.SelectionMode.MultiSimple
+        Me.lstBuscaProduto.Size = New System.Drawing.Size(516, 91)
+        Me.lstBuscaProduto.TabIndex = 23
+        Me.lstBuscaProduto.Visible = False
+        '
+        'NomeProduto
+        '
+        Me.NomeProduto.HeaderText = "Nome"
+        Me.NomeProduto.Name = "NomeProduto"
+        '
+        'Column2
+        '
+        Me.Column2.HeaderText = "Tipo"
+        Me.Column2.Name = "Column2"
+        '
+        'Column3
+        '
+        Me.Column3.HeaderText = "Classificação"
+        Me.Column3.Name = "Column3"
+        '
+        'Column4
+        '
+        Me.Column4.HeaderText = "Safra"
+        Me.Column4.Name = "Column4"
+        '
         'Catalogo
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(174, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(65, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1174, 701)
+        Me.Controls.Add(Me.dgvBuscaProduto)
         Me.Controls.Add(Me.imgProduto)
         Me.Controls.Add(Me.lblTipoClasseProduto)
         Me.Controls.Add(Me.lblDescricaoProduto)
@@ -272,6 +310,7 @@ Partial Class Catalogo
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
         CType(Me.imgProduto, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dgvBuscaProduto, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -290,9 +329,14 @@ Partial Class Catalogo
     Friend WithEvents txtBusca As TextBox
     Friend WithEvents SairDoSistemaToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents btnCatalogo As Button
-    Friend WithEvents lstBuscaProduto As ListBox
     Friend WithEvents imgProduto As PictureBox
     Friend WithEvents lblTipoClasseProduto As Label
     Friend WithEvents lblDescricaoProduto As Label
     Friend WithEvents lblDadosGerais As Label
+    Friend WithEvents dgvBuscaProduto As DataGridView
+    Friend WithEvents lstBuscaProduto As ListBox
+    Friend WithEvents NomeProduto As DataGridViewTextBoxColumn
+    Friend WithEvents Column2 As DataGridViewTextBoxColumn
+    Friend WithEvents Column3 As DataGridViewTextBoxColumn
+    Friend WithEvents Column4 As DataGridViewTextBoxColumn
 End Class

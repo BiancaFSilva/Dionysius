@@ -5,16 +5,18 @@
 
     Private Sub btnConfirmaPresenca_Click(sender As Object, e As EventArgs) Handles btnConfirmaPresenca.Click
         Try
-            If txtNomeParticipante.Text = "" Or txtEmailParticipante.Text = "" Then
+            If txtNomeParticipante.Text = "" Or txtSobrenomeParticipante.Text = "" Or txtEmailParticipante.Text = "" Then
                 MsgBox("Preencha os campos!", MsgBoxStyle.Information + MsgBoxStyle.OkOnly, "AVISO")
                 Exit Sub
             Else
-                sql = "SELECT * FROM tb_clientes WHERE nome = '" & txtNomeParticipante.Text & "' AND email = '" & txtEmailParticipante.Text & "'"
+                sql = "SELECT * FROM tb_clientes WHERE nome = '" & txtNomeParticipante.Text & "' AND sobrenome = '" & txtSobrenomeParticipante.Text & "' AND email = '" & txtEmailParticipante.Text & "'"
                 rs = db.Execute(sql)
 
                 If rs.EOF = False Then
-                    sql = "UPDATE tb_eventos SET participantes = participantes  + ', ' + '" & txtEmailParticipante.Text & "' WHERE nome = '" & Eventos.lblTituloEvento.Text & "'"
-                    rs = db.Execute(UCase(sql))
+                    sql = "UPDATE tb_eventos SET participantes = (participantes  + ', ' + '" & txtNomeParticipante.Text & "' + ' ' + '" & txtSobrenomeParticipante.Text & "') WHERE nome = '" & Eventos.lblTituloEvento.Text & "'"
+                    rs = db.Execute(sql)
+
+                    Call carregaDadosEvento()
 
                     MsgBox("Seu interesse em participar do evento " + Eventos.lblTituloEvento.Text + " foi registrado com sucesso!" + vbNewLine &
                            "Seu nome estará na lista.", MsgBoxStyle.Information + MsgBoxStyle.OkOnly, "AVISO")

@@ -387,6 +387,7 @@ Partial Class frmAdicionaProduto
         '
         Me.imgProduto.BackgroundImage = CType(resources.GetObject("imgProduto.BackgroundImage"), System.Drawing.Image)
         Me.imgProduto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.imgProduto.Image = CType(resources.GetObject("imgProduto.Image"), System.Drawing.Image)
         Me.imgProduto.Location = New System.Drawing.Point(491, 50)
         Me.imgProduto.Name = "imgProduto"
         Me.imgProduto.Size = New System.Drawing.Size(100, 110)

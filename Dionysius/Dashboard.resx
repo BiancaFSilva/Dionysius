@@ -643,7 +643,7 @@
     <value>3, 3, 3, 3</value>
   </data>
   <data name="tabProdutos.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1149, 645</value>
+    <value>1149, 646</value>
   </data>
   <data name="tabProdutos.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -832,7 +832,7 @@
     <value>3, 3, 3, 3</value>
   </data>
   <data name="tabProducao.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1149, 645</value>
+    <value>1149, 646</value>
   </data>
   <data name="tabProducao.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -852,6 +852,54 @@
   <data name="&gt;&gt;tabProducao.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="ChartPaises.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 405</value>
+  </data>
+  <data name="ChartPaises.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1118, 208</value>
+  </data>
+  <data name="ChartPaises.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="ChartPaises.Text" xml:space="preserve">
+    <value>Relação dos Produtos por País</value>
+  </data>
+  <data name="&gt;&gt;ChartPaises.Name" xml:space="preserve">
+    <value>ChartPaises</value>
+  </data>
+  <data name="&gt;&gt;ChartPaises.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataVisualization.Charting.Chart, System.Windows.Forms.DataVisualization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35</value>
+  </data>
+  <data name="&gt;&gt;ChartPaises.Parent" xml:space="preserve">
+    <value>tabVendas</value>
+  </data>
+  <data name="&gt;&gt;ChartPaises.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="ChartRelacaoClasse.Location" type="System.Drawing.Point, System.Drawing">
+    <value>576, 107</value>
+  </data>
+  <data name="ChartRelacaoClasse.Size" type="System.Drawing.Size, System.Drawing">
+    <value>525, 275</value>
+  </data>
+  <data name="ChartRelacaoClasse.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="ChartRelacaoClasse.Text" xml:space="preserve">
+    <value>Relação dos Produtos por Classe </value>
+  </data>
+  <data name="&gt;&gt;ChartRelacaoClasse.Name" xml:space="preserve">
+    <value>ChartRelacaoClasse</value>
+  </data>
+  <data name="&gt;&gt;ChartRelacaoClasse.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataVisualization.Charting.Chart, System.Windows.Forms.DataVisualization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35</value>
+  </data>
+  <data name="&gt;&gt;ChartRelacaoClasse.Parent" xml:space="preserve">
+    <value>tabVendas</value>
+  </data>
+  <data name="&gt;&gt;ChartRelacaoClasse.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
   <data name="Label5.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -868,13 +916,13 @@
     <value>4, 0, 4, 0</value>
   </data>
   <data name="Label5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>353, 42</value>
+    <value>360, 42</value>
   </data>
   <data name="Label5.TabIndex" type="System.Int32, mscorlib">
     <value>18</value>
   </data>
   <data name="Label5.Text" xml:space="preserve">
-    <value>Estimativa de Vendas</value>
+    <value>Resumo dos Produtos</value>
   </data>
   <data name="&gt;&gt;Label5.Name" xml:space="preserve">
     <value>Label5</value>
@@ -886,31 +934,31 @@
     <value>tabVendas</value>
   </data>
   <data name="&gt;&gt;Label5.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="ChartRelacaoProdutos.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 107</value>
+  </data>
+  <data name="ChartRelacaoProdutos.Size" type="System.Drawing.Size, System.Drawing">
+    <value>517, 275</value>
+  </data>
+  <data name="ChartRelacaoProdutos.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="Chart1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>28, 120</value>
+  <data name="ChartRelacaoProdutos.Text" xml:space="preserve">
+    <value>Relação dos Produtos por Tipo</value>
   </data>
-  <data name="Chart1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>640, 300</value>
+  <data name="&gt;&gt;ChartRelacaoProdutos.Name" xml:space="preserve">
+    <value>ChartRelacaoProdutos</value>
   </data>
-  <data name="Chart1.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="Chart1.Text" xml:space="preserve">
-    <value>Chart1</value>
-  </data>
-  <data name="&gt;&gt;Chart1.Name" xml:space="preserve">
-    <value>Chart1</value>
-  </data>
-  <data name="&gt;&gt;Chart1.Type" xml:space="preserve">
+  <data name="&gt;&gt;ChartRelacaoProdutos.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataVisualization.Charting.Chart, System.Windows.Forms.DataVisualization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35</value>
   </data>
-  <data name="&gt;&gt;Chart1.Parent" xml:space="preserve">
+  <data name="&gt;&gt;ChartRelacaoProdutos.Parent" xml:space="preserve">
     <value>tabVendas</value>
   </data>
-  <data name="&gt;&gt;Chart1.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="&gt;&gt;ChartRelacaoProdutos.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
   <data name="tabVendas.Location" type="System.Drawing.Point, System.Drawing">
     <value>23, 4</value>
@@ -919,7 +967,7 @@
     <value>3, 3, 3, 3</value>
   </data>
   <data name="tabVendas.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1149, 645</value>
+    <value>1149, 646</value>
   </data>
   <data name="tabVendas.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -1138,7 +1186,7 @@
     <value>3, 3, 3, 3</value>
   </data>
   <data name="tabEventos.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1149, 645</value>
+    <value>1149, 646</value>
   </data>
   <data name="tabEventos.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -1330,7 +1378,7 @@
     <value>3, 3, 3, 3</value>
   </data>
   <data name="tabFornecedores.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1149, 645</value>
+    <value>1149, 646</value>
   </data>
   <data name="tabFornecedores.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -1543,7 +1591,7 @@
     <value>3, 3, 3, 3</value>
   </data>
   <data name="tabUsuarios.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1149, 645</value>
+    <value>1149, 646</value>
   </data>
   <data name="tabUsuarios.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -1564,13 +1612,13 @@
     <value>5</value>
   </data>
   <data name="tabControlDashboard.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 46</value>
+    <value>1, 46</value>
   </data>
   <data name="tabControlDashboard.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
     <value>No</value>
   </data>
   <data name="tabControlDashboard.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1176, 653</value>
+    <value>1176, 654</value>
   </data>
   <data name="tabControlDashboard.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -1623,7 +1671,7 @@
     <value>6, 13</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1176, 697</value>
+    <value>1176, 701</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

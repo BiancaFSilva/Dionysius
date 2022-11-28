@@ -112,7 +112,7 @@ Partial Class Fornecedores
         Me.SairDoSistemaToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(230, Byte), Integer), CType(CType(217, Byte), Integer))
         Me.SairDoSistemaToolStripMenuItem.Image = CType(resources.GetObject("SairDoSistemaToolStripMenuItem.Image"), System.Drawing.Image)
         Me.SairDoSistemaToolStripMenuItem.Name = "SairDoSistemaToolStripMenuItem"
-        Me.SairDoSistemaToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.SairDoSistemaToolStripMenuItem.Size = New System.Drawing.Size(154, 22)
         Me.SairDoSistemaToolStripMenuItem.Text = "Sair do Sistema"
         '
         'lblContatoFornecedor
