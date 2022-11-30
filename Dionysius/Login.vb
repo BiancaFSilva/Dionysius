@@ -34,7 +34,7 @@
                 End With
 
                 Dashboard.ShowDialog()
-                Call limpaLogin()
+                Me.Close()
             ElseIf (txtUsuario.Text = "enólogo" Or txtUsuario.Text = "viticultor") And txtSenha.Text = "admin" Then
                 MsgBox("Login realizado com sucesso!", MsgBoxStyle.Information + MsgBoxStyle.OkOnly, "AVISO")
 
@@ -43,7 +43,7 @@
                 End With
 
                 Dashboard.ShowDialog()
-                Call limpaLogin()
+                Me.Close()
             End If
 
             sql = "SELECT * FROM tb_clientes WHERE email = '" & txtUsuario.Text & "' AND senha = '" & txtSenha.Text & "'"

@@ -50,7 +50,7 @@
 
     Private Sub SairDoSistemaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SairDoSistemaToolStripMenuItem.Click
         Try
-            Me.Close()
+            Application.Exit()
         Catch ex As Exception
             Exit Sub
         End Try
