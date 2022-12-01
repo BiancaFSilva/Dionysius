@@ -21,7 +21,7 @@
         End Try
     End Sub
 
-    Private Sub CatálogoToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CatálogoToolStripMenuItem.Click
+    Private Sub CatálogoToolStripMenuItem_Click(sender As Object, e As EventArgs)
         Try
             Catalogo.ShowDialog()
         Catch ex As Exception
@@ -30,7 +30,7 @@
         End Try
     End Sub
 
-    Private Sub FornecedoresToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles FornecedoresToolStripMenuItem.Click
+    Private Sub FornecedoresToolStripMenuItem_Click(sender As Object, e As EventArgs)
         Try
             Fornecedores.ShowDialog()
         Catch ex As Exception
@@ -39,7 +39,7 @@
         End Try
     End Sub
 
-    Private Sub EventosToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles EventosToolStripMenuItem.Click
+    Private Sub EventosToolStripMenuItem_Click(sender As Object, e As EventArgs)
         Try
             Eventos.ShowDialog()
         Catch ex As Exception
@@ -293,6 +293,86 @@
                 camposUsuario(0) = .Cells("IdUsuario").Value
             End With
         Catch ex As Exception
+            Exit Sub
+        End Try
+    End Sub
+
+    ' Filtragem dos dados do DataGridView
+    Private Sub txtBusca_TextChanged(sender As Object, e As EventArgs) Handles txtBusca.TextChanged
+        Try
+            If cmbBusca.SelectedItem = "Produtos" Then
+                sql = "SELECT * FROM tb_vinhos WHERE nome LIKE '" & txtBusca.Text & "%' ORDER BY nome ASC"
+                rs = db.Execute(sql)
+
+                With dgvDadosVinho
+                    .Rows.Clear()
+
+                    Do While rs.EOF = False
+                        .Rows.Add(rs.Fields(0).Value, rs.Fields(1).Value, rs.Fields(2).Value, rs.Fields(3).Value, rs.Fields(4).Value, rs.Fields(5).Value, rs.Fields(6).Value, rs.Fields(7).Value & ", " & rs.Fields(8).Value, rs.Fields(11).Value, rs.Fields(12).Value, rs.Fields(14).Value, rs.Fields(9).Value, rs.Fields(15).Value, Nothing, Nothing)
+                        rs.MoveNext()
+
+                        cont += 1
+                    Loop
+                End With
+            ElseIf cmbBusca.SelectedItem = "Produção" Then
+                sql = "SELECT * FROM tb_fabricacao WHERE processo LIKE '" & txtBusca.Text & "%' ORDER BY produto_relacionado ASC"
+                rs = db.Execute(sql)
+
+                With dgvDadosProducao
+                    .Rows.Clear()
+
+                    Do While rs.EOF = False
+                        .Rows.Add(rs.Fields(0).Value, rs.Fields(5).Value, rs.Fields(1).Value, rs.Fields(2).Value, rs.Fields(3).Value, rs.Fields(4).Value, Nothing, Nothing)
+                        rs.MoveNext()
+
+                        cont += 1
+                    Loop
+                End With
+            ElseIf cmbBusca.SelectedItem = "Eventos" Then
+                sql = "SELECT * FROM tb_eventos WHERE nome LIKE '" & txtBusca.Text & "%' ORDER BY nome ASC"
+                rs = db.Execute(sql)
+
+                With dgvDadosEvento
+                    .Rows.Clear()
+
+                    Do While rs.EOF = False
+                        .Rows.Add(rs.Fields(0).Value, rs.Fields(1).Value, rs.Fields(2).Value, rs.Fields(3).Value, rs.Fields(4).Value, rs.Fields(5).Value, rs.Fields(6).Value, rs.Fields(7).Value, rs.Fields(8).Value, rs.Fields(9).Value, rs.Fields(10).Value, Nothing, Nothing)
+                        rs.MoveNext()
+
+                        cont += 1
+                    Loop
+                End With
+            ElseIf cmbBusca.SelectedItem = "Fornecedores" Then
+                sql = "SELECT * FROM tb_fornecedores WHERE nome LIKE '" & txtBusca.Text & "%' ORDER BY ramo ASC"
+                rs = db.Execute(sql)
+
+                With dgvDadosFornecedores
+                    .Rows.Clear()
+
+                    Do While rs.EOF = False
+                        .Rows.Add(rs.Fields(0).Value, rs.Fields(1).Value, rs.Fields(2).Value, rs.Fields(4).Value, rs.Fields(5).Value, rs.Fields(3).Value, rs.Fields(6).Value, Nothing, Nothing)
+                        rs.MoveNext()
+
+                        cont += 1
+                    Loop
+                End With
+            ElseIf cmbBusca.SelectedItem = "Usuários" Then
+                sql = "SELECT * FROM tb_clientes WHERE nome LIKE '" & txtBusca.Text & "%' ORDER BY nome ASC"
+                rs = db.Execute(sql)
+
+                With dgvDadosUsuarios
+                    .Rows.Clear()
+
+                    Do While rs.EOF = False
+                        .Rows.Add(rs.Fields(0).Value, rs.Fields(1).Value, rs.Fields(2).Value, rs.Fields(3).Value, rs.Fields(4).Value, rs.Fields(7).Value, rs.Fields(5).Value, rs.Fields(6).Value, rs.Fields(8).Value, rs.Fields(10).Value, Nothing, Nothing)
+                        rs.MoveNext()
+
+                        cont += 1
+                    Loop
+                End With
+            End If
+        Catch ex As Exception
+            MsgBox("Ocorreu um erro durante a pesquisa", MsgBoxStyle.Critical + MsgBoxStyle.OkOnly, "ATENÇÃO")
             Exit Sub
         End Try
     End Sub

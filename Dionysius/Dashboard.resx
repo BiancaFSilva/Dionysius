@@ -360,80 +360,6 @@
   <data name="DionysiusToolStripMenuItem.Text" xml:space="preserve">
     <value>Dionysius</value>
   </data>
-  <data name="CatálogoToolStripMenuItem.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Bahnschrift, 9.75pt</value>
-  </data>
-  <data name="CatálogoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>102, 23</value>
-  </data>
-  <data name="CatálogoToolStripMenuItem.Text" xml:space="preserve">
-    <value>Catálogo</value>
-  </data>
-  <data name="FornecedoresToolStripMenuItem.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Bahnschrift, 9.75pt</value>
-  </data>
-  <data name="FornecedoresToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>132, 23</value>
-  </data>
-  <data name="FornecedoresToolStripMenuItem.Text" xml:space="preserve">
-    <value>Fornecedores</value>
-  </data>
-  <data name="EventosToolStripMenuItem.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Bahnschrift, 9.75pt</value>
-  </data>
-  <data name="EventosToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>98, 23</value>
-  </data>
-  <data name="EventosToolStripMenuItem.Text" xml:space="preserve">
-    <value>Eventos</value>
-  </data>
-  <data name="SairDoSistemaToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPmHLAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
-        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAB3RJTUUH5gsPACYJmXhI+AAACBdJREFU
-        eF7tnUuMFEUYx1lBTdQQNFHx5iO+NRr1YABjEB8XjUaJYqJy0IsxIIokmqgBjxq8mvgAj0YTTqjxIgki
-        4OMgJOt21SxsELprZleMLiJMVzPtv3pKkdlanOnuqq5mvl/yz+7sdH3V9X3/qa6eme2eMyjp5OjCWPCV
-        UvCP4ojthiZjwY7hZ+pALfS9A32vSycmFuhdIlyQRMEDccS/QBGSnqJUI8F/jUO+Qu8eYYs4GrsdCd81
-        owB+qCMjtkbvKlEmaZrOxSt+A5Lsxyt+diVJyJbp3SbKIG3uOR/F/9KQbC8lI74Xhj1L7z5RhKz4WGiZ
-        Eu2zcChYoodA5EVP+2qhZ0yy3+Ib9DCIvOhjviG5/gszwGY9DCIPcTR+GxLp+4JvVknBNumhEHmIBdtp
-        Smxd1A7Zej0UYlCSqHG/Kal1kgyDRXo4xKAggZ/3JrROkoLvodPAnGTv7UdcmhJbEyVJM1iqh0MMCo79
-        zxiSWhd1ZMRX66EQecD0+aEhsXXQVFsEy/UwiLzUbPXfhLbDtGvTw435eghEEXD8Fz1JHlS726Jxgw5H
-        1A0U8GhPQQdTc/xGHYqoIyjiiRlFHUDq8wMdiqgjKGJRA9D5d51BEckAwwyKSAYYZlBEMsAwgyKSAYYZ
-        FJEM4ACVpzjiT8qIbZGChfrzlxZ+blPfbE4nRy/Qm7oFO0EGsExb8OvVF1dN+fuPWkmTP6ibuAMdkwEs
-        IkVwB/L0e2/eZtEJGGWVbuoG1WnPTgwkMsDspAdHL8J0f9CUt9OoI6PgRR3CPuiQDGAJ5Oft3nz1K6wL
-        XtVh7ILOyAAWSNNt82LBfzPlrF85MQE6IgNYQLYad5ryNaDs/+8jOiEDWCAO2ROmfOWR1ZkAHZABLBA3
-        2eOmfOWVNRMgOBnAAiUdAk6RlcMBApMBLIC8zM0uYmHIWRGVPhMgKBnAEshP7tPA06lUEyAgGcASOd8I
-        6kuI+5LuphgIRgawSPetYP6nKXdFVYoJEIgMYBkZBouRq+ne3JWhwocDBCEDOMCyCV7T3QwOApABHOGl
-        CdCYDOAQ70yAhmQAx3hlAjQiA1SANyZAAzJARXhhAmxMBqiQyk2ADckAFVOpCbARGcADLJqgAz2nu5kJ
-        niQDeIKM+F1xxI+Y8lxMXLbDxkO6m1PBBmQAj7A3E/Aj7TC4VndzEjxJBvAMizPBD+no6Dm6my54ggzg
-        IbZmAin4K7qLLvgjGcBTLM0E0+nU2GW6CzKA71iaCTbq8GSAOmBhJphOD+y9MAuOB2eEAbAfI2pQlQpT
-        6/EWv9KGYsFXwgSlXdJXNtkLWeLwoBIDqIK1BX8U7v5UCvZLLFjbFJ9kSYLvyAqBB84NcHyycZU6JTHF
-        IzlTJ23uu8S5AdSFJW18X540uLJrLeMXZwZQl0GREdtvikOqQvxdpwbAsf4NUwxSZdrqzADYbiRb7Bli
-        kKqRFDxwZgB1oSRTe1KlmnRmgO7dx80xSBVJsGMODVD/O5OdcRLsL3eHgIhdZ2pPqlTuDgHYjhaBngmn
-        5GPODKDAqvN1UwxSZXJ3GqhQt6aH68ZNcUiVaKNTAyjUDabQbqo3Dsm9cGr+mHMDKI432RVou6s3Fsmp
-        OqloXFyJARRoN4Izg4exMPwEh4UDJX4c3Mmu0OmRMMYQY9xXVBjbdM9Y80uwb7JC4EElBiAGQ4bBIuS7
-        NANIETyfBcYDMoDnlF18aDqdmFiQBccDMoDHWCi+0js6PBnAZyx9I/iPdHJ0oe6CDOArll756tJyL+su
-        uuCPZADPsPTKV/o+TX88W3fTBX8kA3iErVe++r+Cdjh2je7mJHiSDOAJ9l75XM56RzJsQAbwAHuv/OwC
-        Ec/qbmaCJ8kAFWOz+P97BzJsRAaokEqLr8CGZICKqLz4CmxMBqgAL4qvQAMygGO8Kb4CjcgADvGq+Ao0
-        JAM4wrviK9CYDOAAL4uvQAAygGW8Lb4CQcgAFokPsVuQJz+Lr0AgMoAl0ig6TwrOTXkrqHKKr0AwMoAl
-        VJFMOSuo8oqvQEAygCWkYD+ZclZA5RZfgaBkAAuoL10iP+qTOGPecqj84isQmAxggfahn6825Sun7BRf
-        geBkAAscE2OXm/KVQ/aKr0AHZAALpOm2eeoKHKacDSC7xVegEzKAJWTEtphy1qfsF1+BjsgAlpCicbcp
-        Z33ITfEV6IwMYBHMAh+b8nYauSu+Ah2SASySNhrnYi3wlSl3BiUy4qt0UzegUzKAZbIFYcTfQr6O9ubv
-        H6m3jJMmu0c3cQc6JwM4Im3tv1S9wqHPYsG/hSm+Rg7fa0fsEeRxrt7MLdgBMsAwgyKSAYYZFJEMMMyg
-        iGSAYQZFJAMMMyhiUQNUs3olygFFnPXctC81x2/UoYg6gnNRYSxs//oubo7dhJlgRIck6kQs2E5DUX1V
-        KxZ8hxR83b+XOSOKgWR+YEi0/1K3ngv5Cj0MIi+YAZ42Jrge6siIrdFDIfKg7h6priFjSG5dlCQhW6aH
-        Q+QBSdzak9RaSUZ8L70fUYAk4veZElsn4VCwRA+HyINaXZsSWx/xDXooRB7iVnBzndcCmAE266EQeZGC
-        vWlKbh2Efd+kh0HkRS2kkMxaLgjbIVuvh0EUQf1Ls7qdiCnJPkuGwWI9BKIomQlqNBNIwffQaWDJqITq
-        NUHSm3DPlCTNYKnebaJs4pDf6vEhoSMjvlrvKmGTJOT3IuE4LHhzqjjVFsFyvXuEK7qfHbCncHh4v/vd
-        dtaEin2ppH+pvrbjmL82PdyYr3eJyM2cOX8Dqq365JNOiMUAAAAASUVORK5CYII=
-</value>
-  </data>
-  <data name="SairDoSistemaToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>154, 22</value>
-  </data>
-  <data name="SairDoSistemaToolStripMenuItem.Text" xml:space="preserve">
-    <value>Sair do Sistema</value>
-  </data>
   <data name="LoginToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPmHLAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
@@ -536,6 +462,30 @@
   <data name="LoginToolStripMenuItem.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>TopRight</value>
   </data>
+  <data name="txtBusca.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="txtBusca.Size" type="System.Drawing.Size, System.Drawing">
+    <value>230, 23</value>
+  </data>
+  <data name="cmbBusca.Items" xml:space="preserve">
+    <value>Produtos</value>
+  </data>
+  <data name="cmbBusca.Items1" xml:space="preserve">
+    <value>Produção</value>
+  </data>
+  <data name="cmbBusca.Items2" xml:space="preserve">
+    <value>Eventos</value>
+  </data>
+  <data name="cmbBusca.Items3" xml:space="preserve">
+    <value>Fornecedores</value>
+  </data>
+  <data name="cmbBusca.Items4" xml:space="preserve">
+    <value>Usuários</value>
+  </data>
+  <data name="cmbBusca.Size" type="System.Drawing.Size, System.Drawing">
+    <value>131, 23</value>
+  </data>
   <data name="MenuStrip1.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
@@ -564,8 +514,202 @@
   <data name="&gt;&gt;MenuStrip1.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="SairDoSistemaToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+</value>
+  </data>
+  <data name="SairDoSistemaToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
+  <data name="SairDoSistemaToolStripMenuItem.Text" xml:space="preserve">
+    <value>Sair do Sistema</value>
+  </data>
   <data name="tabControlDashboard.Alignment" type="System.Windows.Forms.TabAlignment, System.Windows.Forms">
     <value>Left</value>
+  </data>
+  <data name="&gt;&gt;tabProdutos.Name" xml:space="preserve">
+    <value>tabProdutos</value>
+  </data>
+  <data name="&gt;&gt;tabProdutos.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabProdutos.Parent" xml:space="preserve">
+    <value>tabControlDashboard</value>
+  </data>
+  <data name="&gt;&gt;tabProdutos.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;tabProducao.Name" xml:space="preserve">
+    <value>tabProducao</value>
+  </data>
+  <data name="&gt;&gt;tabProducao.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabProducao.Parent" xml:space="preserve">
+    <value>tabControlDashboard</value>
+  </data>
+  <data name="&gt;&gt;tabProducao.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;tabVendas.Name" xml:space="preserve">
+    <value>tabVendas</value>
+  </data>
+  <data name="&gt;&gt;tabVendas.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabVendas.Parent" xml:space="preserve">
+    <value>tabControlDashboard</value>
+  </data>
+  <data name="&gt;&gt;tabVendas.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;tabEventos.Name" xml:space="preserve">
+    <value>tabEventos</value>
+  </data>
+  <data name="&gt;&gt;tabEventos.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabEventos.Parent" xml:space="preserve">
+    <value>tabControlDashboard</value>
+  </data>
+  <data name="&gt;&gt;tabEventos.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;tabFornecedores.Name" xml:space="preserve">
+    <value>tabFornecedores</value>
+  </data>
+  <data name="&gt;&gt;tabFornecedores.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabFornecedores.Parent" xml:space="preserve">
+    <value>tabControlDashboard</value>
+  </data>
+  <data name="&gt;&gt;tabFornecedores.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;tabUsuarios.Name" xml:space="preserve">
+    <value>tabUsuarios</value>
+  </data>
+  <data name="&gt;&gt;tabUsuarios.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabUsuarios.Parent" xml:space="preserve">
+    <value>tabControlDashboard</value>
+  </data>
+  <data name="&gt;&gt;tabUsuarios.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="tabControlDashboard.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1, 46</value>
+  </data>
+  <data name="tabControlDashboard.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>No</value>
+  </data>
+  <data name="tabControlDashboard.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1176, 654</value>
+  </data>
+  <data name="tabControlDashboard.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;tabControlDashboard.Name" xml:space="preserve">
+    <value>tabControlDashboard</value>
+  </data>
+  <data name="&gt;&gt;tabControlDashboard.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabControlDashboard.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;tabControlDashboard.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;btnAdicionaVinho.Name" xml:space="preserve">
+    <value>btnAdicionaVinho</value>
+  </data>
+  <data name="&gt;&gt;btnAdicionaVinho.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnAdicionaVinho.Parent" xml:space="preserve">
+    <value>tabProdutos</value>
+  </data>
+  <data name="&gt;&gt;btnAdicionaVinho.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;Label6.Name" xml:space="preserve">
+    <value>Label6</value>
+  </data>
+  <data name="&gt;&gt;Label6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Label6.Parent" xml:space="preserve">
+    <value>tabProdutos</value>
+  </data>
+  <data name="&gt;&gt;Label6.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="tabProdutos.Location" type="System.Drawing.Point, System.Drawing">
+    <value>23, 4</value>
+  </data>
+  <data name="tabProdutos.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="tabProdutos.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1149, 646</value>
+  </data>
+  <data name="tabProdutos.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="tabProdutos.Text" xml:space="preserve">
+    <value>Vinhos e Bibidas</value>
+  </data>
+  <data name="&gt;&gt;tabProdutos.Name" xml:space="preserve">
+    <value>tabProdutos</value>
+  </data>
+  <data name="&gt;&gt;tabProdutos.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabProdutos.Parent" xml:space="preserve">
+    <value>tabControlDashboard</value>
+  </data>
+  <data name="&gt;&gt;tabProdutos.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="btnAdicionaVinho.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Popup</value>
@@ -636,32 +780,68 @@
   <data name="&gt;&gt;Label6.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="tabProdutos.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="&gt;&gt;btnAdicionaProducao.Name" xml:space="preserve">
+    <value>btnAdicionaProducao</value>
+  </data>
+  <data name="&gt;&gt;btnAdicionaProducao.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnAdicionaProducao.Parent" xml:space="preserve">
+    <value>tabProducao</value>
+  </data>
+  <data name="&gt;&gt;btnAdicionaProducao.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;Label1.Name" xml:space="preserve">
+    <value>Label1</value>
+  </data>
+  <data name="&gt;&gt;Label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Label1.Parent" xml:space="preserve">
+    <value>tabProducao</value>
+  </data>
+  <data name="&gt;&gt;Label1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;dgvDadosProducao.Name" xml:space="preserve">
+    <value>dgvDadosProducao</value>
+  </data>
+  <data name="&gt;&gt;dgvDadosProducao.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dgvDadosProducao.Parent" xml:space="preserve">
+    <value>tabProducao</value>
+  </data>
+  <data name="&gt;&gt;dgvDadosProducao.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="tabProducao.Location" type="System.Drawing.Point, System.Drawing">
     <value>23, 4</value>
   </data>
-  <data name="tabProdutos.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="tabProducao.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 3, 3, 3</value>
   </data>
-  <data name="tabProdutos.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="tabProducao.Size" type="System.Drawing.Size, System.Drawing">
     <value>1149, 646</value>
   </data>
-  <data name="tabProdutos.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
+  <data name="tabProducao.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
   </data>
-  <data name="tabProdutos.Text" xml:space="preserve">
-    <value>Vinhos e Bibidas</value>
+  <data name="tabProducao.Text" xml:space="preserve">
+    <value>Produção</value>
   </data>
-  <data name="&gt;&gt;tabProdutos.Name" xml:space="preserve">
-    <value>tabProdutos</value>
+  <data name="&gt;&gt;tabProducao.Name" xml:space="preserve">
+    <value>tabProducao</value>
   </data>
-  <data name="&gt;&gt;tabProdutos.Type" xml:space="preserve">
+  <data name="&gt;&gt;tabProducao.Type" xml:space="preserve">
     <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;tabProdutos.Parent" xml:space="preserve">
+  <data name="&gt;&gt;tabProducao.Parent" xml:space="preserve">
     <value>tabControlDashboard</value>
   </data>
-  <data name="&gt;&gt;tabProdutos.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="&gt;&gt;tabProducao.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="btnAdicionaProducao.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Popup</value>
@@ -825,32 +1005,80 @@
   <data name="&gt;&gt;dgvDadosProducao.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="tabProducao.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="&gt;&gt;ChartPaises.Name" xml:space="preserve">
+    <value>ChartPaises</value>
+  </data>
+  <data name="&gt;&gt;ChartPaises.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataVisualization.Charting.Chart, System.Windows.Forms.DataVisualization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35</value>
+  </data>
+  <data name="&gt;&gt;ChartPaises.Parent" xml:space="preserve">
+    <value>tabVendas</value>
+  </data>
+  <data name="&gt;&gt;ChartPaises.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;ChartRelacaoClasse.Name" xml:space="preserve">
+    <value>ChartRelacaoClasse</value>
+  </data>
+  <data name="&gt;&gt;ChartRelacaoClasse.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataVisualization.Charting.Chart, System.Windows.Forms.DataVisualization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35</value>
+  </data>
+  <data name="&gt;&gt;ChartRelacaoClasse.Parent" xml:space="preserve">
+    <value>tabVendas</value>
+  </data>
+  <data name="&gt;&gt;ChartRelacaoClasse.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;Label5.Name" xml:space="preserve">
+    <value>Label5</value>
+  </data>
+  <data name="&gt;&gt;Label5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Label5.Parent" xml:space="preserve">
+    <value>tabVendas</value>
+  </data>
+  <data name="&gt;&gt;Label5.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;ChartRelacaoProdutos.Name" xml:space="preserve">
+    <value>ChartRelacaoProdutos</value>
+  </data>
+  <data name="&gt;&gt;ChartRelacaoProdutos.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataVisualization.Charting.Chart, System.Windows.Forms.DataVisualization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35</value>
+  </data>
+  <data name="&gt;&gt;ChartRelacaoProdutos.Parent" xml:space="preserve">
+    <value>tabVendas</value>
+  </data>
+  <data name="&gt;&gt;ChartRelacaoProdutos.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="tabVendas.Location" type="System.Drawing.Point, System.Drawing">
     <value>23, 4</value>
   </data>
-  <data name="tabProducao.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="tabVendas.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 3, 3, 3</value>
   </data>
-  <data name="tabProducao.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="tabVendas.Size" type="System.Drawing.Size, System.Drawing">
     <value>1149, 646</value>
   </data>
-  <data name="tabProducao.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
+  <data name="tabVendas.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
   </data>
-  <data name="tabProducao.Text" xml:space="preserve">
-    <value>Produção</value>
+  <data name="tabVendas.Text" xml:space="preserve">
+    <value>Estimativa de Vendas</value>
   </data>
-  <data name="&gt;&gt;tabProducao.Name" xml:space="preserve">
-    <value>tabProducao</value>
+  <data name="&gt;&gt;tabVendas.Name" xml:space="preserve">
+    <value>tabVendas</value>
   </data>
-  <data name="&gt;&gt;tabProducao.Type" xml:space="preserve">
+  <data name="&gt;&gt;tabVendas.Type" xml:space="preserve">
     <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;tabProducao.Parent" xml:space="preserve">
+  <data name="&gt;&gt;tabVendas.Parent" xml:space="preserve">
     <value>tabControlDashboard</value>
   </data>
-  <data name="&gt;&gt;tabProducao.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="&gt;&gt;tabVendas.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="ChartPaises.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 405</value>
@@ -960,32 +1188,68 @@
   <data name="&gt;&gt;ChartRelacaoProdutos.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="tabVendas.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="&gt;&gt;btnAdicionaEvento.Name" xml:space="preserve">
+    <value>btnAdicionaEvento</value>
+  </data>
+  <data name="&gt;&gt;btnAdicionaEvento.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnAdicionaEvento.Parent" xml:space="preserve">
+    <value>tabEventos</value>
+  </data>
+  <data name="&gt;&gt;btnAdicionaEvento.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;Label2.Name" xml:space="preserve">
+    <value>Label2</value>
+  </data>
+  <data name="&gt;&gt;Label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Label2.Parent" xml:space="preserve">
+    <value>tabEventos</value>
+  </data>
+  <data name="&gt;&gt;Label2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;dgvDadosEvento.Name" xml:space="preserve">
+    <value>dgvDadosEvento</value>
+  </data>
+  <data name="&gt;&gt;dgvDadosEvento.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dgvDadosEvento.Parent" xml:space="preserve">
+    <value>tabEventos</value>
+  </data>
+  <data name="&gt;&gt;dgvDadosEvento.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="tabEventos.Location" type="System.Drawing.Point, System.Drawing">
     <value>23, 4</value>
   </data>
-  <data name="tabVendas.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="tabEventos.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 3, 3, 3</value>
   </data>
-  <data name="tabVendas.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="tabEventos.Size" type="System.Drawing.Size, System.Drawing">
     <value>1149, 646</value>
   </data>
-  <data name="tabVendas.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
+  <data name="tabEventos.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
   </data>
-  <data name="tabVendas.Text" xml:space="preserve">
-    <value>Estimativa de Vendas</value>
+  <data name="tabEventos.Text" xml:space="preserve">
+    <value>Eventos</value>
   </data>
-  <data name="&gt;&gt;tabVendas.Name" xml:space="preserve">
-    <value>tabVendas</value>
+  <data name="&gt;&gt;tabEventos.Name" xml:space="preserve">
+    <value>tabEventos</value>
   </data>
-  <data name="&gt;&gt;tabVendas.Type" xml:space="preserve">
+  <data name="&gt;&gt;tabEventos.Type" xml:space="preserve">
     <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;tabVendas.Parent" xml:space="preserve">
+  <data name="&gt;&gt;tabEventos.Parent" xml:space="preserve">
     <value>tabControlDashboard</value>
   </data>
-  <data name="&gt;&gt;tabVendas.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="&gt;&gt;tabEventos.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
   <data name="btnAdicionaEvento.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Popup</value>
@@ -1179,32 +1443,68 @@
   <data name="&gt;&gt;dgvDadosEvento.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="tabEventos.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="&gt;&gt;btnAdicionaFornecedor.Name" xml:space="preserve">
+    <value>btnAdicionaFornecedor</value>
+  </data>
+  <data name="&gt;&gt;btnAdicionaFornecedor.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnAdicionaFornecedor.Parent" xml:space="preserve">
+    <value>tabFornecedores</value>
+  </data>
+  <data name="&gt;&gt;btnAdicionaFornecedor.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;Label3.Name" xml:space="preserve">
+    <value>Label3</value>
+  </data>
+  <data name="&gt;&gt;Label3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Label3.Parent" xml:space="preserve">
+    <value>tabFornecedores</value>
+  </data>
+  <data name="&gt;&gt;Label3.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;dgvDadosFornecedores.Name" xml:space="preserve">
+    <value>dgvDadosFornecedores</value>
+  </data>
+  <data name="&gt;&gt;dgvDadosFornecedores.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dgvDadosFornecedores.Parent" xml:space="preserve">
+    <value>tabFornecedores</value>
+  </data>
+  <data name="&gt;&gt;dgvDadosFornecedores.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="tabFornecedores.Location" type="System.Drawing.Point, System.Drawing">
     <value>23, 4</value>
   </data>
-  <data name="tabEventos.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="tabFornecedores.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 3, 3, 3</value>
   </data>
-  <data name="tabEventos.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="tabFornecedores.Size" type="System.Drawing.Size, System.Drawing">
     <value>1149, 646</value>
   </data>
-  <data name="tabEventos.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
+  <data name="tabFornecedores.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
   </data>
-  <data name="tabEventos.Text" xml:space="preserve">
-    <value>Eventos</value>
+  <data name="tabFornecedores.Text" xml:space="preserve">
+    <value>Fornecedores</value>
   </data>
-  <data name="&gt;&gt;tabEventos.Name" xml:space="preserve">
-    <value>tabEventos</value>
+  <data name="&gt;&gt;tabFornecedores.Name" xml:space="preserve">
+    <value>tabFornecedores</value>
   </data>
-  <data name="&gt;&gt;tabEventos.Type" xml:space="preserve">
+  <data name="&gt;&gt;tabFornecedores.Type" xml:space="preserve">
     <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;tabEventos.Parent" xml:space="preserve">
+  <data name="&gt;&gt;tabFornecedores.Parent" xml:space="preserve">
     <value>tabControlDashboard</value>
   </data>
-  <data name="&gt;&gt;tabEventos.ZOrder" xml:space="preserve">
-    <value>3</value>
+  <data name="&gt;&gt;tabFornecedores.ZOrder" xml:space="preserve">
+    <value>4</value>
   </data>
   <data name="btnAdicionaFornecedor.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -1371,32 +1671,68 @@
   <data name="&gt;&gt;dgvDadosFornecedores.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="tabFornecedores.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="&gt;&gt;btnAdicionaUsuario.Name" xml:space="preserve">
+    <value>btnAdicionaUsuario</value>
+  </data>
+  <data name="&gt;&gt;btnAdicionaUsuario.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnAdicionaUsuario.Parent" xml:space="preserve">
+    <value>tabUsuarios</value>
+  </data>
+  <data name="&gt;&gt;btnAdicionaUsuario.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;Label4.Name" xml:space="preserve">
+    <value>Label4</value>
+  </data>
+  <data name="&gt;&gt;Label4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Label4.Parent" xml:space="preserve">
+    <value>tabUsuarios</value>
+  </data>
+  <data name="&gt;&gt;Label4.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;dgvDadosUsuarios.Name" xml:space="preserve">
+    <value>dgvDadosUsuarios</value>
+  </data>
+  <data name="&gt;&gt;dgvDadosUsuarios.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dgvDadosUsuarios.Parent" xml:space="preserve">
+    <value>tabUsuarios</value>
+  </data>
+  <data name="&gt;&gt;dgvDadosUsuarios.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="tabUsuarios.Location" type="System.Drawing.Point, System.Drawing">
     <value>23, 4</value>
   </data>
-  <data name="tabFornecedores.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="tabUsuarios.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 3, 3, 3</value>
   </data>
-  <data name="tabFornecedores.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="tabUsuarios.Size" type="System.Drawing.Size, System.Drawing">
     <value>1149, 646</value>
   </data>
-  <data name="tabFornecedores.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
+  <data name="tabUsuarios.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
   </data>
-  <data name="tabFornecedores.Text" xml:space="preserve">
-    <value>Fornecedores</value>
+  <data name="tabUsuarios.Text" xml:space="preserve">
+    <value>Usuários</value>
   </data>
-  <data name="&gt;&gt;tabFornecedores.Name" xml:space="preserve">
-    <value>tabFornecedores</value>
+  <data name="&gt;&gt;tabUsuarios.Name" xml:space="preserve">
+    <value>tabUsuarios</value>
   </data>
-  <data name="&gt;&gt;tabFornecedores.Type" xml:space="preserve">
+  <data name="&gt;&gt;tabUsuarios.Type" xml:space="preserve">
     <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;tabFornecedores.Parent" xml:space="preserve">
+  <data name="&gt;&gt;tabUsuarios.Parent" xml:space="preserve">
     <value>tabControlDashboard</value>
   </data>
-  <data name="&gt;&gt;tabFornecedores.ZOrder" xml:space="preserve">
-    <value>4</value>
+  <data name="&gt;&gt;tabUsuarios.ZOrder" xml:space="preserve">
+    <value>5</value>
   </data>
   <data name="btnAdicionaUsuario.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Popup</value>
@@ -1583,57 +1919,6 @@
   </data>
   <data name="&gt;&gt;dgvDadosUsuarios.ZOrder" xml:space="preserve">
     <value>2</value>
-  </data>
-  <data name="tabUsuarios.Location" type="System.Drawing.Point, System.Drawing">
-    <value>23, 4</value>
-  </data>
-  <data name="tabUsuarios.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
-  </data>
-  <data name="tabUsuarios.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1149, 646</value>
-  </data>
-  <data name="tabUsuarios.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="tabUsuarios.Text" xml:space="preserve">
-    <value>Usuários</value>
-  </data>
-  <data name="&gt;&gt;tabUsuarios.Name" xml:space="preserve">
-    <value>tabUsuarios</value>
-  </data>
-  <data name="&gt;&gt;tabUsuarios.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabUsuarios.Parent" xml:space="preserve">
-    <value>tabControlDashboard</value>
-  </data>
-  <data name="&gt;&gt;tabUsuarios.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="tabControlDashboard.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1, 46</value>
-  </data>
-  <data name="tabControlDashboard.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
-    <value>No</value>
-  </data>
-  <data name="tabControlDashboard.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1176, 654</value>
-  </data>
-  <data name="tabControlDashboard.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;tabControlDashboard.Name" xml:space="preserve">
-    <value>tabControlDashboard</value>
-  </data>
-  <data name="&gt;&gt;tabControlDashboard.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabControlDashboard.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;tabControlDashboard.ZOrder" xml:space="preserve">
-    <value>0</value>
   </data>
   <data name="DataGridViewImageColumn9.HeaderText" xml:space="preserve">
     <value>Editar</value>
@@ -2007,24 +2292,6 @@
   <data name="&gt;&gt;DionysiusToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;CatálogoToolStripMenuItem.Name" xml:space="preserve">
-    <value>CatálogoToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;CatálogoToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;FornecedoresToolStripMenuItem.Name" xml:space="preserve">
-    <value>FornecedoresToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;FornecedoresToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;EventosToolStripMenuItem.Name" xml:space="preserve">
-    <value>EventosToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;EventosToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="&gt;&gt;LoginToolStripMenuItem.Name" xml:space="preserve">
     <value>LoginToolStripMenuItem</value>
   </data>
@@ -2300,6 +2567,18 @@
   </data>
   <data name="&gt;&gt;DataGridViewImageColumn10.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewImageColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtBusca.Name" xml:space="preserve">
+    <value>txtBusca</value>
+  </data>
+  <data name="&gt;&gt;txtBusca.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cmbBusca.Name" xml:space="preserve">
+    <value>cmbBusca</value>
+  </data>
+  <data name="&gt;&gt;cmbBusca.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>Dashboard</value>
